@@ -1,0 +1,30 @@
+project: 
+  type: website
+
+format:
+  html:
+    toc: false
+    theme: [united, theme/theme.scss]
+    css: theme/styles.css
+    self-contained: true
+    link-external-newwindow: true
+    link-external-icon: false
+    backgroundcolor: "#F8F7F0"
+    page-layout: full
+
+knitr: 
+  opts_chunk: 
+    comment: "#>"
+    fig.align: "center"
+    fig.show: "hold"
+    fig.asp: 0.618
+    fig.retna: 3
+    out.width: 70%
+    echo: false
+
+execute: 
+  freeze: false
+  warning: false
+
+website: 
+  title: "Pingfan's Slides"

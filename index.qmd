@@ -1,0 +1,22 @@
+---
+title: "Pingfan's Slides"
+---
+
+```{r}
+library(tidyverse)
+library(tinytable)
+library(googlesheets4)
+
+gs4_deauth()
+slides_data <- read_sheet("1WISHM4Y0kp12QAsXMRt3KhE9mQ18ofpNSUzz6V82tU8") %>% 
+  mutate(
+    Slides = '<i class="bi bi-file-earmark-slides"></i>',
+    PDF = '<i class="bi bi-file-earmark-pdf"></i>'
+  )
+slides_table <- tt(slides_data, escape = FALSE)
+
+slides_table %>% 
+  format_tt(markdown = TRUE)
+
+```
+
