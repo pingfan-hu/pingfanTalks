@@ -33,17 +33,20 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-## Introduction
 
-- Surveys are widely used in researches to collect human behavior.
-- Survey questions are varied in types and randomization.
-- Data management, generalization and reproducibility are vitally important.
+## [What do we need from a survey platform?]{style="text-align: center"} {.center}
+
+## Features
+
+- Free to use
+- Open source
+- Learning curve
+- Reproducibility
+- Generalizability
 
 ## Existing Survey Platforms
 
 (What they are and why are they bad)
-
-## [What exactly do we need from a survey platform?]{style="text-align: center"} {.center}
 
 ## Features of surveydown
 

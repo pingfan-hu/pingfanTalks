@@ -40,11 +40,10 @@ th {
 .reveal .slide-background-content {
   background-position: 50% 80%;
 }
-
 .reveal a {
-  color: #FF5733 !important;
+  color: #9BBD2E !important;
 }
 
 .reveal a:hover {
-  color: #FF8C33 !important;
+  color: #7b9725 !important;
 }
