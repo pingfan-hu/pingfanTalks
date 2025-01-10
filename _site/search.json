@@ -7,181 +7,6 @@
     "text": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, and Shiny\n\nGW OSPO Award Ceremony\n\nJanuary 06, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
   },
   {
-    "objectID": "slides/2025_trb/index.html",
-    "href": "slides/2025_trb/index.html",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "",
-    "text": "BEVs (Battery Electric Vehicles) can reduce \\(CO_2\\) and prevent air pollution.\nBut managing BEV charging can become a problem for the grid.\nSmart charging can help, but depends on user acceptance.\n\n\n\n\n\n\n\nAs an introduction…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#introduction",
-    "href": "slides/2025_trb/index.html#introduction",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Introduction",
-    "text": "Introduction\n\nBEVs (Battery Electric Vehicles) can reduce \\(CO_2\\) and prevent air pollution.\nBut managing BEV charging can become a problem for the grid.\nSmart charging can help, but depends on user acceptance.\n\n\n\n\n\n\n\nAs an introduction…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#smc---supplier-managed-charging",
-    "href": "slides/2025_trb/index.html#smc---supplier-managed-charging",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "SMC - Supplier Managed Charging",
-    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold.\n\n\n\n\n\n\n\nThis is the first type of smart charging…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#smc---supplier-managed-charging-1",
-    "href": "slides/2025_trb/index.html#smc---supplier-managed-charging-1",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "SMC - Supplier Managed Charging",
-    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold."
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#v2g---vehicle-to-grid",
-    "href": "slides/2025_trb/index.html#v2g---vehicle-to-grid",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "V2G - Vehicle-to-Grid",
-    "text": "V2G - Vehicle-to-Grid\n\n\n\n\n\n\nThen, the other way of smart charging, is called V2G…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#research-questions",
-    "href": "slides/2025_trb/index.html#research-questions",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Research Questions",
-    "text": "Research Questions\n\nSensitivity: How do changes in smart charging program features influence BEV owners’ willingness to opt in?\nMarket Share: Under what conditions will BEV owners be more willing to opt in to smart charging programs?\n\n\nConjoint survey to collect BEV owners’ willingness.\n\n\nMixed logit model to evaluate utilities for simulations.\n\n\n\nHere we have 2 research questions…\nFor sensitivity, we want to measure and quantify the program features’ influence to owners’ willingness.\nFor market share, we wonder under what conditions they will opt in."
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#survey-design-with-formr",
-    "href": "slides/2025_trb/index.html#survey-design-with-formr",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Survey Design with formr",
-    "text": "Survey Design with formr\n\n\n\nSurvey Components\n\nConjoint Questions:\n\nMonetary Incentives\nCharging Limitations\nFlexibility\n\nDemographic Questions:\n\nBEV Ownership & Usage\nPersonal & Household Info\n\n\n\n\nConjoint Attributes Sample\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nOur first step will be survey design…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#conjoint-question-explained",
-    "href": "slides/2025_trb/index.html#conjoint-question-explained",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Conjoint Question Explained",
-    "text": "Conjoint Question Explained\nA Sample Conjoint Question\n\n\n\n\n\n\n\nYou are provided with different sets of attributes.\nYou choose one set instead of one attribute."
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#smc-programs",
-    "href": "slides/2025_trb/index.html#smc-programs",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "SMC Programs",
-    "text": "SMC Programs\n\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nMonthly Cash\n$20\n\n\nMonthly Override\n5\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the SMC program…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#v2g-programs",
-    "href": "slides/2025_trb/index.html#v2g-programs",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "V2G Programs",
-    "text": "V2G Programs\n\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nOccurrence Cash\n$2 to $20\n\n\n3\nMonthly Occurrence\n1 to 4\n\n\n4\nLower Bound\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nOccurrence Cash\n$20\n\n\nMonthly Occurrence\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the V2G program…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#sample-smc-question",
-    "href": "slides/2025_trb/index.html#sample-smc-question",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Sample SMC Question",
-    "text": "Sample SMC Question\n\n\n\n\n\n\nSo here is a sample SMC question…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#sample-v2g-question",
-    "href": "slides/2025_trb/index.html#sample-v2g-question",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Sample V2G Question",
-    "text": "Sample V2G Question\n\n\n\n\n\n\nSame for the V2G questions…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#survey-fielding",
-    "href": "slides/2025_trb/index.html#survey-fielding",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Survey Fielding",
-    "text": "Survey Fielding\n\nMeta: Facebook, Messenger, Instagram - Voluntary\n4 months’ of fielding from March to July in 2024\n858 results after filtering\n\n\n\n\n\n\n\n\n\nWhen the design is done we start to field the survey…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#survey-results---top-10-bev",
-    "href": "slides/2025_trb/index.html#survey-results---top-10-bev",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Survey Results - Top 10 BEV",
-    "text": "Survey Results - Top 10 BEV"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#survey-results---demographics",
-    "href": "slides/2025_trb/index.html#survey-results---demographics",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Survey Results - Demographics",
-    "text": "Survey Results - Demographics\n\n\n\n\n\n\n\n\n\n\nHere are part of the demographics of the survey results…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#survey-results---willingness-to-participate",
-    "href": "slides/2025_trb/index.html#survey-results---willingness-to-participate",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Survey Results - Willingness to Participate",
-    "text": "Survey Results - Willingness to Participate\n\n\nMixed Logit Models\n\\[\n\\begin{align*}\nu_j = v_j + \\epsilon_j = \\beta' x + \\epsilon_j\n\\qquad\nP_j = \\frac{e^{v_j}}{\\sum_{k=1}^{J} e^{v_k}}\n\\end{align*}\n\\]\n\n\n\nSMC Estimates\n\n\n\n\n\n\nV2G Estimates\n\n\n\n\n\n\n\nWithout compensation, users will not participate.\n\n\nFor the conjoint results, we used the mixed logit models…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#sensitivity-analysis",
-    "href": "slides/2025_trb/index.html#sensitivity-analysis",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Sensitivity Analysis",
-    "text": "Sensitivity Analysis"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#sensitivity-analysis-1",
-    "href": "slides/2025_trb/index.html#sensitivity-analysis-1",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Sensitivity Analysis",
-    "text": "Sensitivity Analysis\n\n\n\n\n\n\nSteeper slope indicates higher sensitivity.\n\n\nSo, how to judge which one is more sensitive and which one is not? We sketched these sensitivity plots…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#tornado-plots---smc",
-    "href": "slides/2025_trb/index.html#tornado-plots---smc",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Tornado Plots - SMC",
-    "text": "Tornado Plots - SMC\n\n\n\n\n\n\nThis tornado plot is generated from the sensitivity plots…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#tornado-plots---v2g",
-    "href": "slides/2025_trb/index.html#tornado-plots---v2g",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Tornado Plots - V2G",
-    "text": "Tornado Plots - V2G\n\n\n\n\n\n\nFor V2G, things are a little different, since both monetary incentives are more sensitive than all others…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#tornado-plots---summary",
-    "href": "slides/2025_trb/index.html#tornado-plots---summary",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Tornado Plots - Summary",
-    "text": "Tornado Plots - Summary\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonetary incentives are important.\nRecurring incentives are more important than one-time.\nFor SMC, range anxiety is vital, since it happens regularly.\nFor V2G, usability is compromised.\nDiminishing returns exist."
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#market-simulation-for-smc",
-    "href": "slides/2025_trb/index.html#market-simulation-for-smc",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Market Simulation for SMC",
-    "text": "Market Simulation for SMC\n\n\n\n\n\n\nFor marketing simulation, the programs start from simple all the way to sophisticated…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#market-simulation-for-v2g",
-    "href": "slides/2025_trb/index.html#market-simulation-for-v2g",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Market Simulation for V2G",
-    "text": "Market Simulation for V2G\n\n\n\n\n\n\nBut for V2G, money is more important than flexibility…"
-  },
-  {
-    "objectID": "slides/2025_trb/index.html#future-work",
-    "href": "slides/2025_trb/index.html#future-work",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "Future Work",
-    "text": "Future Work\nData Collection\n\nOther than social media, use survey panels to collect more responses.\nIncrease data size from 800 to 2000.\n\nModeling\n\nSubgroup analysis considering heterogeneity.\nMore modeling techniques such as Apollo Choice Modeling.\n\nSimulation\n\nApply customer preferences to grid simulation.\nEstimate benefit-cost trade-offs for utilities.\n\n\n\n\n\nPingfan Hu - IEEE VPPC 2024"
-  },
-  {
-    "objectID": "slides/2024_ieee_vppc/index.html",
-    "href": "slides/2024_ieee_vppc/index.html",
-    "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
-    "section": "",
-    "text": "BEVs (Battery Electric Vehicles) can reduce \\(CO_2\\) and prevent air pollution.\nBut managing BEV charging can become a problem for the grid.\nSmart charging can help, but depends on user acceptance.\n\n\n\n\n\n\n\nAs an introduction…"
-  },
-  {
     "objectID": "slides/2024_ieee_vppc/index.html#introduction",
     "href": "slides/2024_ieee_vppc/index.html#introduction",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
@@ -341,5 +166,222 @@
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Future Work",
     "text": "Future Work\nData Collection\n\nOther than social media, use survey panels to collect more responses.\nIncrease data size from 800 to 2000.\n\nModeling\n\nSubgroup analysis considering heterogeneity.\nMore modeling techniques such as Apollo Choice Modeling.\n\nSimulation\n\nApply customer preferences to grid simulation.\nEstimate benefit-cost trade-offs for utilities.\n\n\n\n\n\nPingfan Hu - IEEE VPPC 2024"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#introduction",
+    "href": "slides/2025_gw_ospo/index.html#introduction",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Introduction",
+    "text": "Introduction\n\nSurveys are widely used in researches to collect human behavior.\nSurvey questions are varied in types and randomization.\nData management, generalization and reproducibility are vitally important."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#smc---supplier-managed-charging",
+    "href": "slides/2025_gw_ospo/index.html#smc---supplier-managed-charging",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "SMC - Supplier Managed Charging",
+    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold.\n\n\n\n\n\n\n\nThis is the first type of smart charging…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#smc---supplier-managed-charging-1",
+    "href": "slides/2025_gw_ospo/index.html#smc---supplier-managed-charging-1",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "SMC - Supplier Managed Charging",
+    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#v2g---vehicle-to-grid",
+    "href": "slides/2025_gw_ospo/index.html#v2g---vehicle-to-grid",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "V2G - Vehicle-to-Grid",
+    "text": "V2G - Vehicle-to-Grid\n\n\n\n\n\n\nThen, the other way of smart charging, is called V2G…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#research-questions",
+    "href": "slides/2025_gw_ospo/index.html#research-questions",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nSensitivity: How do changes in smart charging program features influence BEV owners’ willingness to opt in?\nMarket Share: Under what conditions will BEV owners be more willing to opt in to smart charging programs?\n\n\nConjoint survey to collect BEV owners’ willingness.\n\n\nMixed logit model to evaluate utilities for simulations.\n\n\n\nHere we have 2 research questions…\nFor sensitivity, we want to measure and quantify the program features’ influence to owners’ willingness.\nFor market share, we wonder under what conditions they will opt in."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey-design-with-formr",
+    "href": "slides/2025_gw_ospo/index.html#survey-design-with-formr",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Survey Design with formr",
+    "text": "Survey Design with formr\n\n\n\nSurvey Components\n\nConjoint Questions:\n\nMonetary Incentives\nCharging Limitations\nFlexibility\n\nDemographic Questions:\n\nBEV Ownership & Usage\nPersonal & Household Info\n\n\n\n\nConjoint Attributes Sample\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nOur first step will be survey design…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#conjoint-question-explained",
+    "href": "slides/2025_gw_ospo/index.html#conjoint-question-explained",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Conjoint Question Explained",
+    "text": "Conjoint Question Explained\nA Sample Conjoint Question\n\n\n\n\n\n\n\nYou are provided with different sets of attributes.\nYou choose one set instead of one attribute."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#smc-programs",
+    "href": "slides/2025_gw_ospo/index.html#smc-programs",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "SMC Programs",
+    "text": "SMC Programs\n\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nMonthly Cash\n$20\n\n\nMonthly Override\n5\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the SMC program…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#v2g-programs",
+    "href": "slides/2025_gw_ospo/index.html#v2g-programs",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "V2G Programs",
+    "text": "V2G Programs\n\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nOccurrence Cash\n$2 to $20\n\n\n3\nMonthly Occurrence\n1 to 4\n\n\n4\nLower Bound\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nOccurrence Cash\n$20\n\n\nMonthly Occurrence\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the V2G program…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#sample-smc-question",
+    "href": "slides/2025_gw_ospo/index.html#sample-smc-question",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Sample SMC Question",
+    "text": "Sample SMC Question\n\n\n\n\n\n\nSo here is a sample SMC question…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#sample-v2g-question",
+    "href": "slides/2025_gw_ospo/index.html#sample-v2g-question",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Sample V2G Question",
+    "text": "Sample V2G Question\n\n\n\n\n\n\nSame for the V2G questions…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey-fielding",
+    "href": "slides/2025_gw_ospo/index.html#survey-fielding",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Survey Fielding",
+    "text": "Survey Fielding\n\nMeta: Facebook, Messenger, Instagram - Voluntary\n4 months’ of fielding from March to July in 2024\n858 results after filtering\n\n\n\n\n\n\n\n\n\nWhen the design is done we start to field the survey…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey-results---top-10-bev",
+    "href": "slides/2025_gw_ospo/index.html#survey-results---top-10-bev",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Survey Results - Top 10 BEV",
+    "text": "Survey Results - Top 10 BEV"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey-results---demographics",
+    "href": "slides/2025_gw_ospo/index.html#survey-results---demographics",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Survey Results - Demographics",
+    "text": "Survey Results - Demographics\n\n\n\n\n\n\n\n\n\n\nHere are part of the demographics of the survey results…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey-results---willingness-to-participate",
+    "href": "slides/2025_gw_ospo/index.html#survey-results---willingness-to-participate",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Survey Results - Willingness to Participate",
+    "text": "Survey Results - Willingness to Participate\n\n\nMixed Logit Models\n\\[\n\\begin{align*}\nu_j = v_j + \\epsilon_j = \\beta' x + \\epsilon_j\n\\qquad\nP_j = \\frac{e^{v_j}}{\\sum_{k=1}^{J} e^{v_k}}\n\\end{align*}\n\\]\n\n\n\nSMC Estimates\n\n\n\n\n\n\nV2G Estimates\n\n\n\n\n\n\n\nWithout compensation, users will not participate.\n\n\nFor the conjoint results, we used the mixed logit models…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#sensitivity-analysis",
+    "href": "slides/2025_gw_ospo/index.html#sensitivity-analysis",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Sensitivity Analysis",
+    "text": "Sensitivity Analysis"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#sensitivity-analysis-1",
+    "href": "slides/2025_gw_ospo/index.html#sensitivity-analysis-1",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Sensitivity Analysis",
+    "text": "Sensitivity Analysis\n\n\n\n\n\n\nSteeper slope indicates higher sensitivity.\n\n\nSo, how to judge which one is more sensitive and which one is not? We sketched these sensitivity plots…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#tornado-plots---smc",
+    "href": "slides/2025_gw_ospo/index.html#tornado-plots---smc",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Tornado Plots - SMC",
+    "text": "Tornado Plots - SMC\n\n\n\n\n\n\nThis tornado plot is generated from the sensitivity plots…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#tornado-plots---v2g",
+    "href": "slides/2025_gw_ospo/index.html#tornado-plots---v2g",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Tornado Plots - V2G",
+    "text": "Tornado Plots - V2G\n\n\n\n\n\n\nFor V2G, things are a little different, since both monetary incentives are more sensitive than all others…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#tornado-plots---summary",
+    "href": "slides/2025_gw_ospo/index.html#tornado-plots---summary",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Tornado Plots - Summary",
+    "text": "Tornado Plots - Summary\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonetary incentives are important.\nRecurring incentives are more important than one-time.\nFor SMC, range anxiety is vital, since it happens regularly.\nFor V2G, usability is compromised.\nDiminishing returns exist."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#market-simulation-for-smc",
+    "href": "slides/2025_gw_ospo/index.html#market-simulation-for-smc",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Market Simulation for SMC",
+    "text": "Market Simulation for SMC\n\n\n\n\n\n\nFor marketing simulation, the programs start from simple all the way to sophisticated…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#market-simulation-for-v2g",
+    "href": "slides/2025_gw_ospo/index.html#market-simulation-for-v2g",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Market Simulation for V2G",
+    "text": "Market Simulation for V2G\n\n\n\n\n\n\nBut for V2G, money is more important than flexibility…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#future-work",
+    "href": "slides/2025_gw_ospo/index.html#future-work",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Future Work",
+    "text": "Future Work\nData Collection\n\nOther than social media, use survey panels to collect more responses.\nIncrease data size from 800 to 2000.\n\nModeling\n\nSubgroup analysis considering heterogeneity.\nMore modeling techniques such as Apollo Choice Modeling.\n\nSimulation\n\nApply customer preferences to grid simulation.\nEstimate benefit-cost trade-offs for utilities.\n\n\n\n\n\nsurveydown.org"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
+    "href": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Existing Survey Platforms",
+    "text": "Existing Survey Platforms\n(What they are and why are they bad)"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform",
+    "href": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "What exactly do we need from a survey platform?",
+    "text": "What exactly do we need from a survey platform?"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform-styletext-align-center",
+    "href": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform-styletext-align-center",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "What exactly do we need from a survey platform? {style=“text-align: center”}",
+    "text": "What exactly do we need from a survey platform? {style=“text-align: center”}\n\n\n\n\nsurveydown.org"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#features-of-surveydown",
+    "href": "slides/2025_gw_ospo/index.html#features-of-surveydown",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Features of surveydown",
+    "text": "Features of surveydown\n(Show the features table)"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#components-of-surveydown",
+    "href": "slides/2025_gw_ospo/index.html#components-of-surveydown",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Components of surveydown",
+    "text": "Components of surveydown\n(survey.qmd + app.R)"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#demo-of-built-in-question-types",
+    "href": "slides/2025_gw_ospo/index.html#demo-of-built-in-question-types",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Demo of Built-in Question Types",
+    "text": "Demo of Built-in Question Types"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#demo-of-custom-questions---leaflet-map",
+    "href": "slides/2025_gw_ospo/index.html#demo-of-custom-questions---leaflet-map",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Demo of Custom Questions - leaflet Map",
+    "text": "Demo of Custom Questions - leaflet Map"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#proceed-to-surveydown.org-for-more-details.",
+    "href": "slides/2025_gw_ospo/index.html#proceed-to-surveydown.org-for-more-details.",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Proceed to surveydown.org for more details.",
+    "text": "Proceed to surveydown.org for more details.\n\n\n\n\nsurveydown.org"
   }
 ]

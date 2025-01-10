@@ -1,0 +1,60 @@
+---
+title: "surveydown: An Open-Source, Markdown-Based Survey Platform"
+author: "Pingfan Hu, Bogdan Bunea, John Paul Helveston"
+format:
+  revealjs: 
+    smaller: false
+    theme: theme.scss
+    css: slides.css
+    slide-number: true
+    embed-resources: true
+    auto-stretch: false
+    preview-links: auto
+    logo: figs/logo.png
+    footer: "<a href='https://surveydown.org'>surveydown.org</a>"
+    link-external-newwindow: true
+    link-external-icon: false
+    center-title-slide: false
+    title-slide-attributes: 
+      data-background-image: figs/surveydown.png
+      data-background-size: 25%
+      data-background-opacity: "1"
+      class: custom-title-slide
+
+execute: 
+  warning: false
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(kableExtra)
+```
+
+## Introduction
+
+- Surveys are widely used in researches to collect human behavior.
+- Survey questions are varied in types and randomization.
+- Data management, generalization and reproducibility are vitally important.
+
+## Existing Survey Platforms
+
+(What they are and why are they bad)
+
+## [What exactly do we need from a survey platform?]{style="text-align: center"} {.center}
+
+## Features of surveydown
+
+(Show the features table)
+
+## Components of surveydown
+
+(`survey.qmd` + `app.R`)
+
+## Demo of Built-in Question Types
+
+## Demo of Custom Questions - `leaflet` Map
+
+## [Proceed to [surveydown.org](https://surveydown.org) for more details.]{style="text-align: center; display: block;"} {.center}
