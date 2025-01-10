@@ -4741,7 +4741,56 @@ width: 100%;
 height: 100%;
 border: 2px solid #5654A2;
 }
-</style>
+
+.presentation-box {
+display: flex;
+margin: 1rem 0;
+padding: 1rem;
+border: 1px solid #E5DFD5;
+border-radius: 8px;
+background-color: white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.presentation-content {
+flex: 1;
+}
+.presentation-title {
+font-size: 1.1rem;
+font-weight: 500;
+color: #333;
+margin-bottom: 0.5rem;
+}
+.presentation-details {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 0.9rem;
+color: #666;
+}
+.event-location {
+flex: 1;
+}
+.presentation-date {
+color: #888;
+}
+.presentation-icons {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 0.5rem;
+margin-left: 1rem;
+padding-left: 1rem;
+border-left: 1px solid #E5DFD5;
+}
+.presentation-icons i {
+font-size: 1.2rem;
+color: #5654A2;
+cursor: pointer;
+transition: color 0.2s ease;
+}
+.presentation-icons i:hover {
+color: #694696;
+}</style>
 </head>
 
 <body>
@@ -4775,114 +4824,31 @@ border: 2px solid #5654A2;
 
 
 <div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<!-- preamble start -->
-
-    <script>
-
-      function styleCell_vpngecvu3gh165wbxdn0(i, j, css_id) {
-          var table = document.getElementById("tinytable_vpngecvu3gh165wbxdn0");
-          var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
-          if (cell) {
-              console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
-              cell.classList.add(css_id);
-          } else {
-              console.warn(`Cell at (${i}, ${j}) not found.`);
-          }
-      }
-      function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_vpngecvu3gh165wbxdn0');
-        var newRow = table.insertRow(i);
-        var newCell = newRow.insertCell(0);
-        newCell.setAttribute("colspan", colspan);
-        // newCell.innerText = content;
-        // this may be unsafe, but innerText does not interpret <br>
-        newCell.innerHTML = content;
-      }
-      function spanCell_vpngecvu3gh165wbxdn0(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_vpngecvu3gh165wbxdn0");
-        const targetRow = table.rows[i];
-        const targetCell = targetRow.cells[j];
-        for (let r = 0; r < rowspan; r++) {
-          // Only start deleting cells to the right for the first row (r == 0)
-          if (r === 0) {
-            // Delete cells to the right of the target cell in the first row
-            for (let c = colspan - 1; c > 0; c--) {
-              if (table.rows[i + r].cells[j + c]) {
-                table.rows[i + r].deleteCell(j + c);
-              }
-            }
-          }
-          // For rows below the first, delete starting from the target column
-          if (r > 0) {
-            for (let c = colspan - 1; c >= 0; c--) {
-              if (table.rows[i + r] && table.rows[i + r].cells[j]) {
-                table.rows[i + r].deleteCell(j);
-              }
-            }
-          }
-        }
-        // Set rowspan and colspan of the target cell
-        targetCell.rowSpan = rowspan;
-        targetCell.colSpan = colspan;
-      }
-      // tinytable span after
-      window.addEventListener('load', function () {
-          var cellsToStyle = [
-            // tinytable style arrays after
-          { positions: [ { i: 2, j: 0 }, { i: 2, j: 1 }, { i: 2, j: 2 }, { i: 2, j: 3 }, { i: 2, j: 4 }, { i: 2, j: 5 },  ], css_id: 'tinytable_css_wlmsukyuw9v6m2ai00ga',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 }, { i: 0, j: 5 },  ], css_id: 'tinytable_css_d6633uuh6m3wnz97r9he',}, 
-          ];
-
-          // Loop over the arrays to style the cells
-          cellsToStyle.forEach(function (group) {
-              group.positions.forEach(function (cell) {
-                  styleCell_vpngecvu3gh165wbxdn0(cell.i, cell.j, group.css_id);
-              });
-          });
-      });
-    </script>
-
-    <style>
-
-.table td.tinytable_css_wlmsukyuw9v6m2ai00ga, .table th.tinytable_css_wlmsukyuw9v6m2ai00ga { border-bottom: solid #d3d8dc 0.1em; }
-.table td.tinytable_css_d6633uuh6m3wnz97r9he, .table th.tinytable_css_d6633uuh6m3wnz97r9he { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
-</style>
-    <div class="container">
-      <table class="table table-borderless" id="tinytable_vpngecvu3gh165wbxdn0" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-        <thead>
-        
-              <tr>
-                <th scope="col">Date</th>
-                <th scope="col">Title</th>
-                <th scope="col">Event</th>
-                <th scope="col">Location</th>
-                <th scope="col">Slides</th>
-                <th scope="col">PDF</th>
-              </tr>
-        </thead>
-        
-        <tbody>
-                <tr>
-                  <td>2025-01-06</td>
-                  <td>surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, and Shiny</td>
-                  <td><a href="https://ospo.gwu.edu/project-registry">GW OSPO Award Ceremony</a></td>
-                  <td>Washington, DC, USA</td>
-                  <td><i class="bi bi-file-earmark-slides"></i></td>
-                  <td><i class="bi bi-file-earmark-pdf"></i></td>
-                </tr>
-                <tr>
-                  <td>2024-10-10</td>
-                  <td>Measuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs</td>
-                  <td><a href="https://events.vtsociety.org/vppc2024/">IEEE VPPC 2024</a></td>
-                  <td>Washington, DC, USA</td>
-                  <td><i class="bi bi-file-earmark-slides"></i></td>
-                  <td><i class="bi bi-file-earmark-pdf"></i></td>
-                </tr>
-        </tbody>
-      </table>
-    </div>
-<!-- hack to avoid NA insertion in last line -->
+<div class="presentation-box">
+<div class="presentation-content">
+<pre><code>&lt;div class=&quot;presentation-title&quot;&gt;surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, and Shiny&lt;/div&gt;
+&lt;div class=&quot;presentation-details&quot;&gt;
+  &lt;div class=&quot;event-location&quot;&gt;[GW OSPO Award Ceremony](https://ospo.gwu.edu/project-registry)&lt;/div&gt;
+  &lt;div class=&quot;presentation-date&quot;&gt;January 06, 2025&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="presentation-icons">
+<pre><code>&lt;i class=&quot;bi bi-file-earmark-slides&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-file-earmark-pdf&quot;&gt;&lt;/i&gt;</code></pre>
+</div>
+</div>
+<div class="presentation-box">
+<div class="presentation-content">
+<pre><code>&lt;div class=&quot;presentation-title&quot;&gt;Measuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs&lt;/div&gt;
+&lt;div class=&quot;presentation-details&quot;&gt;
+  &lt;div class=&quot;event-location&quot;&gt;[IEEE VPPC 2024](https://events.vtsociety.org/vppc2024/)&lt;/div&gt;
+  &lt;div class=&quot;presentation-date&quot;&gt;October 10, 2024&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<div class="presentation-icons">
+<pre><code>&lt;i class=&quot;bi bi-file-earmark-slides&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-file-earmark-pdf&quot;&gt;&lt;/i&gt;</code></pre>
+</div>
 </div>
 </div>
 
