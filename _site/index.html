@@ -4770,6 +4770,13 @@ color: #666;
 .event-location {
 flex: 1;
 }
+.event-location a {
+color: #5654A2;
+text-decoration: none;
+}
+.event-location a:hover {
+text-decoration: underline;
+}
 .presentation-date {
 color: #888;
 }
@@ -4777,32 +4784,48 @@ color: #888;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 0.5rem;
-margin-left: 1rem;
-padding-left: 1rem;
+gap: 0.75rem;
+margin-left: 2rem;
+padding-left: 1.5rem;
 border-left: 1px solid #E5DFD5;
 }
-.presentation-icons i {
-font-size: 1.2rem;
+.presentation-button {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.5rem 1rem;
+border: 1px solid #5654A2;
+border-radius: 4px;
 color: #5654A2;
+background-color: white;
 cursor: pointer;
-transition: color 0.2s ease;
+transition: all 0.2s ease;
 }
-.presentation-icons i:hover {
-color: #694696;
-}</style>
+.presentation-button:hover {
+background-color: #5654A2;
+text-decoration: none;
+color: white;
+}
+.presentation-button i {
+font-size: 1rem;
+color: inherit;
+}
+.presentation-button {
+text-decoration: none;
+}
+</style>
 </head>
 
-<body>
+<body class="fullcontent">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -4811,7 +4834,7 @@ color: #694696;
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -4824,30 +4847,48 @@ color: #694696;
 
 
 <div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="presentations-container">
 <div class="presentation-box">
 <div class="presentation-content">
-<pre><code>&lt;div class=&quot;presentation-title&quot;&gt;surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, and Shiny&lt;/div&gt;
-&lt;div class=&quot;presentation-details&quot;&gt;
-  &lt;div class=&quot;event-location&quot;&gt;[GW OSPO Award Ceremony](https://ospo.gwu.edu/project-registry)&lt;/div&gt;
-  &lt;div class=&quot;presentation-date&quot;&gt;January 06, 2025&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<div class="presentation-title">surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, and Shiny</div>
+<div class="presentation-details">
+<div class="event-location"><p><a href="https://ospo.gwu.edu/project-registry">GW OSPO Award Ceremony</a></p>
+</div>
+<div class="presentation-date">January 06, 2025</div>
+</div>
 </div>
 <div class="presentation-icons">
-<pre><code>&lt;i class=&quot;bi bi-file-earmark-slides&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;bi bi-file-earmark-pdf&quot;&gt;&lt;/i&gt;</code></pre>
+<a href="./slides/2025_trb" class="presentation-button" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-file-earmark-slides"></i>
+<span>Slides</span>
+</a>
+<a href="./pdf/2025_trb.pdf" class="presentation-button" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-file-earmark-pdf"></i>
+<span>PDF</span>
+</a>
 </div>
 </div>
 <div class="presentation-box">
 <div class="presentation-content">
-<pre><code>&lt;div class=&quot;presentation-title&quot;&gt;Measuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs&lt;/div&gt;
-&lt;div class=&quot;presentation-details&quot;&gt;
-  &lt;div class=&quot;event-location&quot;&gt;[IEEE VPPC 2024](https://events.vtsociety.org/vppc2024/)&lt;/div&gt;
-  &lt;div class=&quot;presentation-date&quot;&gt;October 10, 2024&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<div class="presentation-title">Measuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs</div>
+<div class="presentation-details">
+<div class="event-location"><p><a href="https://events.vtsociety.org/vppc2024/">IEEE VPPC 2024</a></p>
+</div>
+<div class="presentation-date">October 10, 2024</div>
+</div>
 </div>
 <div class="presentation-icons">
-<pre><code>&lt;i class=&quot;bi bi-file-earmark-slides&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;bi bi-file-earmark-pdf&quot;&gt;&lt;/i&gt;</code></pre>
+<a href="./slides/2024_ieee_vppc" class="presentation-button" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-file-earmark-slides"></i>
+<span>Slides</span>
+</a>
+<a href="./pdf/2024_ieee_vppc.pdf" class="presentation-button" target="_blank" rel="noopener noreferrer">
+<i class="bi bi-file-earmark-pdf"></i>
+<span>PDF</span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
