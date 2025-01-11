@@ -333,7 +333,7 @@
     "href": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
     "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
     "section": "Existing Survey Platforms",
-    "text": "Existing Survey Platforms\n(What they are and why are they bad)"
+    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducible\nGeneralizable\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nLow\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\n\n\nQualtrics\nNo\nNo\nLow\nNo\nStrong\n\n\nQDS\nNo\nNo\nHigh\nNo\nLow\n\n\nsurveydown\nYes\nYes\nLow\nYes\nStrong"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform",
@@ -397,5 +397,26 @@
     "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
     "section": "Features",
     "text": "Features\n\nFree to use\nOpen source\nLearning curve\nReproducibility\nGeneralizability"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section",
+    "href": "slides/2025_gw_ospo/index.html#section",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "",
+    "text": "Free to Use\n\n\nOpen Source\n\n\nLearning Curve\n\n\nReproducible\n\n\nGeneralizable"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#styletext-align-center",
+    "href": "slides/2025_gw_ospo/index.html#styletext-align-center",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "{style=“text-align: center”}",
+    "text": "{style=“text-align: center”}\n\n\nFree to Use\n\n\nOpen Source\n\n\nLearning Curve\n\n\nReproducible\n\n\nGeneralizable"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#introducing-surveydown",
+    "href": "slides/2025_gw_ospo/index.html#introducing-surveydown",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Introducing surveydown",
+    "text": "Introducing surveydown"
   }
 ]

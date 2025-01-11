@@ -31,26 +31,56 @@ execute:
 #| include: false
 library(tidyverse)
 library(kableExtra)
+library(googlesheets4)
 ```
 
 
 ## [What do we need from a survey platform?]{style="text-align: center"} {.center}
 
-## Features
+##
 
-- Free to use
-- Open source
-- Learning curve
-- Reproducibility
-- Generalizability
+::: {.grid-container}
+::: {.centered-orange .container}
+Free to Use
+:::
+
+::: {.centered-orange .container}
+Open Source
+:::
+
+::: {.centered-orange .container}
+Learning Curve
+:::
+
+::: {.centered-orange .container}
+Reproducible
+:::
+
+::: {.centered-orange .container}
+Generalizable
+:::
+:::
 
 ## Existing Survey Platforms
 
-(What they are and why are they bad)
+```{r}
+#| label: comparison-table
+gs4_deauth()
+comparisons <- read_sheet("1zlaNbhzOQAJnVlT8t_WmDv-uAnHwvDCb66vwYtVU5M8")
+comparisons %>% 
+  kbl(align = c("l", "c", "c", "c", "c", "c")) %>% 
+  kable_styling(font_size = 20, bootstrap_options = "basic", 
+                html_font = "inherit",
+                full_width = FALSE,
+                position = "center") %>%
+  row_spec(0:nrow(comparisons), extra_css = "vertical-align: middle !important; height: 2em;") %>%
+  row_spec(nrow(comparisons), color = "#FF5733", font_size = 28) %>%
+  column_spec(1, bold = TRUE)
+```
 
-## Features of surveydown
+## Introducing `surveydown`
 
-(Show the features table)
+![](figs/technologies.svg){.r-stretch fig-align="center" width="90%"}
 
 ## Components of surveydown
 
