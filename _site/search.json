@@ -333,7 +333,7 @@
     "href": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
     "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
     "section": "Existing Survey Platforms",
-    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducible\nGeneralizable\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nLow\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\n\n\nQualtrics\nNo\nNo\nLow\nNo\nStrong\n\n\nQDS\nNo\nNo\nHigh\nNo\nLow\n\n\nsurveydown\nYes\nYes\nLow\nYes\nStrong"
+    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducible\nGeneralizable\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nLow\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\n\n\nQualtrics\nNo\nNo\nLow\nNo\nStrong\n\n\nQDS\nNo\nNo\nHigh\nNo\nLow\n\n\nsurveydown\nYes\nYes\nLow\nYes\nStrong"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform",
@@ -418,5 +418,47 @@
     "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
     "section": "Introducing surveydown",
     "text": "Introducing surveydown"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#a-surveydown-survey",
+    "href": "slides/2025_gw_ospo/index.html#a-surveydown-survey",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "A surveydown Survey",
+    "text": "A surveydown Survey\n\n\nsurvey.qmd\nLoad package:\n\nlibrary(surveydown)\n\nWrite markdown:\n# Welcome Page\nHi! This is a **surveydown** survey!\nDefine question:\n\nsd_question(\n  type   = \"mc\",\n  id     = \"like_apple\",\n  label  = \"Do you like apple?\",\n  option = c(\n    \"Yes\" = \"yes\",\n    \"No\"  = \"no\"\n  )\n)\n\nNext page & End survey:\n\nsd_next()\nsd_close()\n\n\napp.R\nDatabase setup:\n\n# Supabase credentials\nsd_db_config()\n\n# Connect to database\ndb &lt;- sd_db_connect()\n\nServer setup:\n\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\nLaunch survey:\n\nshiny::shinyApp(ui = sd_ui(), server = server)"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#thanks-for-taking-our-survey",
+    "href": "slides/2025_gw_ospo/index.html#thanks-for-taking-our-survey",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Thanks for taking our survey!",
+    "text": "Thanks for taking our survey!\n\n\n\nExit Survey"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#a-surveydown-project",
+    "href": "slides/2025_gw_ospo/index.html#a-surveydown-project",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "A surveydown Project",
+    "text": "A surveydown Project\n\n\nsurvey.qmd\nLoad package:\n\nlibrary(surveydown)\n\nWrite markdown:\n# Welcome Page\nHi! This is a **surveydown** survey!\nDefine question:\n\nsd_question(\n  type   = \"mc\",\n  id     = \"like_apple\",\n  label  = \"Do you like apple?\",\n  option = c(\n    \"Yes\" = \"yes\",\n    \"No\"  = \"no\"\n  )\n)\n\nNext page & End survey:\n\nsd_next()\nsd_close()\n\n\napp.R\nDatabase setup:\n\n# Supabase credentials\nsd_db_config()\n\n# Connect to database\ndb &lt;- sd_db_connect()\n\nServer setup:\n\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\nLaunch survey:\n\nshiny::shinyApp(ui = sd_ui(), server = server)"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#demo---built-in-question-types",
+    "href": "slides/2025_gw_ospo/index.html#demo---built-in-question-types",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Demo - Built-in Question Types",
+    "text": "Demo - Built-in Question Types"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#demo---leaflet-map",
+    "href": "slides/2025_gw_ospo/index.html#demo---leaflet-map",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Demo - leaflet Map",
+    "text": "Demo - leaflet Map"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey-features",
+    "href": "slides/2025_gw_ospo/index.html#survey-features",
+    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "section": "Survey features",
+    "text": "Survey features\n\n\nFree to Use\n\n\nOpen Source\n\n\nLearning Curve\n\n\nReproducible\n\n\nGeneralizable"
   }
 ]

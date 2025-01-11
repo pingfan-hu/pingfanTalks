@@ -37,7 +37,7 @@ library(googlesheets4)
 
 ## [What do we need from a survey platform?]{style="text-align: center"} {.center}
 
-##
+## Survey features
 
 ::: {.grid-container}
 ::: {.centered-orange .container}
@@ -82,12 +82,81 @@ comparisons %>%
 
 ![](figs/technologies.svg){.r-stretch fig-align="center" width="90%"}
 
-## Components of surveydown
+## A surveydown Project {.smaller}
 
-(`survey.qmd` + `app.R`)
+::: columns
+::: {.column width="50%"}
+### `survey.qmd`
 
-## Demo of Built-in Question Types
+Load package:
+```{r echo=TRUE, eval=FALSE}
+library(surveydown)
+```
+Write markdown:
+```
+# Welcome Page
+Hi! This is a **surveydown** survey!
+```
 
-## Demo of Custom Questions - `leaflet` Map
+Define question:
+```{r echo=TRUE, eval=FALSE}
+sd_question(
+  type   = "mc",
+  id     = "like_apple",
+  label  = "Do you like apple?",
+  option = c(
+    "Yes" = "yes",
+    "No"  = "no"
+  )
+)
+```
+Next page & End survey:
+```{r echo=TRUE, eval=FALSE}
+sd_next()
+sd_close()
+```
+
+:::
+
+::: {.column width="50%"}
+### `app.R`
+Database setup:
+```{r echo=TRUE, eval=FALSE}
+# Supabase credentials
+sd_db_config()
+
+# Connect to database
+db <- sd_db_connect()
+```
+
+Server setup:
+```{r echo=TRUE, eval=FALSE}
+server <- function(input, output, session) {
+
+  # Skip logic
+  sd_skip_if(...)
+
+  # Conditional display
+  sd_show_if(...)
+
+  # Server settings
+  sd_server(...)
+}
+```
+
+Launch survey:
+```{r echo=TRUE, eval=FALSE}
+shiny::shinyApp(ui = sd_ui(), server = server)
+```
+:::
+:::
+
+## Demo - Built-in Question Types
+
+[![](figs/demo_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown.shinyapps.io/types/)
+
+## Demo - `leaflet` Map
+
+[![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
 ## [Proceed to [surveydown.org](https://surveydown.org) for more details.]{style="text-align: center; display: block;"} {.center}
