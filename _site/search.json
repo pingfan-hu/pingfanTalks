@@ -18,7 +18,7 @@
     "href": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Existing Survey Platforms",
-    "text": "Existing Survey Platforms\n\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducibility\nGeneralizability\nData Control\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\nFull\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\nNo\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\nFull\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\nFull\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nPoor\nPartial\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\nPartial\n\n\nQualtrics\nNo\nNo\nLow\nNo\nPoor\nNo\n\n\nQDS\nNo\nNo\nHigh\nNo\nPoor\nNo\n\n\nsurveydown\nYes\nYes\nMedium\nYes\nStrong\nFull"
+    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducibility\nGeneralizability\nData Control\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\nFull\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\nNo\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\nFull\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\nFull\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nPoor\nPartial\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\nPartial\n\n\nQualtrics\nNo\nNo\nLow\nNo\nPoor\nNo\n\n\nQDS\nNo\nNo\nHigh\nNo\nPoor\nNo\n\n\nsurveydown\nYes\nYes\nMedium\nYes\nStrong\nFull"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#introducing-surveydown",
@@ -39,7 +39,7 @@
     "href": "slides/2025_gw_ospo/index.html#survey.qmd-1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "survey.qmd",
-    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nQuestion Definition"
+    "text": "survey.qmd\n\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nQuestion Definition"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-2",
@@ -81,35 +81,35 @@
     "href": "slides/2025_gw_ospo/index.html#app.r-1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "app.R",
-    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#app.r-2",
     "href": "slides/2025_gw_ospo/index.html#app.r-2",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "app.R",
-    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package"
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#app.r-3",
     "href": "slides/2025_gw_ospo/index.html#app.r-3",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "app.R",
-    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nDatabase Setup\n\n\n\n\nWe recommend using Supabase or any PostgreSQL database for the database setup."
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nDatabase Setup\n\n\n\nWe recommend using Supabase or any PostgreSQL database for the database setup."
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#app.r-4",
     "href": "slides/2025_gw_ospo/index.html#app.r-4",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "app.R",
-    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nServer Setup"
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nServer Setup"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#app.r-5",
     "href": "slides/2025_gw_ospo/index.html#app.r-5",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "app.R",
-    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLaunch Survey"
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLaunch Survey"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#templates-and-demos-are-provided-for-an-easy-start.",
@@ -319,7 +319,7 @@
     "href": "slides/2025_gw_ospo/index.html#section",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = 'mc',\n  id    = 'penguins',\n  label = \"What's your favorite penguin?\",\n  option = c(\n    'Adélie'    = 'adelie',\n    'Chinstrap' = 'chinstrap',\n    'Gentoo'    = 'gentoo'\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nYAML Header\n\n\nLoad Package"
+    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nYAML Header\n\n\nLoad Package"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#test",
@@ -333,20 +333,41 @@
     "href": "slides/2025_gw_ospo/index.html#section-1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = 'mc',\n  id    = 'penguins',\n  label = \"What's your favorite penguin?\",\n  option = c(\n    'Adélie'    = 'adelie',\n    'Chinstrap' = 'chinstrap',\n    'Gentoo'    = 'gentoo'\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\nDefine pages uses “fences” (:::)\n\nPage 1 (Welcome)\n\n\nPage 2 (End)"
+    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\nDefine pages using “fences” (:::)\n\nPage 1 (Welcome)\n\n\nPage 2 (End)"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#section-2",
     "href": "slides/2025_gw_ospo/index.html#section-2",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = 'mc',\n  id    = 'penguins',\n  label = \"What's your favorite penguin?\",\n  option = c(\n    'Adélie'    = 'adelie',\n    'Chinstrap' = 'chinstrap',\n    'Gentoo'    = 'gentoo'\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nContents of Page 1"
+    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nContents of Page 1"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#slide1",
     "href": "slides/2025_gw_ospo/index.html#slide1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "slide1",
-    "text": "slide1\n{{&lt; surveycode  &gt;}}"
+    "text": "slide1\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-3",
+    "href": "slides/2025_gw_ospo/index.html#section-3",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nQuestion Definition"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-4",
+    "href": "slides/2025_gw_ospo/index.html#section-4",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "survey.qmd file\n\n\n---\nformat: html\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = \"mc\",\n  id    = \"penguins\",\n  label = \"What's your favorite penguin?\",\n  option = c(\n    \"Adélie\"    = \"adelie\",\n    \"Chinstrap\" = \"chinstrap\",\n    \"Gentoo\"    = \"gentoo\"\n  )\n)\n\nsd_next()\n```\n\n:::\n\n::: {#end .sd-page}\n\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n\n:::\n\n\n\nQuestion Definition"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-5",
+    "href": "slides/2025_gw_ospo/index.html#section-5",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "app.R file\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
   }
 ]
