@@ -1,5 +1,5 @@
 ---
-title: "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL"
+title: "surveydown:<br>An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys"
 author: "Pingfan Hu, Bogdan Bunea, John Paul Helveston"
 format:
   revealjs: 
@@ -19,7 +19,8 @@ format:
       data-background-size: 20%
       data-background-opacity: "1"
       class: custom-title-slide
-
+shortcodes:
+  - surveycode.lua
 execute: 
   warning: false
   echo: false
@@ -33,8 +34,11 @@ library(kableExtra)
 library(googlesheets4)
 ```
 
+## slide1
 
-## [What do we need from a survey platform?]{style="text-align: center"} {.center}
+{{< surveycode >}}
+
+## [What do we want from a survey platform?]{style="text-align: center"} {.center}
 
 ## Survey Features {style="text-align: center;"}
 
@@ -83,268 +87,326 @@ comparisons %>%
 
 ## Introducing `surveydown` {style="text-align: center"}
 
-![](figs/technologies.svg){.r-stretch fig-align="center" width="90%"}
+<br>
+
+![](figs/technologies.svg){fig-align="center" width="90%"}
 
 ## Components {style="text-align: center;"}
 
 ::: columns
+
 ::: {.column width="50%"}
+
 ### `survey.qmd` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
-A **Quarto doc** containing survey texts, questions and pages.
+
+A **Quarto doc** defining the main survey content (pages, text, images, questions, etc).
+
 :::
 
 ::: {.column width="50%"}
+
 ### `app.R` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+
 An **R script** defining the survey Shiny app. It sets up the database and server, and launches the survey.
-:::
+
 :::
 
-## `survey.qmd` {.smaller}
+:::
+
+
+
+
+
+
+
+
+
+
+
+## {style="font-size: 0.6em;"}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+survey.qmd 
+file
+
+:::
+
+::: {.column width="43%"}
 
 ````{r}
 #| eval: false
 #| echo: true
+
+---
+format: html
+echo: false
+warning: false
+---
+
 ```{r}
 library(surveydown)
 ```
 
 ::: {#welcome .sd-page}
+
 # Welcome to our survey!
 
 ```{r}
 sd_question(
-  type   = 'mc',
-  id     = 'penguins',
-  label  = "Which penguin do you like?",
-  option = c('Adélie'    = 'adelie',
-             'Chinstrap' = 'chinstrap',
-             'Gentoo'    = 'gentoo')
+  type  = 'mc',
+  id    = 'penguins',
+  label = "What's your favorite penguin?",
+  option = c(
+    'Adélie'    = 'adelie',
+    'Chinstrap' = 'chinstrap',
+    'Gentoo'    = 'gentoo'
+  )
 )
 
 sd_next()
 ```
+
 :::
 
 ::: {#end .sd-page}
+
 This is the last page of the survey.
 
 ```{r}
 sd_close()
 ```
+
 :::
+
 ````
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="43%"}
+
 ::: {.surveyqmd-texts}
+
+YAML Header
+
+:::
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 14%;"}
+
 Load Package
+
 :::
 
-::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
-Welcome Page
 :::
 
-::: {.surveyqmd-texts style="display: block; transform: none; top: 78%;"}
-End Page
-:::
-:::
 :::
 
-## `survey.qmd` {.smaller}
+
+
+
+
+
+
+
+## {style="font-size: 0.6em;"}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+survey.qmd 
+file
+
+:::
+
+::: {.column width="43%"}
 
 ````{r}
 #| eval: false
 #| echo: true
-#| code-line-numbers: "1-3"
+#| code-line-numbers: "11,30,32,40"
+
+---
+format: html
+echo: false
+warning: false
+---
+
 ```{r}
 library(surveydown)
 ```
 
 ::: {#welcome .sd-page}
+
 # Welcome to our survey!
 
 ```{r}
 sd_question(
-  type   = 'mc',
-  id     = 'penguins',
-  label  = "Which penguin do you like?",
-  option = c('Adélie'    = 'adelie',
-             'Chinstrap' = 'chinstrap',
-             'Gentoo'    = 'gentoo')
+  type  = 'mc',
+  id    = 'penguins',
+  label = "What's your favorite penguin?",
+  option = c(
+    'Adélie'    = 'adelie',
+    'Chinstrap' = 'chinstrap',
+    'Gentoo'    = 'gentoo'
+  )
 )
 
 sd_next()
 ```
+
 :::
 
 ::: {#end .sd-page}
+
 This is the last page of the survey.
 
 ```{r}
 sd_close()
 ```
+
 :::
+
 ````
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts}
-Load Package
-:::
-:::
+::: {.column width="43%"}
+
+Define pages uses "fences" (`:::`)
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 24%;"}
+
+Page 1 (Welcome)
+
 :::
 
-## `survey.qmd` {.smaller}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 71%;"}
+
+Page 2 (End)
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+## {style="font-size: 0.6em;"}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+survey.qmd 
+file
+
+:::
+
+::: {.column width="43%"}
 
 ````{r}
 #| eval: false
 #| echo: true
-#| code-line-numbers: "5,20"
+#| code-line-numbers: "13-28"
+
+---
+format: html
+echo: false
+warning: false
+---
+
 ```{r}
 library(surveydown)
 ```
 
 ::: {#welcome .sd-page}
+
 # Welcome to our survey!
 
 ```{r}
 sd_question(
-  type   = 'mc',
-  id     = 'penguins',
-  label  = "Which penguin do you like?",
-  option = c('Adélie'    = 'adelie',
-             'Chinstrap' = 'chinstrap',
-             'Gentoo'    = 'gentoo')
+  type  = 'mc',
+  id    = 'penguins',
+  label = "What's your favorite penguin?",
+  option = c(
+    'Adélie'    = 'adelie',
+    'Chinstrap' = 'chinstrap',
+    'Gentoo'    = 'gentoo'
+  )
 )
 
 sd_next()
 ```
+
 :::
 
 ::: {#end .sd-page}
+
 This is the last page of the survey.
 
 ```{r}
 sd_close()
 ```
+
 :::
+
 ````
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
-Welcome Page
-:::
-:::
-:::
+::: {.column width="43%"}
 
-## `survey.qmd` {.smaller}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 28%;"}
 
-::: columns
-::: {.column width="50%"}
-
-````{r}
-#| eval: false
-#| echo: true
-#| code-line-numbers: "22,28"
-```{r}
-library(surveydown)
-```
-
-::: {#welcome .sd-page}
-# Welcome to our survey!
-
-```{r}
-sd_question(
-  type   = 'mc',
-  id     = 'penguins',
-  label  = "Which penguin do you like?",
-  option = c('Adélie'    = 'adelie',
-             'Chinstrap' = 'chinstrap',
-             'Gentoo'    = 'gentoo')
-)
-
-sd_next()
-```
-:::
-
-::: {#end .sd-page}
-This is the last page of the survey.
-
-```{r}
-sd_close()
-```
-:::
-````
+Contents of Page 1
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts style="display: block; transform: none; top: 78%;"}
-End Page
 :::
-:::
-:::
-
-## `survey.qmd` {.smaller}
-
-::: columns
-::: {.column width="50%"}
-
-````{r}
-#| eval: false
-#| echo: true
-#| code-line-numbers: "6-19"
-```{r}
-library(surveydown)
-```
-
-::: {#welcome .sd-page}
-# Welcome to our survey!
-
-```{r}
-sd_question(
-  type   = 'mc',
-  id     = 'penguins',
-  label  = "Which penguin do you like?",
-  option = c('Adélie'    = 'adelie',
-             'Chinstrap' = 'chinstrap',
-             'Gentoo'    = 'gentoo')
-)
-
-sd_next()
-```
-:::
-
-::: {#end .sd-page}
-This is the last page of the survey.
-
-```{r}
-sd_close()
-```
-:::
-````
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
-Contents of This Page
-:::
-:::
-:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## `survey.qmd` {.smaller}
 
