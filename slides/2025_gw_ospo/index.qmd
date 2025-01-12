@@ -355,6 +355,10 @@ Launch Survey
 :::
 :::
 
+## Video Showcase {style="text-align: center;"}
+
+![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;"}
+
 ## [Templates and demos are provided for an easy start.]{style="text-align: center"} {.center}
 
 ## Demo - Built-in Question Types {style="text-align: center;"}
@@ -364,5 +368,27 @@ Launch Survey
 ## Demo - `leaflet` Map {style="text-align: center;"}
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
+
+## Future Works {style="text-align: center;"}
+
+<br>
+
+::: {.grid-container style="height: 40vh;"}
+::: {.centered-orange .container style="width: 600px;"}
+GUI for survey creation
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+Administrative dashboard
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+More question types...
+:::
+:::
+
+## Dashboard (Under Construction...) {style="text-align: center;"}
+
+![](figs/dashboard.png){fig-align="center" style="border: 2px solid #5654A2;"}
 
 ## [Check out [surveydown.org](https://surveydown.org) for more!]{style="text-align: center; display: block;"} {.center}

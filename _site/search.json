@@ -369,5 +369,26 @@
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
     "text": "app.R file\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#video-showcase",
+    "href": "slides/2025_gw_ospo/index.html#video-showcase",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Video Showcase",
+    "text": "Video Showcase\n\n\nVideo"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#future-works",
+    "href": "slides/2025_gw_ospo/index.html#future-works",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Future Works",
+    "text": "Future Works\n\n\n\nGUI for survey creation\n\n\nAdministrative dashboard\n\n\nMore question types…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#dashboard-under-construction",
+    "href": "slides/2025_gw_ospo/index.html#dashboard-under-construction",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Dashboard (Under Construction…)",
+    "text": "Dashboard (Under Construction…)"
   }
 ]
