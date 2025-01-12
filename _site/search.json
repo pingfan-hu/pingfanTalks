@@ -331,9 +331,9 @@
   {
     "objectID": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
     "href": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "Existing Survey Platforms",
-    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducible\nGeneralizable\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nLow\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\n\n\nQualtrics\nNo\nNo\nLow\nNo\nStrong\n\n\nQDS\nNo\nNo\nHigh\nNo\nLow\n\n\nsurveydown\nYes\nYes\nLow\nYes\nStrong"
+    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nFree to Use\nOpen Source\nLearning Curve\nReproducibility\nGeneralizability\nData Control\n\n\n\n\nformr\nYes\nYes\nHigh\nYes\nModerate\nFull\n\n\nGoogle Form\nYes\nNo\nLow\nNo\nModerate\nNo\n\n\nOpen Data Kit\nPartial\nYes\nMedium\nPartial\nStrong\nFull\n\n\nREDCap\nPartial\nNo\nHigh\nNo\nModerate\nFull\n\n\nCASIC Builder\nNo\nNo\nHigh\nNo\nPoor\nPartial\n\n\nSurveyCTO\nNo\nNo\nMedium\nYes\nModerate\nPartial\n\n\nQualtrics\nNo\nNo\nLow\nNo\nPoor\nNo\n\n\nQDS\nNo\nNo\nHigh\nNo\nPoor\nNo\n\n\nsurveydown\nYes\nYes\nMedium\nYes\nStrong\nFull"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#what-exactly-do-we-need-from-a-survey-platform",
@@ -380,14 +380,14 @@
   {
     "objectID": "slides/2025_gw_ospo/index.html#proceed-to-surveydown.org-for-more-details.",
     "href": "slides/2025_gw_ospo/index.html#proceed-to-surveydown.org-for-more-details.",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "Proceed to surveydown.org for more details.",
-    "text": "Proceed to surveydown.org for more details.\n\n\n\n\nsurveydown.org"
+    "text": "Proceed to surveydown.org for more details."
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#what-do-we-need-from-a-survey-platform",
     "href": "slides/2025_gw_ospo/index.html#what-do-we-need-from-a-survey-platform",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "What do we need from a survey platform?",
     "text": "What do we need from a survey platform?"
   },
@@ -401,9 +401,9 @@
   {
     "objectID": "slides/2025_gw_ospo/index.html#section",
     "href": "slides/2025_gw_ospo/index.html#section",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
-    "section": "",
-    "text": "Free to Use\n\n\nOpen Source\n\n\nLearning Curve\n\n\nReproducible\n\n\nGeneralizable"
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": ":::",
+    "text": ":::\nIntroducing surveydown :::"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#styletext-align-center",
@@ -415,7 +415,7 @@
   {
     "objectID": "slides/2025_gw_ospo/index.html#introducing-surveydown",
     "href": "slides/2025_gw_ospo/index.html#introducing-surveydown",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "Introducing surveydown",
     "text": "Introducing surveydown"
   },
@@ -436,29 +436,162 @@
   {
     "objectID": "slides/2025_gw_ospo/index.html#a-surveydown-project",
     "href": "slides/2025_gw_ospo/index.html#a-surveydown-project",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "A surveydown Project",
-    "text": "A surveydown Project\n\n\nsurvey.qmd\nLoad package:\n\nlibrary(surveydown)\n\nWrite markdown:\n# Welcome Page\nHi! This is a **surveydown** survey!\nDefine question:\n\nsd_question(\n  type   = \"mc\",\n  id     = \"like_apple\",\n  label  = \"Do you like apple?\",\n  option = c(\n    \"Yes\" = \"yes\",\n    \"No\"  = \"no\"\n  )\n)\n\nNext page & End survey:\n\nsd_next()\nsd_close()\n\n\napp.R\nDatabase setup:\n\n# Supabase credentials\nsd_db_config()\n\n# Connect to database\ndb &lt;- sd_db_connect()\n\nServer setup:\n\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\nLaunch survey:\n\nshiny::shinyApp(ui = sd_ui(), server = server)"
+    "text": "A surveydown Project\n\n\nsurvey.qmd\n\n---\necho: false\nwarning: false\n---\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type  = 'mc',\n  id    = 'penguins',\n  label = \"Which type of penguin do you like?\",\n  option = c(\n    'Adélie'    = 'adelie',\n    'Chinstrap' = 'chinstrap',\n    'Gentoo'    = 'gentoo'\n  )\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page in the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\napp.R\nDatabase setup:\n\n# Supabase credentials\nsd_db_config()\n\n# Connect to database\ndb &lt;- sd_db_connect()\n\nServer setup:\n\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\nLaunch survey:\n\nshiny::shinyApp(ui = sd_ui(), server = server)"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#demo---built-in-question-types",
     "href": "slides/2025_gw_ospo/index.html#demo---built-in-question-types",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "Demo - Built-in Question Types",
     "text": "Demo - Built-in Question Types"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#demo---leaflet-map",
     "href": "slides/2025_gw_ospo/index.html#demo---leaflet-map",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
     "section": "Demo - leaflet Map",
     "text": "Demo - leaflet Map"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#survey-features",
     "href": "slides/2025_gw_ospo/index.html#survey-features",
-    "title": "surveydown: An Open-Source, Markdown-Based Survey Platform",
-    "section": "Survey features",
-    "text": "Survey features\n\n\nFree to Use\n\n\nOpen Source\n\n\nLearning Curve\n\n\nReproducible\n\n\nGeneralizable"
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "Survey Features",
+    "text": "Survey Features\n\n\nFree to Use\n\n\nOpen Source\n\n\nLearning Curve\n\n\nReproducible\n\n\nGeneralizable\n\n\nFeature Packed…"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nLoad Package\n\n\nWelcome Page\n\n\nEnd Page"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-1",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd-1",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nLoad Package\n\n\nWelcome Page\n\n\nEnd Page"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-2",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd-2",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nLoad Package"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-3",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd-3",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nWelcome Page"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-4",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd-4",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nEnd Page"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#app.r",
+    "href": "slides/2025_gw_ospo/index.html#app.r",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "app.R",
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-5",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd-5",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nContents of This Page"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#app.r-1",
+    "href": "slides/2025_gw_ospo/index.html#app.r-1",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "app.R",
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#app.r-2",
+    "href": "slides/2025_gw_ospo/index.html#app.r-2",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "app.R",
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#app.r-3",
+    "href": "slides/2025_gw_ospo/index.html#app.r-3",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "app.R",
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nDatabase Setup\n\n\n\nWe recommend using Supabase or any PostgreSQL database for the database setup."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#app.r-4",
+    "href": "slides/2025_gw_ospo/index.html#app.r-4",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "app.R",
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nServer Setup"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#we-have-a-template-for-you-styletext-align-center",
+    "href": "slides/2025_gw_ospo/index.html#we-have-a-template-for-you-styletext-align-center",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "[We have a template for you!] {style=“text-align: center”}",
+    "text": "[We have a template for you!] {style=“text-align: center”}"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#what-do-we-need-from-a-survey-platform-1",
+    "href": "slides/2025_gw_ospo/index.html#what-do-we-need-from-a-survey-platform-1",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "What do we need from a survey platform?",
+    "text": "What do we need from a survey platform?"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#we-have-a-template-for-you",
+    "href": "slides/2025_gw_ospo/index.html#we-have-a-template-for-you",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "We have a template for you!",
+    "text": "We have a template for you!\nsd_create_survey()"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#templates-and-demos-are-provided-for-an-easy-start.",
+    "href": "slides/2025_gw_ospo/index.html#templates-and-demos-are-provided-for-an-easy-start.",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "Templates and demos are provided for an easy start.",
+    "text": "Templates and demos are provided for an easy start."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#components",
+    "href": "slides/2025_gw_ospo/index.html#components",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "Components",
+    "text": "Components\n\n\nsurvey.qmd\nA Quarto doc containing survey texts, questions and pages.\n\napp.R\nAn R script defining the survey Shiny app. It sets up the database and server, and launches the survey."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-6",
+    "href": "slides/2025_gw_ospo/index.html#survey.qmd-6",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "survey.qmd",
+    "text": "survey.qmd\n\n\n\n```{r}\nlibrary(surveydown)\n```\n\n::: {#welcome .sd-page}\n# Welcome to our survey!\n\n```{r}\nsd_question(\n  type   = 'mc',\n  id     = 'penguins',\n  label  = \"Which penguin do you like?\",\n  option = c('Adélie'    = 'adelie',\n             'Chinstrap' = 'chinstrap',\n             'Gentoo'    = 'gentoo')\n)\n\nsd_next()\n```\n:::\n\n::: {#end .sd-page}\nThis is the last page of the survey.\n\n```{r}\nsd_close()\n```\n:::\n\n\n\nQuestion Definition"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#app.r-5",
+    "href": "slides/2025_gw_ospo/index.html#app.r-5",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "app.R",
+    "text": "app.R\n\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(...)\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLaunch Survey"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#check-out-surveydown.org-for-more",
+    "href": "slides/2025_gw_ospo/index.html#check-out-surveydown.org-for-more",
+    "title": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL",
+    "section": "Check out surveydown.org for more!",
+    "text": "Check out surveydown.org for more!"
   }
 ]

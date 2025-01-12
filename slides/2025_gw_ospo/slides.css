@@ -5,15 +5,14 @@ th {
 
 .centered-orange {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
   color: #FF5733;
 }
 
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  gap: 20px;
-  height: 70vh;
+  gap: 10px;
+  height: 50vh;
   align-items: center;
   justify-content: center;
 }
@@ -39,11 +38,13 @@ th {
 .custom-title-slide h1 {
   position: relative;
   top: 5vh;
+  font-size: 1.3em !important;
 }
 
 .custom-title-slide .quarto-title-author-name {
   position: relative;
   top: 5vh;
+  font-size: 0.9em !important;
 }
 
 .reveal .slide-background-content {
@@ -55,4 +56,25 @@ th {
 
 .reveal a:hover {
   color: #7b9725 !important;
+}
+
+.surveyqmd-texts {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 20px;
+  width: fit-content;
+}
+
+.surveyqmd-texts::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #f0f0f0 transparent transparent;
 }

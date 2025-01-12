@@ -1,5 +1,5 @@
 ---
-title: "surveydown: An Open-Source, Markdown-Based Survey Platform"
+title: "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, Shiny, and PostgreSQL"
 author: "Pingfan Hu, Bogdan Bunea, John Paul Helveston"
 format:
   revealjs: 
@@ -10,14 +10,13 @@ format:
     embed-resources: true
     auto-stretch: false
     preview-links: auto
-    logo: figs/logo.png
-    footer: "<a href='https://surveydown.org'>surveydown.org</a>"
     link-external-newwindow: true
     link-external-icon: false
     center-title-slide: false
+    code-block-height: 650px
     title-slide-attributes: 
-      data-background-image: figs/surveydown.png
-      data-background-size: 25%
+      data-background-image: figs/sd_transparent.png
+      data-background-size: 20%
       data-background-opacity: "1"
       class: custom-title-slide
 
@@ -37,38 +36,42 @@ library(googlesheets4)
 
 ## [What do we need from a survey platform?]{style="text-align: center"} {.center}
 
-## Survey features
+## Survey Features {style="text-align: center;"}
 
 ::: {.grid-container}
-::: {.centered-orange .container}
+::: {.centered-orange .container .fragment}
 Free to Use
 :::
 
-::: {.centered-orange .container}
+::: {.centered-orange .container .fragment}
 Open Source
 :::
 
-::: {.centered-orange .container}
+::: {.centered-orange .container .fragment}
 Learning Curve
 :::
 
-::: {.centered-orange .container}
+::: {.centered-orange .container .fragment}
 Reproducible
 :::
 
-::: {.centered-orange .container}
+::: {.centered-orange .container .fragment}
 Generalizable
+:::
+
+::: {.centered-orange .container .fragment}
+Feature Packed...
 :::
 :::
 
-## Existing Survey Platforms
+## Existing Survey Platforms {style="text-align: center;"}
 
 ```{r}
 #| label: comparison-table
 gs4_deauth()
 comparisons <- read_sheet("1zlaNbhzOQAJnVlT8t_WmDv-uAnHwvDCb66vwYtVU5M8")
 comparisons %>% 
-  kbl(align = c("l", "c", "c", "c", "c", "c")) %>% 
+  kbl(align = c("l", "c", "c", "c", "c", "c", "c")) %>% 
   kable_styling(font_size = 20, bootstrap_options = "basic", 
                 html_font = "inherit",
                 full_width = FALSE,
@@ -78,59 +81,336 @@ comparisons %>%
   column_spec(1, bold = TRUE)
 ```
 
-## Introducing `surveydown`
+## Introducing `surveydown` {style="text-align: center"}
 
 ![](figs/technologies.svg){.r-stretch fig-align="center" width="90%"}
 
-## A surveydown Project {.smaller}
+## Components {style="text-align: center;"}
 
 ::: columns
 ::: {.column width="50%"}
-### `survey.qmd`
+### `survey.qmd` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+A **Quarto doc** containing survey texts, questions and pages.
+:::
 
-Load package:
-```{r echo=TRUE, eval=FALSE}
+::: {.column width="50%"}
+### `app.R` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+An **R script** defining the survey Shiny app. It sets up the database and server, and launches the survey.
+:::
+:::
+
+## `survey.qmd` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+```{r}
 library(surveydown)
 ```
-Write markdown:
-```
-# Welcome Page
-Hi! This is a **surveydown** survey!
-```
 
-Define question:
-```{r echo=TRUE, eval=FALSE}
+::: {#welcome .sd-page}
+# Welcome to our survey!
+
+```{r}
 sd_question(
-  type   = "mc",
-  id     = "like_apple",
-  label  = "Do you like apple?",
-  option = c(
-    "Yes" = "yes",
-    "No"  = "no"
-  )
+  type   = 'mc',
+  id     = 'penguins',
+  label  = "Which penguin do you like?",
+  option = c('Adélie'    = 'adelie',
+             'Chinstrap' = 'chinstrap',
+             'Gentoo'    = 'gentoo')
 )
-```
-Next page & End survey:
-```{r echo=TRUE, eval=FALSE}
+
 sd_next()
+```
+:::
+
+::: {#end .sd-page}
+This is the last page of the survey.
+
+```{r}
 sd_close()
 ```
+:::
+````
 
 :::
 
 ::: {.column width="50%"}
-### `app.R`
-Database setup:
-```{r echo=TRUE, eval=FALSE}
-# Supabase credentials
-sd_db_config()
+::: {.surveyqmd-texts}
+Load Package
+:::
 
-# Connect to database
-db <- sd_db_connect()
+::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
+Welcome Page
+:::
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 78%;"}
+End Page
+:::
+:::
+:::
+
+## `survey.qmd` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1-3"
+```{r}
+library(surveydown)
 ```
 
-Server setup:
-```{r echo=TRUE, eval=FALSE}
+::: {#welcome .sd-page}
+# Welcome to our survey!
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'penguins',
+  label  = "Which penguin do you like?",
+  option = c('Adélie'    = 'adelie',
+             'Chinstrap' = 'chinstrap',
+             'Gentoo'    = 'gentoo')
+)
+
+sd_next()
+```
+:::
+
+::: {#end .sd-page}
+This is the last page of the survey.
+
+```{r}
+sd_close()
+```
+:::
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts}
+Load Package
+:::
+:::
+:::
+
+## `survey.qmd` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "5,20"
+```{r}
+library(surveydown)
+```
+
+::: {#welcome .sd-page}
+# Welcome to our survey!
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'penguins',
+  label  = "Which penguin do you like?",
+  option = c('Adélie'    = 'adelie',
+             'Chinstrap' = 'chinstrap',
+             'Gentoo'    = 'gentoo')
+)
+
+sd_next()
+```
+:::
+
+::: {#end .sd-page}
+This is the last page of the survey.
+
+```{r}
+sd_close()
+```
+:::
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
+Welcome Page
+:::
+:::
+:::
+
+## `survey.qmd` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "22,28"
+```{r}
+library(surveydown)
+```
+
+::: {#welcome .sd-page}
+# Welcome to our survey!
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'penguins',
+  label  = "Which penguin do you like?",
+  option = c('Adélie'    = 'adelie',
+             'Chinstrap' = 'chinstrap',
+             'Gentoo'    = 'gentoo')
+)
+
+sd_next()
+```
+:::
+
+::: {#end .sd-page}
+This is the last page of the survey.
+
+```{r}
+sd_close()
+```
+:::
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 78%;"}
+End Page
+:::
+:::
+:::
+
+## `survey.qmd` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "6-19"
+```{r}
+library(surveydown)
+```
+
+::: {#welcome .sd-page}
+# Welcome to our survey!
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'penguins',
+  label  = "Which penguin do you like?",
+  option = c('Adélie'    = 'adelie',
+             'Chinstrap' = 'chinstrap',
+             'Gentoo'    = 'gentoo')
+)
+
+sd_next()
+```
+:::
+
+::: {#end .sd-page}
+This is the last page of the survey.
+
+```{r}
+sd_close()
+```
+:::
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
+Contents of This Page
+:::
+:::
+:::
+
+## `survey.qmd` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "9-16"
+```{r}
+library(surveydown)
+```
+
+::: {#welcome .sd-page}
+# Welcome to our survey!
+
+```{r}
+sd_question(
+  type   = 'mc',
+  id     = 'penguins',
+  label  = "Which penguin do you like?",
+  option = c('Adélie'    = 'adelie',
+             'Chinstrap' = 'chinstrap',
+             'Gentoo'    = 'gentoo')
+)
+
+sd_next()
+```
+:::
+
+::: {#end .sd-page}
+This is the last page of the survey.
+
+```{r}
+sd_close()
+```
+:::
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 40%;"}
+Question Definition
+:::
+:::
+:::
+
+## `app.R` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+# Load Package
+library(surveydown)
+
+# Database Credentials
+sd_db_config()
+# Connect to Database
+db <- sd_db_connect()
+
+# Server Setup
 server <- function(input, output, session) {
 
   # Skip logic
@@ -142,21 +422,216 @@ server <- function(input, output, session) {
   # Server settings
   sd_server(...)
 }
-```
 
-Launch survey:
-```{r echo=TRUE, eval=FALSE}
+# Launch Survey
 shiny::shinyApp(ui = sd_ui(), server = server)
-```
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none;"}
+Load Package
+:::
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 22%;"}
+Database Setup
+:::
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 48%;"}
+Server Setup
+:::
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 70%;"}
+Launch Survey
+:::
 :::
 :::
 
-## Demo - Built-in Question Types
+## `app.R` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1-2"
+# Load Package
+library(surveydown)
+
+# Database Credentials
+sd_db_config()
+# Connect to Database
+db <- sd_db_connect()
+
+# Server Setup
+server <- function(input, output, session) {
+
+  # Skip logic
+  sd_skip_if(...)
+
+  # Conditional display
+  sd_show_if(...)
+
+  # Server settings
+  sd_server(...)
+}
+
+# Launch Survey
+shiny::shinyApp(ui = sd_ui(), server = server)
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none;"}
+Load Package
+:::
+:::
+:::
+
+## `app.R` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "4-7"
+# Load Package
+library(surveydown)
+
+# Database Credentials
+sd_db_config()
+# Connect to Database
+db <- sd_db_connect()
+
+# Server Setup
+server <- function(input, output, session) {
+
+  # Skip logic
+  sd_skip_if(...)
+
+  # Conditional display
+  sd_show_if(...)
+
+  # Server settings
+  sd_server(...)
+}
+
+# Launch Survey
+shiny::shinyApp(ui = sd_ui(), server = server)
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 22%;"}
+Database Setup
+:::
+:::
+:::
+
+::: {.fragment style="text-align: center; padding-top: 1em;"}
+We recommend using **Supabase** or any **PostgreSQL** database for the database setup.
+:::
+
+## `app.R` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "9-20"
+# Load Package
+library(surveydown)
+
+# Database Credentials
+sd_db_config()
+# Connect to Database
+db <- sd_db_connect()
+
+# Server Setup
+server <- function(input, output, session) {
+
+  # Skip logic
+  sd_skip_if(...)
+
+  # Conditional display
+  sd_show_if(...)
+
+  # Server settings
+  sd_server(...)
+}
+
+# Launch Survey
+shiny::shinyApp(ui = sd_ui(), server = server)
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 48%;"}
+Server Setup
+:::
+:::
+:::
+
+## `app.R` {.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+````{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "22-23"
+# Load Package
+library(surveydown)
+
+# Database Credentials
+sd_db_config()
+# Connect to Database
+db <- sd_db_connect()
+
+# Server Setup
+server <- function(input, output, session) {
+
+  # Skip logic
+  sd_skip_if(...)
+
+  # Conditional display
+  sd_show_if(...)
+
+  # Server settings
+  sd_server(...)
+}
+
+# Launch Survey
+shiny::shinyApp(ui = sd_ui(), server = server)
+````
+
+:::
+
+::: {.column width="50%"}
+::: {.surveyqmd-texts style="display: block; transform: none; top: 70%;"}
+Launch Survey
+:::
+:::
+:::
+
+## [Templates and demos are provided for an easy start.]{style="text-align: center"} {.center}
+
+## Demo - Built-in Question Types {style="text-align: center;"}
 
 [![](figs/demo_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown.shinyapps.io/types/)
 
-## Demo - `leaflet` Map
+## Demo - `leaflet` Map {style="text-align: center;"}
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
-## [Proceed to [surveydown.org](https://surveydown.org) for more details.]{style="text-align: center; display: block;"} {.center}
+## [Check out [surveydown.org](https://surveydown.org) for more!]{style="text-align: center; display: block;"} {.center}

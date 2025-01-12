@@ -30,5 +30,13 @@ $code-block-border-color: lighten($body-color, 60%);
 $code-block-font-size: 0.6em;
 
 // Inline Code
-$code-color: #ED6D46 !default;
-$code-bg: #EDEDED !default;
+$code-color: #5654A2 !default;
+
+/*-- scss:rules --*/
+.reveal {
+  h1, h2, h3, h4, h5, h6 {
+    code {
+      color: inherit;
+    }
+  }
+}
