@@ -105,27 +105,6 @@ source("codes.R")
 
 :::
 
-## Common Survey Platforms {style="text-align: center; font-size: 0.6em;"}
-
-```{r}
-#| label: comparison-table
-
-gs4_deauth()
-comparisons <- read_sheet("1zlaNbhzOQAJnVlT8t_WmDv-uAnHwvDCb66vwYtVU5M8")
-
-comparisons %>% 
-  kbl(align = c("l", rep("c", 10))) %>% 
-  kable_styling(
-    font_size = 19, bootstrap_options = "basic", 
-    html_font = "inherit",
-    full_width = FALSE,
-    position = "center"
-  ) %>%
-  row_spec(0:nrow(comparisons), extra_css = "vertical-align: middle !important; height: 2em;") %>%
-  row_spec(nrow(comparisons), color = "#FF5733") %>%
-  column_spec(2:10, width = "5em")  # Adjust all other columns width
-```
-
 ## Introducing `surveydown` {style="text-align: center"}
 
 <br>
@@ -136,7 +115,7 @@ comparisons %>%
 
 ::: columns
 
-::: {.column width="50%"}
+::: {.column width="45%"}
 
 ### `survey.qmd` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
 
@@ -144,7 +123,10 @@ A **Quarto doc** defining the main survey content (pages, text, images, question
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
 
 ### `app.R` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
 
@@ -195,7 +177,7 @@ surveycode()
 ```{r}
 #| results: 'asis'
 
-surveycode()
+surveycode("1-9")
 ```
 
 :::
@@ -464,13 +446,13 @@ Launch Survey
 
 ![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;" width="1800"}
 
-## [Templates and demos are provided on surveydown.org for an easy start.]{style="text-align: center"} {.center}
+## [Templates and demos are provided on [surveydown.org](https://surveydown.org) for an easy start.]{style="text-align: center"} {.center}
 
-## Demo - Built-in Question Types {style="text-align: center;"}
+## Demo: Built-in Question Types {style="text-align: center;"}
 
 [![](figs/demo_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown.shinyapps.io/types/)
 
-## Demo - `leaflet` Map {style="text-align: center;"}
+## Demo: Custom Question (`leaflet` Map) {style="text-align: center;"}
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
@@ -480,16 +462,21 @@ Launch Survey
 
 ::: {.grid-container style="height: 40vh;"}
 ::: {.centered-orange .container style="width: 600px;"}
-GUI for survey creation
+Dashboard for managing survey data
 :::
 
 ::: {.centered-orange .container style="width: 600px;"}
-Administrative dashboard
+GUI for defining surveys
 :::
 
 ::: {.centered-orange .container style="width: 600px;"}
-More question types...
+More question types
 :::
+
+<br>
+
+### [You can contribute!](https://github.com/surveydown-dev/surveydown/)
+
 :::
 
 ## Dashboard (Under Construction...) {style="text-align: center;"}

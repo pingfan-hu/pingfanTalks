@@ -32,7 +32,7 @@
     "href": "slides/2025_gw_ospo/index.html#components",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Components",
-    "text": "Components\n\n\nsurvey.qmd\nA Quarto doc defining the main survey content (pages, text, images, questions, etc).\n\napp.R\nAn R script defining the survey Shiny app. It sets up the database and server, and launches the survey."
+    "text": "Components\n\n\nsurvey.qmd\nA Quarto doc defining the main survey content (pages, text, images, questions, etc).\n\n\n\napp.R\nAn R script defining the survey Shiny app. It sets up the database and server, and launches the survey."
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#survey.qmd-1",
@@ -410,7 +410,7 @@
     "href": "slides/2025_gw_ospo/index.html#future-work",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Future Work",
-    "text": "Future Work\n\n\n\nGUI for survey creation\n\n\nAdministrative dashboard\n\n\nMore question types…"
+    "text": "Future Work\n\n\n\nDashboard for managing survey data\n\n\nGUI for defining surveys\n\n\nMore question types\n\n\nYou can contribute!"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#section-7",
@@ -432,5 +432,19 @@
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Common Survey Platforms",
     "text": "Common Survey Platforms\n\n\n\n\n\nPlatform\nUser Interface\nFree\nOpen Source\nRepro-ducible\nCollaboration\nFeatures\nLearning Curve\nGeneral-izability\nData Control\n\n\n\n\nformr\nSpreadsheet\n✅\n✅\n✅\n✅\n✅\n❌\n⚠️\n⚠️\n\n\nLimeSurvey\nGUI\n✅\n✅\n⚠️\n⚠️\n⚠️\n✅\n⚠️\n⚠️\n\n\nGoogle Form\nGUI\n✅\n❌\n❌\n⚠️\n❌\n✅\n⚠️\n❌\n\n\nOpen Data Kit\nSpreadsheet\n⚠️\n✅\n⚠️\n?\n?\n⚠️\n⚠️\n⚠️\n\n\nREDCap\nGUI\n⚠️\n❌\n❌\n?\n?\n❌\n⚠️\n✅\n\n\nCASIC Builder\n?\n❌\n❌\n❌\n?\n?\n❌\n?\n⚠️\n\n\nSurveyCTO\n?\n❌\n❌\n✅\n?\n?\n⚠️\n⚠️\n⚠️\n\n\nQualtrics\nGUI\n❌\n❌\n❌\n❌\n⚠️\n✅\n❌\n❌\n\n\nSawtooth Software\nGUI\n❌\n❌\n❌\n❌\n⚠️\n⚠️\n❌\n⚠️\n\n\nQDS\n?\n❌\n❌\n❌\n?\n?\n❌\n❌\n❌\n\n\nsurveydown\nText\n✅\n✅\n✅\n✅\n✅\n⚠️\n✅\n✅"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#demo-built-in-question-types",
+    "href": "slides/2025_gw_ospo/index.html#demo-built-in-question-types",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Demo: Built-in Question Types",
+    "text": "Demo: Built-in Question Types"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#demo-custom-question-leaflet-map",
+    "href": "slides/2025_gw_ospo/index.html#demo-custom-question-leaflet-map",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Demo: Custom Question (leaflet Map)",
+    "text": "Demo: Custom Question (leaflet Map)"
   }
 ]
