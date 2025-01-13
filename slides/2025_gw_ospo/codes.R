@@ -73,6 +73,7 @@ library(surveydown)
 
 # Database Credentials
 sd_db_config()
+
 # Connect to Database
 db <- sd_db_connect()
 

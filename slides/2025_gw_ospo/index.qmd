@@ -112,21 +112,49 @@ An **R script** defining the survey Shiny app. It sets up the database and serve
 
 ::: columns
 
-::: {.column width="14%"}
+::: {.column width="17%"}
 
-survey.qmd 
-file
+### survey.qmd
 
 :::
 
 ::: {.column width="43%"}
+
 ```{r}
 #| results: 'asis'
+
 surveycode()
 ```
+
+:::
+
+::: {.column width="40%"}
+
+:::
+
+:::
+
+## {style="font-size: 0.6em;"}
+
+::: columns
+
+::: {.column width="17%"}
+
+### survey.qmd
+
 :::
 
 ::: {.column width="43%"}
+
+```{r}
+#| results: 'asis'
+
+surveycode()
+```
+
+:::
+
+::: {.column width="40%"}
 
 ::: {.surveyqmd-texts}
 
@@ -148,10 +176,9 @@ Load Package
 
 ::: columns
 
-::: {.column width="14%"}
+::: {.column width="17%"}
 
-survey.qmd 
-file
+### survey.qmd
 
 :::
 
@@ -159,14 +186,15 @@ file
 
 ```{r}
 #| results: 'asis'
+
 surveycode("11,30,32,40")
 ```
 
 :::
 
-::: {.column width="43%"}
+::: {.column width="40%"}
 
-Define pages using "fences" (`:::`)
+Define pages using "fences":<br><br>`::: {#id .sd-page}`<br>`:::`
 
 ::: {.surveyqmd-texts style="display: block; transform: none; top: 24%;"}
 
@@ -188,23 +216,24 @@ Page 2 (End)
 
 ::: columns
 
-::: {.column width="14%"}
+::: {.column width="17%"}
 
-survey.qmd 
-file
+### survey.qmd
 
 :::
+
 
 ::: {.column width="43%"}
 
 ```{r}
 #| results: 'asis'
+
 surveycode("13-28")
 ```
 
 :::
 
-::: {.column width="43%"}
+::: {.column width="40%"}
 
 ::: {.surveyqmd-texts style="display: block; transform: none; top: 28%;"}
 
@@ -220,10 +249,9 @@ Contents of Page 1
 
 ::: columns
 
-::: {.column width="14%"}
+::: {.column width="17%"}
 
-survey.qmd 
-file
+### survey.qmd
 
 :::
 
@@ -231,67 +259,98 @@ file
 
 ```{r}
 #| results: 'asis'
+
 surveycode("16-25")
 ```
 
 :::
 
-::: {.column width="43%"}
+::: {.column width="40%"}
 
 ::: {.surveyqmd-texts style="display: block; transform: none; top: 36%;"}
+
 Question Definition
-:::
-:::
+
 :::
 
-## `app.R` {.smaller}
+:::
+
+:::
+
+## {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+### app.R
+
+:::
+
+::: {.column width="53%"}
 
 ```{r}
 #| results: 'asis'
+
 appcode()
 ```
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="33%"}
+
 ::: {.surveyqmd-texts style="display: block; transform: none;"}
+
 Load Package
+
 :::
 
 ::: {.surveyqmd-texts style="display: block; transform: none; top: 22%;"}
+
 Database Setup
+
 :::
 
 ::: {.surveyqmd-texts style="display: block; transform: none; top: 48%;"}
+
 Server Setup
+
 :::
 
 ::: {.surveyqmd-texts style="display: block; transform: none; top: 70%;"}
+
 Launch Survey
+
 :::
+
 :::
+
 :::
 
 ## `app.R` {.smaller}
 
 ::: columns
+
 ::: {.column width="50%"}
 
 ```{r}
 #| results: 'asis'
+
 appcode("1-2")
 ```
 
 :::
 
 ::: {.column width="50%"}
+
 ::: {.surveyqmd-texts style="display: block; transform: none;"}
+
 Load Package
+
 :::
+
 :::
+
 :::
 
 ## `app.R` {.smaller}
@@ -355,11 +414,11 @@ Launch Survey
 :::
 :::
 
-## Video Showcase {style="text-align: center;"}
+## 
 
-![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;"}
+![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;" width="1800"}
 
-## [Templates and demos are provided for an easy start.]{style="text-align: center"} {.center}
+## [Templates and demos are provided on surveydown.org for an easy start.]{style="text-align: center"} {.center}
 
 ## Demo - Built-in Question Types {style="text-align: center;"}
 
@@ -369,7 +428,7 @@ Launch Survey
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
-## Future Works {style="text-align: center;"}
+## Future Work {style="text-align: center;"}
 
 <br>
 
