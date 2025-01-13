@@ -33,52 +33,76 @@ library(googlesheets4)
 source("codes.R")
 ```
 
-## [What do we want from a survey platform?]{style="text-align: center"} {.center}
+## {background-color="#FFFFFF"}
 
-## Survey Features {style="text-align: center;"}
+<br>
 
-::: {.grid-container}
-::: {.centered-orange .container .fragment}
-Free to Use
+<center>
+
+### Typical experience making a survey
+
+<img src="figs/google-form-edit.gif" width=700>
+</center>
+
+## {background-color="#FFFFFF"}
+
+<br>
+
+::: columns
+
+::: {.column width="40%"}
+
+<center>
+
+### Typical experience making a survey
+
+<img src="figs/google-form-edit.gif" width=100%>
+</center>
+
 :::
 
-::: {.centered-orange .container .fragment}
-Open Source
+::: {.column width="10%"}
 :::
 
-::: {.centered-orange .container .fragment}
-Learning Curve
+::: {.column width="50%"}
+
+::: {.centered .fragment}
+### ⚠️ Free to Use
 :::
 
-::: {.centered-orange .container .fragment}
-Reproducible
+<br>
+
+::: {.centered .fragment}
+### ⚠️ Open Source
 :::
 
-::: {.centered-orange .container .fragment}
-Generalizable
+<br>
+
+::: {.centered .fragment}
+### ❌ Reproducible
 :::
 
-::: {.centered-orange .container .fragment}
-Feature Packed...
-:::
+<br>
+
+::: {.centered .fragment}
+### ⚠️ Easy Collaboration
 :::
 
-## Existing Survey Platforms {style="text-align: center;"}
+<br>
 
-```{r}
-#| label: comparison-table
-gs4_deauth()
-comparisons <- read_sheet("1zlaNbhzOQAJnVlT8t_WmDv-uAnHwvDCb66vwYtVU5M8")
-comparisons %>% 
-  kbl(align = c("l", "c", "c", "c", "c", "c", "c")) %>% 
-  kable_styling(font_size = 20, bootstrap_options = "basic", 
-                html_font = "inherit",
-                full_width = FALSE,
-                position = "center") %>%
-  row_spec(0:nrow(comparisons), extra_css = "vertical-align: middle !important; height: 2em;") %>%
-  row_spec(nrow(comparisons), color = "#FF5733", font_size = 28) %>%
-  column_spec(1, bold = TRUE)
-```
+::: {.centered .fragment}
+### ⚠️ Feature Packed
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ❌ Data Control
+:::
+
+:::
+
+:::
 
 ## Introducing `surveydown` {style="text-align: center"}
 
