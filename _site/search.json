@@ -18,7 +18,7 @@
     "href": "slides/2025_gw_ospo/index.html#existing-survey-platforms",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Existing Survey Platforms",
-    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nUser Interface\nFree to Use\nOpen Source\nReproducibility\nEasy Collaboration\nFeatures\nLearning Curve\nGeneralizability\nData Control\n\n\n\n\nformr\nSpreadsheet\nYes\nYes\nYes\nHigh\nHigh\nHigh\nMedium\nFull\n\n\nLimeSurvey\nGUI\nYes\nYes\nPartial\nMedium\nMedium\nMedium\nMedium\n?\n\n\nGoogle Form\nGUI\nYes\nNo\nNo\nMedium\nLow\nLow\nMedium\nNo\n\n\nOpen Data Kit\nSpreadsheet\nPartial\nYes\nPartial\n?\n?\nMedium\nHigh\nFull\n\n\nREDCap\nGUI\nPartial\nNo\nNo\n?\n?\nHigh\nMedium\nFull\n\n\nCASIC Builder\n?\nNo\nNo\nNo\n?\n?\nHigh\nLow\nPartial\n\n\nSurveyCTO\n?\nNo\nNo\nYes\n?\n?\nMedium\nMedium\nPartial\n\n\nQualtrics\nGUI\nNo\nNo\nNo\nLow\nMedium\nLow\nLow\nNo\n\n\nSawtooth Software\nGUI\nNo\nNo\nNo\nLow\nMedium\nMedium\nLow\nPartial\n\n\nQDS\n?\nNo\nNo\nNo\n?\n?\nHigh\nLow\nNo\n\n\nsurveydown\ntext\nYes\nYes\nYes\nHigh\nHigh\nMedium\nHigh\nFull"
+    "text": "Existing Survey Platforms\n\n\n\n\n\nPlatform\nUser Interface\nFree to Use\nOpen Source\nReproducibility\nEasy Collaboration\nFeatures\nLearning Curve\nGeneralizability\nData Control\n\n\n\n\nformr\nSpreadsheet\n✅\n✅\n✅\n✅\n✅\n❌\n⚠️\n⚠️\n\n\nLimeSurvey\nGUI\n✅\n✅\n⚠️\n⚠️\n⚠️\n✅\n⚠️\n⚠️\n\n\nGoogle Form\nGUI\n✅\n❌\n❌\n⚠️\n❌\n✅\n⚠️\n❌\n\n\nOpen Data Kit\nSpreadsheet\n⚠️\n✅\n⚠️\n?\n?\n⚠️\n⚠️\n⚠️\n\n\nREDCap\nGUI\n⚠️\n❌\n❌\n?\n?\n❌\n⚠️\n✅\n\n\nCASIC Builder\n?\n❌\n❌\n❌\n?\n?\n❌\n?\n⚠️\n\n\nSurveyCTO\n?\n❌\n❌\n✅\n?\n?\n⚠️\n⚠️\n⚠️\n\n\nQualtrics\nGUI\n❌\n❌\n❌\n❌\n⚠️\n✅\n❌\n❌\n\n\nSawtooth Software\nGUI\n❌\n❌\n❌\n❌\n⚠️\n⚠️\n❌\n⚠️\n\n\nQDS\n?\n❌\n❌\n❌\n?\n?\n❌\n❌\n❌\n\n\nsurveydown\nText\n✅\n✅\n✅\n✅\n✅\n⚠️\n✅\n✅"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#introducing-surveydown",
@@ -333,7 +333,7 @@
     "href": "slides/2025_gw_ospo/index.html#section-1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "Typical experience making a survey\n\n\n\n\n\n\n⚠️ Free to Use\n\n\n\n⚠️ Open Source\n\n\n\n❌ Reproducible\n\n\n\n⚠️ Easy Collaboration\n\n\n\n⚠️ Feature Packed\n\n\n\n❌ Data Control"
+    "text": "Typical experience making a survey\n\n\n\n\n\n\n❌ Reproducible\n\n\n\n❌ Data Control\n\n\n\n⚠️ Free to Use\n\n\n\n⚠️ Open Source\n\n\n\n⚠️ Easy Collaboration\n\n\n\n⚠️ Feature Packed"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#section-2",
@@ -425,5 +425,12 @@
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
     "text": "Video"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#common-survey-platforms",
+    "href": "slides/2025_gw_ospo/index.html#common-survey-platforms",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Common Survey Platforms",
+    "text": "Common Survey Platforms\n\n\n\n\n\nPlatform\nUser Interface\nFree\nOpen Source\nRepro-ducible\nCollaboration\nFeatures\nLearning Curve\nGeneral-izability\nData Control\n\n\n\n\nformr\nSpreadsheet\n✅\n✅\n✅\n✅\n✅\n❌\n⚠️\n⚠️\n\n\nLimeSurvey\nGUI\n✅\n✅\n⚠️\n⚠️\n⚠️\n✅\n⚠️\n⚠️\n\n\nGoogle Form\nGUI\n✅\n❌\n❌\n⚠️\n❌\n✅\n⚠️\n❌\n\n\nOpen Data Kit\nSpreadsheet\n⚠️\n✅\n⚠️\n?\n?\n⚠️\n⚠️\n⚠️\n\n\nREDCap\nGUI\n⚠️\n❌\n❌\n?\n?\n❌\n⚠️\n✅\n\n\nCASIC Builder\n?\n❌\n❌\n❌\n?\n?\n❌\n?\n⚠️\n\n\nSurveyCTO\n?\n❌\n❌\n✅\n?\n?\n⚠️\n⚠️\n⚠️\n\n\nQualtrics\nGUI\n❌\n❌\n❌\n❌\n⚠️\n✅\n❌\n❌\n\n\nSawtooth Software\nGUI\n❌\n❌\n❌\n❌\n⚠️\n⚠️\n❌\n⚠️\n\n\nQDS\n?\n❌\n❌\n❌\n?\n?\n❌\n❌\n❌\n\n\nsurveydown\nText\n✅\n✅\n✅\n✅\n✅\n⚠️\n✅\n✅"
   }
 ]

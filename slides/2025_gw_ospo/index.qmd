@@ -27,6 +27,7 @@ execute:
 ```{r}
 #| label: setup
 #| include: false
+
 library(tidyverse)
 library(kableExtra)
 library(googlesheets4)
@@ -67,6 +68,18 @@ source("codes.R")
 ::: {.column width="50%"}
 
 ::: {.centered .fragment}
+### ❌ Reproducible
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ❌ Data Control
+:::
+
+<br>
+
+::: {.centered .fragment}
 ### ⚠️ Free to Use
 :::
 
@@ -74,12 +87,6 @@ source("codes.R")
 
 ::: {.centered .fragment}
 ### ⚠️ Open Source
-:::
-
-<br>
-
-::: {.centered .fragment}
-### ❌ Reproducible
 :::
 
 <br>
@@ -94,15 +101,30 @@ source("codes.R")
 ### ⚠️ Feature Packed
 :::
 
-<br>
-
-::: {.centered .fragment}
-### ❌ Data Control
 :::
 
 :::
 
-:::
+## Common Survey Platforms {style="text-align: center; font-size: 0.6em;"}
+
+```{r}
+#| label: comparison-table
+
+gs4_deauth()
+comparisons <- read_sheet("1zlaNbhzOQAJnVlT8t_WmDv-uAnHwvDCb66vwYtVU5M8")
+
+comparisons %>% 
+  kbl(align = c("l", rep("c", 10))) %>% 
+  kable_styling(
+    font_size = 19, bootstrap_options = "basic", 
+    html_font = "inherit",
+    full_width = FALSE,
+    position = "center"
+  ) %>%
+  row_spec(0:nrow(comparisons), extra_css = "vertical-align: middle !important; height: 2em;") %>%
+  row_spec(nrow(comparisons), color = "#FF5733") %>%
+  column_spec(2:10, width = "5em")  # Adjust all other columns width
+```
 
 ## Introducing `surveydown` {style="text-align: center"}
 
