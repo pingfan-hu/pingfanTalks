@@ -394,7 +394,7 @@ Database Setup
 
 :::
 
-::: {.fragment style="text-align: center; padding: 1em 6em 1em 6em;"}
+::: {style="text-align: center; padding: 1em 6em 1em 6em;"}
 
 We recommend using **Supabase** or any **PostgreSQL** database for the database setup.
 
