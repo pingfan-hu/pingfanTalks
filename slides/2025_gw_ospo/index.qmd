@@ -327,39 +327,21 @@ appcode()
 
 ::: {.column width="33%"}
 
-::: {.surveyqmd-texts style="display: block; transform: none;"}
-
-Load Package
-
-:::
-
-::: {.surveyqmd-texts style="display: block; transform: none; top: 22%;"}
-
-Database Setup
-
-:::
-
-::: {.surveyqmd-texts style="display: block; transform: none; top: 48%;"}
-
-Server Setup
-
-:::
-
-::: {.surveyqmd-texts style="display: block; transform: none; top: 70%;"}
-
-Launch Survey
-
 :::
 
 :::
 
-:::
-
-## `app.R` {.smaller}
+## {.smaller}
 
 ::: columns
 
-::: {.column width="50%"}
+::: {.column width="14%"}
+
+### app.R
+
+:::
+
+::: {.column width="53%"}
 
 ```{r}
 #| results: 'asis'
@@ -369,7 +351,7 @@ appcode("1-2")
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="33%"}
 
 ::: {.surveyqmd-texts style="display: block; transform: none;"}
 
@@ -381,72 +363,110 @@ Load Package
 
 :::
 
-## `app.R` {.smaller}
+## {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+### app.R
+
+:::
+
+::: {.column width="53%"}
 
 ```{r}
 #| results: 'asis'
-appcode("4-7")
+appcode("4-8")
 ```
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts style="display: block; transform: none; top: 22%;"}
+::: {.column width="33%"}
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 10%;"}
+
 Database Setup
-:::
-:::
+
 :::
 
-::: {.fragment style="text-align: center; padding-top: 1em;"}
+:::
+
+:::
+
+::: {.fragment style="text-align: center; padding: 1em 6em 1em 6em;"}
+
 We recommend using **Supabase** or any **PostgreSQL** database for the database setup.
+
 :::
 
-## `app.R` {.smaller}
+## {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+### app.R
+
+:::
+
+::: {.column width="53%"}
 
 ```{r}
 #| results: 'asis'
-appcode("9-23")
+appcode("10-24")
 ```
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts style="display: block; transform: none; top: 48%;"}
+::: {.column width="33%"}
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 28%;"}
+
 Server Setup
-:::
-:::
+
 :::
 
-## `app.R` {.smaller}
+:::
+
+:::
+
+## {.smaller}
 
 ::: columns
-::: {.column width="50%"}
+
+::: {.column width="14%"}
+
+### app.R
+
+:::
+
+::: {.column width="53%"}
 
 ```{r}
 #| results: 'asis'
-appcode("25-26")
+appcode("26-27")
 ```
 
 :::
 
-::: {.column width="50%"}
-::: {.surveyqmd-texts style="display: block; transform: none; top: 77%;"}
+::: {.column width="33%"}
+
+::: {.surveyqmd-texts style="display: block; transform: none; top: 73%;"}
+
 Launch Survey
+
 :::
+
 :::
+
 :::
 
 ## 
 
 ![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;" width="1800"}
 
-## [Templates and demos are provided on [surveydown.org](https://surveydown.org) for an easy start.]{style="text-align: center"} {.center}
+## [Templates and demos are provided on [surveydown.org](https://surveydown.org) for an easy start.]{style="text-align: center; display: block;"} {.center}
 
 ## Demo: Built-in Question Types {style="text-align: center;"}
 

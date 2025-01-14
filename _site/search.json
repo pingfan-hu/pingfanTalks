@@ -333,7 +333,7 @@
     "href": "slides/2025_gw_ospo/index.html#section-1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "Typical experience making a survey\n\n\n\n\n\n\n❌ Reproducible\n\n\n\n❌ Data Control\n\n\n\n⚠️ Free to Use\n\n\n\n⚠️ Open Source\n\n\n\n⚠️ Easy Collaboration\n\n\n\n⚠️ Feature Packed"
+    "text": "Typical experience making a survey\n\n\n\n\n\n\n\n❌ Reproducible\n\n\n\n\n❌ Data Control\n\n\n\n\n⚠️ Free to Use\n\n\n\n\n⚠️ Open Source\n\n\n\n\n⚠️ Easy Collaboration\n\n\n\n\n⚠️ Feature Packed"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#section-2",
@@ -417,14 +417,14 @@
     "href": "slides/2025_gw_ospo/index.html#section-7",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package\n\n\nDatabase Setup\n\n\nServer Setup\n\n\nLaunch Survey"
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#section-8",
     "href": "slides/2025_gw_ospo/index.html#section-8",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "Video"
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#common-survey-platforms",
@@ -446,5 +446,33 @@
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Demo: Custom Question (leaflet Map)",
     "text": "Demo: Custom Question (leaflet Map)"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-9",
+    "href": "slides/2025_gw_ospo/index.html#section-9",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nDatabase Setup\n\n\n\nWe recommend using Supabase or any PostgreSQL database for the database setup."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-10",
+    "href": "slides/2025_gw_ospo/index.html#section-10",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nServer Setup"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-11",
+    "href": "slides/2025_gw_ospo/index.html#section-11",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLaunch Survey"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#section-12",
+    "href": "slides/2025_gw_ospo/index.html#section-12",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "",
+    "text": "Video"
   }
 ]
