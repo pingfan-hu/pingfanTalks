@@ -142,7 +142,7 @@ An **R script** defining the survey Shiny app. It sets up the database and serve
 
 ::: {.column width="17%"}
 
-### survey.qmd
+### `survey.qmd` {style="font-size: 24px;"}
 
 :::
 
@@ -168,7 +168,7 @@ surveycode()
 
 ::: {.column width="17%"}
 
-### survey.qmd
+### `survey.qmd` {style="font-size: 24px;"}
 
 :::
 
@@ -206,7 +206,7 @@ Load Package
 
 ::: {.column width="17%"}
 
-### survey.qmd
+### `survey.qmd` {style="font-size: 24px;"}
 
 :::
 
@@ -246,7 +246,7 @@ Page 2 (End)
 
 ::: {.column width="17%"}
 
-### survey.qmd
+### `survey.qmd` {style="font-size: 24px;"}
 
 :::
 
@@ -279,7 +279,7 @@ Contents of Page 1
 
 ::: {.column width="17%"}
 
-### survey.qmd
+### `survey.qmd` {style="font-size: 24px;"}
 
 :::
 
@@ -311,7 +311,7 @@ Question Definition
 
 ::: {.column width="14%"}
 
-### app.R
+### `app.R` {style="font-size: 30px;"}
 
 :::
 
@@ -337,7 +337,7 @@ appcode()
 
 ::: {.column width="14%"}
 
-### app.R
+### `app.R` {style="font-size: 30px;"}
 
 :::
 
@@ -369,7 +369,7 @@ Load Package
 
 ::: {.column width="14%"}
 
-### app.R
+### `app.R` {style="font-size: 30px;"}
 
 :::
 
@@ -406,7 +406,7 @@ We recommend using **Supabase** or any **PostgreSQL** database for the database 
 
 ::: {.column width="14%"}
 
-### app.R
+### `app.R` {style="font-size: 30px;"}
 
 :::
 
@@ -437,7 +437,7 @@ Server Setup
 
 ::: {.column width="14%"}
 
-### app.R
+### `app.R` {style="font-size: 30px;"}
 
 :::
 
