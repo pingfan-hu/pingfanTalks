@@ -144,7 +144,7 @@
     "href": "index.html",
     "title": "Pingfan’s Slides",
     "section": "",
-    "text": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys Using R, Quarto, and Shiny\n\nGW OSPO Award Ceremony\n\nJanuary 16, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
+    "text": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys\n\nGW OSPO Award Ceremony\n\nJanuary 16, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#introduction",
@@ -186,7 +186,7 @@
     "href": "slides/2024_ieee_vppc/index.html#survey-design-with-formr",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Survey Design with formr",
-    "text": "Survey Design with formr\n\n\n\nSurvey Components\n\nConjoint Questions:\n\nMonetary Incentives\nCharging Limitations\nFlexibility\n\nDemographic Questions:\n\nBEV Ownership & Usage\nPersonal & Household Info\n\n\n\n\nConjoint Attributes Sample\n\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\n\n\nOur first step will be survey design…"
+    "text": "Survey Design with formr\n\n\n\nSurvey Components\n\nConjoint Questions:\n\nMonetary Incentives\nCharging Limitations\nFlexibility\n\nDemographic Questions:\n\nBEV Ownership & Usage\nPersonal & Household Info\n\n\n\n\nConjoint Attributes Sample\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nOur first step will be survey design…"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#conjoint-question-explained",
@@ -200,14 +200,14 @@
     "href": "slides/2024_ieee_vppc/index.html#smc-programs",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "SMC Programs",
-    "text": "SMC Programs\n\n\n\nAttributes\n\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nMonthly Cash\n$20\n\n\nMonthly Override\n5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the SMC program…"
+    "text": "SMC Programs\n\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nMonthly Cash\n$20\n\n\nMonthly Override\n5\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the SMC program…"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#v2g-programs",
     "href": "slides/2024_ieee_vppc/index.html#v2g-programs",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "V2G Programs",
-    "text": "V2G Programs\n\n\n\nAttributes\n\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nOccurrence Cash\n$2 to $20\n\n\n3\nMonthly Occurrence\n1 to 4\n\n\n4\nLower Bound\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nOccurrence Cash\n$20\n\n\nMonthly Occurrence\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the V2G program…"
+    "text": "V2G Programs\n\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nOccurrence Cash\n$2 to $20\n\n\n3\nMonthly Occurrence\n1 to 4\n\n\n4\nLower Bound\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nOccurrence Cash\n$20\n\n\nMonthly Occurrence\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor the V2G program…"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#sample-smc-question",
@@ -249,7 +249,7 @@
     "href": "slides/2024_ieee_vppc/index.html#survey-results---willingness-to-participate",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Survey Results - Willingness to Participate",
-    "text": "Survey Results - Willingness to Participate\n\n\nMixed Logit Models\n\\[\n\\begin{align*}\nu_j = v_j + \\epsilon_j = \\beta' x + \\epsilon_j\n\\qquad\nP_j = \\frac{e^{v_j}}{\\sum_{k=1}^{J} e^{v_k}}\n\\end{align*}\n\\]\n\n\n\nSMC Estimates\n\n\n\n\n\n\nV2G Estimates\n\n\n\n\n\n\n\n\nWithout compensation, users will not participate.\n\n\nFor the conjoint results, we used the mixed logit models…"
+    "text": "Survey Results - Willingness to Participate\n\n\nMixed Logit Models\n\\[\n\\begin{align*}\nu_j = v_j + \\epsilon_j = \\beta' x + \\epsilon_j\n\\qquad\nP_j = \\frac{e^{v_j}}{\\sum_{k=1}^{J} e^{v_k}}\n\\end{align*}\n\\]\n\n\n\nSMC Estimates\n\n\n\n\n\n\nV2G Estimates\n\n\n\n\n\n\n\nWithout compensation, users will not participate.\n\n\nFor the conjoint results, we used the mixed logit models…"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#sensitivity-analysis",
@@ -284,7 +284,7 @@
     "href": "slides/2024_ieee_vppc/index.html#tornado-plots---summary",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Tornado Plots - Summary",
-    "text": "Tornado Plots - Summary\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonetary incentives are important.\nRecurring incentives are more important than one-time.\nFor SMC, range anxiety is vital, since it happens regularly.\nFor V2G, usability is compromised.\nDiminishing returns exist."
+    "text": "Tornado Plots - Summary\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonetary incentives are important.\nRecurring incentives are more important than one-time.\nFor SMC, range anxiety is vital, since it happens regularly.\nFor V2G, usability is compromised.\nDiminishing returns exist."
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#market-simulation-for-smc",
