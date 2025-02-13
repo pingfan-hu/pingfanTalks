@@ -10,7 +10,6 @@ format:
     link-external-newwindow: true
     link-external-icon: false
     backgroundcolor: "#F8F7F0"
-    
 
 knitr: 
   opts_chunk: 
