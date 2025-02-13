@@ -6,6 +6,7 @@ format:
     smaller: false
     theme: theme.scss
     css: slides.css
+    bibliography: bibliography.bib
     slide-number: true
     embed-resources: true
     auto-stretch: false

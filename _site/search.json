@@ -480,7 +480,7 @@
     "href": "slides/2024_ieee_vppc/index.html#literature-review",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Literature Review",
-    "text": "Literature Review\n\nA study by @wong_incentives_2023 examined incentives affect the EV owners’ acceptance, but EV ownership is only 19%.\nA study by @philip_consumer_2024 found range anxiety matters, but EV ownership is only 1.28%.\nAnother study by @huang_are_2021 indicates the importance of fast charging, but the sample size is only 157.\n\nNone of them have demographics data to study heterogeneity.\n\nWe need high EV ownership & large sample size, and consider heterogeneity."
+    "text": "Literature Review\n\nA study by Wong et al. (2023) examined incentives affect the EV owners’ acceptance, but EV ownership is only 19%.\nA study by Philip and Whitehead (2024) found range anxiety matters, but EV ownership is only 1.28%.\nAnother study by Huang et al. (2021) indicates the importance of fast charging, but the sample size is only 157.\n\nNone of them have demographics data to study heterogeneity.\n\nWe need high EV ownership & large sample size, and consider heterogeneity."
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#enrollment-sensitivity",
@@ -536,6 +536,6 @@
     "href": "slides/2024_ieee_vppc/index.html#reference-list",
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Reference List",
-    "text": "Reference List"
+    "text": "Reference List\n\n\n\n\nHuang, Bing, Aart Gerard Meijssen, Jan Anne Annema, and Zofia Lukszo. 2021. “Are Electric Vehicle Drivers Willing to Participate in Vehicle-to-Grid Contracts? A Context-Dependent Stated Choice Experiment.” Energy Policy 156 (September): 112410. https://doi.org/10.1016/j.enpol.2021.112410.\n\n\nPhilip, Thara, and Jake Whitehead. 2024. “Consumer Preferences Towards Electric Vehicle Smart Charging Program Attributes: A Stated Preference Study.” Rochester, NY. https://doi.org/10.2139/ssrn.4812923.\n\n\nWong, Stephen D., Susan A. Shaheen, Elliot Martin, and Robert Uyeki. 2023. “Do Incentives Make a Difference? Understanding Smart Charging Program Adoption for Electric Vehicles.” Transportation Research Part C: Emerging Technologies 151 (June): 104123. https://doi.org/10.1016/j.trc.2023.104123."
   }
 ]
