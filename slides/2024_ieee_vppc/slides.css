@@ -26,3 +26,7 @@ th {
 :root {
   --r-block-margin: 5px;
 }
+
+div.csl-entry {
+  margin-bottom: 0.5em;
+}

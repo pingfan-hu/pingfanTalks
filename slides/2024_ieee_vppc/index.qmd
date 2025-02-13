@@ -39,20 +39,12 @@ library(kableExtra)
 
 ![](https://live.staticflickr.com/65535/52717769270_e5071e9c6d_b.jpg){fig-align="center" width="60%"}
 
-::: {.notes}
-As an introduction...
-:::
-
 ## SMC - Supplier Managed Charging
 
 - SMC smooths out overnight EV charging demand.
 - Electricity demand is controlled below capacity threshold.
 
 ![](figs/education_1_half.png){fig-align="center"}
-
-::: {.notes}
-This is the first type of smart charging...
-:::
 
 ## SMC - Supplier Managed Charging
 
@@ -65,8 +57,16 @@ This is the first type of smart charging...
 
 ![](figs/education_2.png){fig-align="center" width="70%"}
 
-::: {.notes}
-Then, the other way of smart charging, is called V2G...
+## Literature Review
+
+1. A study by @wong_incentives_2023 examined **incentives** affect the EV owners' acceptance, <span style="color: #739C69">but EV ownership is only 19%</span>.
+2. A study by @philip_consumer_2024 found **range anxiety** matters, <span style="color: #739C69">but EV ownership is only 1.28%</span>.
+3. Another study by @huang_are_2021 indicates the importance of **fast charging**, <span style="color: #739C69">but the sample size is only 157</span>.
+
+None of them have demographics data to study <span style="color: #739C69">heterogeneity</span>.
+
+::: {.centered-text .container}
+We need high EV ownership & large sample size, and consider heterogeneity.
 :::
 
 ## Research Questions {style="line-height: 2;"}
@@ -81,12 +81,6 @@ Then, the other way of smart charging, is called V2G...
 
 ::: {.centered-text .container}
 **Mixed logit model** to evaluate utilities for simulations.
-:::
-
-::: {.notes}
-1. Here we have 2 research questions...
-2. For sensitivity, we want to measure and quantify the program features' influence to owners' willingness.
-3. For market share, we wonder under what conditions they will opt in.
 :::
 
 ## Survey Design with `formr` {.smaller style="line-height: 1.8;"}
@@ -124,10 +118,6 @@ smc_attributes_kable
 ```
 :::
 :::
-:::
-
-::: {.notes}
-Our first step will be survey design...
 :::
 
 ## Conjoint Question Explained
@@ -180,10 +170,6 @@ smc_options_kable
 :::
 :::
 
-::: {.notes}
-For the SMC program...
-:::
-
 ## V2G Programs {.smaller style="line-height: 1.8;"}
 
 ::: {.columns}
@@ -234,38 +220,28 @@ v2g_options_kable
 :::
 :::
 
-::: {.notes}
-For the V2G program...
-:::
-
 ## Sample SMC Question
 
 ![](figs/smc_question.jpg){fig-align="center"}
-
-::: {.notes}
-So here is a sample SMC question...
-:::
 
 ## Sample V2G Question
 
 ![](figs/v2g_question.jpg){fig-align="center"}
 
-::: {.notes}
-Same for the V2G questions...
-:::
-
 ## Survey Fielding
 
-- **Meta**: Facebook, Messenger, Instagram - **Voluntary**
-- **4** months' of fielding from March to July in 2024
-- **858** results after filtering
+<span style="color: #739C69">**Meta**</span>: Facebook, Messenger, Instagram - **Voluntary**
+
+- Fielding from March to July in 2024
+- **803** results after filtering
+
+<span style="color: #739C69">**Dynata**</span>: Survey Panel - **Payment to real BEV owners only**
+
+- Fielding from September to November in 2024
+- **553** results after filtering
 
 ::: {style="text-align: center;"}
-![](figs/meta.png){fig-align="center" width="60%"}
-:::
-
-::: {.notes}
-When the design is done we start to field the survey...
+![](figs/survey_fielding.png){fig-align="center" width="70%"}
 :::
 
 ## Survey Results - Top 10 BEV
@@ -283,10 +259,6 @@ When the design is done we start to field the survey...
 
 ::: {.fragment style="fig-align: center;"}
 ![](figs/result_3.png)
-:::
-
-::: {.notes}
-Here are part of the demographics of the survey results...
 :::
 
 ## Survey Results - Willingness to Participate {.smaller}
@@ -321,51 +293,35 @@ $$
 Without compensation, users will not participate.
 :::
 
-::: {.notes}
-For the conjoint results, we used the mixed logit models...
-:::
+## Enrollment Sensitivity
 
-## Sensitivity Analysis
+![](figs/sensitivity_plot_1.png){fig-align="center"}
 
-![](figs/sensitivity_plots_1.png){fig-align="center"}
+## Enrollment Sensitivity
 
-## Sensitivity Analysis
-
-![](figs/sensitivity_plots_2.png){fig-align="center"}
+![](figs/sensitivity_plot_2.png){fig-align="center"}
 
 ::: {style="text-align: center;"}
 Steeper slope indicates higher sensitivity.
 :::
 
-::: {.notes}
-So, how to judge which one is more sensitive and which one is not? We sketched these sensitivity plots...
-:::
+## Enrollment Sensitivity Combined - SMC
 
-## Tornado Plots - SMC
+![](figs/smc_combined_plot.png){fig-align="center"}
 
-![](figs/smc_tornado_plot.png){fig-align="center"}
+## Enrollment Sensitivity Combined - V2G
 
-::: {.notes}
-This tornado plot is generated from the sensitivity plots...
-:::
+![](figs/v2g_combined_plot.png){fig-align="center"}
 
-## Tornado Plots - V2G
-
-![](figs/v2g_tornado_plot.png){fig-align="center"}
-
-::: {.notes}
-For V2G, things are a little different, since both monetary incentives are more sensitive than all others...
-:::
-
-## Tornado Plots - Summary {.smaller}
+## Enrollment Sensitivity Combined - Summary {.smaller}
 
 ::: {.columns}
 ::: {.column width="50%"}
-![](figs/smc_tornado_plot.png){fig-align="center"}
+![](figs/smc_combined_plot.png){fig-align="center"}
 :::
 
 ::: {.column width="50%"}
-![](figs/v2g_tornado_plot.png){fig-align="center"}
+![](figs/v2g_combined_plot.png){fig-align="center"}
 :::
 :::
 
@@ -377,30 +333,10 @@ For V2G, things are a little different, since both monetary incentives are more 
 5. Diminishing returns exist.
 :::
 
-## Market Simulation for SMC
-![](figs/smc_market_sim.jpeg){fig-align="center"}
+## Market Simulation - SMC
+![](figs/smc_mxl_sim_plot.png){fig-align="center"}
 
-::: {.notes}
-For marketing simulation, the programs start from simple all the way to sophisticated...
-:::
+## Market Simulation - V2G
+![](figs/v2g_mxl_sim_plot.png){fig-align="center"}
 
-## Market Simulation for V2G
-![](figs/v2g_market_sim.jpeg){fig-align="center"}
-
-::: {.notes}
-But for V2G, money is more important than flexibility...
-:::
-
-## Future Work {style="line-height: 1.2;"}
-
-### Data Collection {style="color: #739C69; font-size: 36px; margin-bottom: 0;"}
-- Other than social media, use survey panels to collect more responses.
-- Increase data size from 800 to 2000.
-
-### Modeling {style="color: #739C69; font-size: 36px; margin-bottom: 0;"}
-- Subgroup analysis considering heterogeneity.
-- More modeling techniques such as Apollo Choice Modeling.
-
-### Simulation {style="color: #739C69; font-size: 36px; margin-bottom: 0;"}
-- Apply customer preferences to grid simulation.
-- Estimate benefit-cost trade-offs for utilities.
+## Reference List
