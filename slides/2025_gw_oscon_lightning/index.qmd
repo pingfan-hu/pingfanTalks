@@ -1,0 +1,138 @@
+---
+title: "[**`surveydown`**](https://surveydown.org) Lightning Talk:<br><br>An Open-Source, Markdown-Based<br>Survey Platform"
+author: "Pingfan Hu, Bogdan Bunea, John Paul Helveston"
+format:
+  revealjs: 
+    smaller: false
+    theme: theme.scss
+    css: slides.css
+    slide-number: true
+    embed-resources: true
+    auto-stretch: false
+    preview-links: auto
+    link-external-newwindow: true
+    link-external-icon: false
+    center-title-slide: false
+    code-block-height: 650px
+    title-slide-attributes: 
+      data-background-image: figs/logo.png
+      data-background-size: 15%
+      data-background-opacity: "1"
+      class: custom-title-slide
+execute: 
+  warning: false
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(kableExtra)
+library(googlesheets4)
+source("codes.R")
+```
+
+##
+
+<br>
+
+::: columns
+
+::: {.column width="40%"}
+
+<center>
+
+### Typical experience making a survey
+
+<img src="figs/google-form.gif" width=100%>
+</center>
+
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+
+::: {.centered .fragment}
+### ❌ Reproducible
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ❌ Data Control
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ⚠️ Free to Use
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ⚠️ Open Source
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ⚠️ Easy Collaboration
+:::
+
+<br>
+
+::: {.centered .fragment}
+### ⚠️ Feature Packed
+:::
+
+:::
+
+:::
+
+## Introducing [**`surveydown`**](https://surveydown.org) {style="text-align: center"}
+
+<br>
+
+![](figs/technologies.svg){fig-align="center" width="90%"}
+
+## Components {style="text-align: center;"}
+
+::: columns
+
+::: {.column width="45%"}
+
+### `survey.qmd` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+
+A **Quarto doc** defining the main survey content (pages, text, images, questions, etc).
+
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+
+### `app.R` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+
+An **R script** defining the survey Shiny app. It sets up the database and server, and launches the survey.
+
+:::
+
+:::
+
+## 
+
+![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;" width="1800"}
+
+## Demo: Built-in Question Types {style="text-align: center;"}
+
+[![](figs/demo.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown.shinyapps.io/types/)
+
+::: {style="text-align: center;"}
+Check out [surveydown.org](https://surveydown.org) for more!
+:::
