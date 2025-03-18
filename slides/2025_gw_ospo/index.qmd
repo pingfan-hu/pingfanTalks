@@ -476,7 +476,7 @@ Launch Survey
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
-## GUI: Data Management {style="text-align: center;"}
+## Survey Dashboard {style="text-align: center;"}
 
 ![](figs/dashboard_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
 
@@ -484,7 +484,7 @@ Launch Survey
 Credentials
 :::
 
-## GUI: Data Management {style="text-align: center;"}
+## Survey Dashboard {style="text-align: center;"}
 
 ![](figs/dashboard_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
 
