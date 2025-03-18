@@ -476,23 +476,7 @@ Launch Survey
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
-## Data Management in Supabase {style="text-align: center;"}
-
-![](figs/supabase_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
-
-::: {style="text-align: center;"}
-Credentials
-:::
-
-## Data Management in Supabase {style="text-align: center;"}
-
-![](figs/supabase_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
-
-::: {style="text-align: center;"}
-Survey Data
-:::
-
-## Data Management in `surveydown` Dashboard {style="text-align: center;"}
+## GUI: Data Management {style="text-align: center;"}
 
 ![](figs/dashboard_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
 
@@ -500,7 +484,7 @@ Survey Data
 Credentials
 :::
 
-## Data Management in `surveydown` Dashboard {style="text-align: center;"}
+## GUI: Data Management {style="text-align: center;"}
 
 ![](figs/dashboard_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
 
