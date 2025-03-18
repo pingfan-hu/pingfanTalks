@@ -144,7 +144,7 @@
     "href": "index.html",
     "title": "Pingfan’s Talks",
     "section": "",
-    "text": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys\n\nGW OSPO Award - 2nd Prize\n\nJanuary 16, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
+    "text": "surveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys\n\nGW OSPO Award & GW OSCON\n\nMarch 24, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#introduction",
@@ -410,7 +410,7 @@
     "href": "slides/2025_gw_ospo/index.html#future-work",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Future Work",
-    "text": "Future Work\n\n\n\nDashboard for managing survey data\n\n\nGUI for defining surveys\n\n\nMore question types\n\n\nYou can contribute!"
+    "text": "Future Work\n\n\n\nGUI for defining surveys\n\n\nMore question types\n\n\n…and more!\n\nYou can contribute!"
   },
   {
     "objectID": "slides/2025_gw_ospo/index.html#section-7",
@@ -537,5 +537,33 @@
     "title": "Measuring Consumer Willingness to Participate in BEV Smart Charging Programs",
     "section": "Reference List",
     "text": "Reference List\n\n\n\n\nHuang, Bing, Aart Gerard Meijssen, Jan Anne Annema, and Zofia Lukszo. 2021. “Are Electric Vehicle Drivers Willing to Participate in Vehicle-to-Grid Contracts? A Context-Dependent Stated Choice Experiment.” Energy Policy 156 (September): 112410. https://doi.org/10.1016/j.enpol.2021.112410.\n\n\nPhilip, Thara, and Jake Whitehead. 2024. “Consumer Preferences Towards Electric Vehicle Smart Charging Program Attributes: A Stated Preference Study.” Rochester, NY. https://doi.org/10.2139/ssrn.4812923.\n\n\nWong, Stephen D., Susan A. Shaheen, Elliot Martin, and Robert Uyeki. 2023. “Do Incentives Make a Difference? Understanding Smart Charging Program Adoption for Electric Vehicles.” Transportation Research Part C: Emerging Technologies 151 (June): 104123. https://doi.org/10.1016/j.trc.2023.104123."
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#data-management-in-supabase",
+    "href": "slides/2025_gw_ospo/index.html#data-management-in-supabase",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Data Management in Supabase",
+    "text": "Data Management in Supabase\n\n\n\n\n\n\nCredentials"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#data-management-in-supabase-1",
+    "href": "slides/2025_gw_ospo/index.html#data-management-in-supabase-1",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Data Management in Supabase",
+    "text": "Data Management in Supabase\n\n\n\n\n\n\nSurvey Data"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#data-management-in-surveydown-dashboard",
+    "href": "slides/2025_gw_ospo/index.html#data-management-in-surveydown-dashboard",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Data Management in surveydown Dashboard",
+    "text": "Data Management in surveydown Dashboard\n\n\n\n\n\n\nCredentials"
+  },
+  {
+    "objectID": "slides/2025_gw_ospo/index.html#data-management-in-surveydown-dashboard-1",
+    "href": "slides/2025_gw_ospo/index.html#data-management-in-surveydown-dashboard-1",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Data Management in surveydown Dashboard",
+    "text": "Data Management in surveydown Dashboard\n\n\n\n\n\n\nSurvey Data"
   }
 ]

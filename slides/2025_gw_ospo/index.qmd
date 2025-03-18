@@ -476,14 +476,43 @@ Launch Survey
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
+## Data Management in Supabase {style="text-align: center;"}
+
+![](figs/supabase_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
+
+::: {style="text-align: center;"}
+Credentials
+:::
+
+## Data Management in Supabase {style="text-align: center;"}
+
+![](figs/supabase_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
+
+::: {style="text-align: center;"}
+Survey Data
+:::
+
+## Data Management in `surveydown` Dashboard {style="text-align: center;"}
+
+![](figs/dashboard_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
+
+::: {style="text-align: center;"}
+Credentials
+:::
+
+## Data Management in `surveydown` Dashboard {style="text-align: center;"}
+
+![](figs/dashboard_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}
+
+::: {style="text-align: center;"}
+Survey Data
+:::
+
 ## Future Work {style="text-align: center;"}
 
 <br>
 
-::: {.grid-container style="height: 40vh;"}
-::: {.centered-orange .container style="width: 600px;"}
-Dashboard for managing survey data
-:::
+::: {.grid-container style="height: 50vh;"}
 
 ::: {.centered-orange .container style="width: 600px;"}
 GUI for defining surveys
@@ -493,14 +522,12 @@ GUI for defining surveys
 More question types
 :::
 
-<br>
+::: {.centered-orange .container style="width: 600px;"}
+...and more!
+:::
 
 ### [You can contribute!](https://github.com/surveydown-dev/surveydown/)
 
 :::
-
-## Dashboard (Under Construction...) {style="text-align: center;"}
-
-![](figs/dashboard.png){fig-align="center" style="border: 2px solid #5654A2;"}
 
 ## [Check out [surveydown.org](https://surveydown.org) for more!]{style="text-align: center; display: block;"} {.center}
