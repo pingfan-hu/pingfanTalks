@@ -14,6 +14,7 @@ format:
     link-external-icon: false
     center-title-slide: false
     code-block-height: 650px
+    code-line-numbers: false
     title-slide-attributes: 
       data-background-image: figs/logo.png
       data-background-size: 15%
@@ -23,16 +24,6 @@ execute:
   warning: false
   echo: false
 ---
-
-```{r}
-#| label: setup
-#| include: false
-
-library(tidyverse)
-library(kableExtra)
-library(googlesheets4)
-source("codes.R")
-```
 
 ##
 
@@ -54,41 +45,29 @@ source("codes.R")
 ::: {.column width="10%"}
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 
-::: {.centered .fragment}
 ### ❌ Reproducible
-:::
 
 <br>
 
-::: {.centered .fragment}
 ### ❌ Data Control
-:::
 
 <br>
 
-::: {.centered .fragment}
 ### ⚠️ Free to Use
-:::
 
 <br>
 
-::: {.centered .fragment}
 ### ⚠️ Open Source
-:::
 
 <br>
 
-::: {.centered .fragment}
 ### ⚠️ Easy Collaboration
-:::
 
 <br>
 
-::: {.centered .fragment}
 ### ⚠️ Feature Packed
-:::
 
 :::
 
@@ -125,14 +104,29 @@ An **R script** defining the survey Shiny app. It sets up the database and serve
 
 :::
 
-## 
+## Run & Deploy {style="text-align: center;"}
 
-![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;" width="1800"}
+![](videos/survey-building.mp4){style="border: 2px solid #5654A2;"}
 
-## Demo: Built-in Question Types {style="text-align: center;"}
+```{r}
+#| eval: false
+#| echo: true
+# Deploy to shinyapps.io
+rsconnect::deployApp(appName = "my_survey")
+```
 
-[![](figs/demo.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown.shinyapps.io/types/)
+## Local Dashboard App {style="text-align: center;"}
+
+![](figs/dashboard_1.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
 
 ::: {style="text-align: center;"}
-Check out [surveydown.org](https://surveydown.org) for more!
+Survey Data
+:::
+
+## Local Dashboard App {style="text-align: center;"}
+
+![](figs/dashboard_2.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
+
+::: {style="text-align: center;"}
+Credentials
 :::

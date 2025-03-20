@@ -462,34 +462,89 @@ Launch Survey
 
 :::
 
-## 
+## Local Running {style="text-align: center;"}
 
-![](videos/demo-showcase.mp4){fig-align="center" style="border: 2px solid #5654A2;" width="1800"}
+![](videos/survey-building.mp4){style="border: 2px solid #5654A2;"}
 
-## [Templates and demos are provided on [surveydown.org](https://surveydown.org) for an easy start.]{style="text-align: center; display: block;"} {.center}
+## Online Deployment {style="text-align: center;"}
 
-## Demo: Built-in Question Types {style="text-align: center;"}
+::: {style="text-align: left;"}
+### `shinyapps.io` {style="font-size: 36px; color: #739C69; padding-top: 2em;"}
 
-[![](figs/demo_1.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown.shinyapps.io/types/)
+```{r}
+#| eval: false
+#| echo: true
+rsconnect::deployApp(appName = "my_survey")
+```
 
-## Demo: Custom Question (`leaflet` Map) {style="text-align: center;"}
+### Other Platforms {style="font-size: 36px; color: #739C69; padding-top: 2em;"}
 
-[![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
+- Posit Connect Cloud
+- Hugging Face
+- Heroku
+:::
 
-## Survey Dashboard {style="text-align: center;"}
+## Local Dashboard App {style="text-align: center;"}
 
 ![](figs/dashboard_1.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
+
+::: {style="text-align: center;"}
+Survey Data
+:::
+
+## Local Dashboard App {style="text-align: center;"}
+
+![](figs/dashboard_2.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
 
 ::: {style="text-align: center;"}
 Credentials
 :::
 
-## Survey Dashboard {style="text-align: center;"}
+## [Templates and demos are provided on [surveydown.org](https://surveydown.org) for an easy start.]{style="text-align: center; display: block;"} {.center}
 
-![](figs/dashboard_2.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
+## Summary of Features {style="text-align: center;"}
 
-::: {style="text-align: center;"}
-Survey Data
+<br>
+
+::: {.grid-container style="height: 50vh;"}
+
+::: {.centered-orange .container style="width: 600px;"}
+Reactivity and randomization
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+Dashboard for survey data
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+Cookies for restoration
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+URL parameters for redirection
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+Ability to start from selected page
+:::
+
+::: {.centered-orange .container style="width: 600px;"}
+Custom questions
+:::
+:::
+
+## Map Question Demo {style="text-align: center;"}
+
+[![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
+
+## Map Question Showcase {style="text-align: center;"}
+
+::: {style="width: 600px; margin: 0 auto;"}
+![](videos/map-showcase.mov){style="border: 2px solid #5654A2; width: 100%;"}
+
+::: {style="text-align: right; font-size: 0.6em;"}
+Source: Dr. Selena Hinojos, GWU
+:::
 :::
 
 ## Future Work {style="text-align: center;"}

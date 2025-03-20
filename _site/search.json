@@ -676,35 +676,35 @@
     "href": "slides/2025_gw_oscon/index.html#section-7",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)"
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_forward(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#section-8",
     "href": "slides/2025_gw_oscon/index.html#section-8",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package"
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_forward(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLoad Package"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#section-9",
     "href": "slides/2025_gw_oscon/index.html#section-9",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nDatabase Setup\n\n\n\nWe recommend using Supabase or any PostgreSQL database for the database setup."
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_forward(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nDatabase Setup\n\n\n\nWe recommend using Supabase or any PostgreSQL database for the database setup."
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#section-10",
     "href": "slides/2025_gw_oscon/index.html#section-10",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nServer Setup"
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_forward(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nServer Setup"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#section-11",
     "href": "slides/2025_gw_oscon/index.html#section-11",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "",
-    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_if(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLaunch Survey"
+    "text": "app.R\n\n\n# Load Package\nlibrary(surveydown)\n\n# Database Credentials\nsd_db_config()\n\n# Connect to Database\ndb &lt;- sd_db_connect()\n\n# Server Setup\nserver &lt;- function(input, output, session) {\n\n  # Skip logic\n  sd_skip_forward(...)\n\n  # Conditional display\n  sd_show_if(...)\n\n  # Server settings\n  sd_server(\n    db = db,\n    ...\n  )\n}\n\n# Launch Survey\nshiny::shinyApp(ui = sd_ui(), server = server)\n\n\n\nLaunch Survey"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#section-12",
@@ -739,14 +739,14 @@
     "href": "slides/2025_gw_oscon/index.html#survey-dashboard",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Survey Dashboard",
-    "text": "Survey Dashboard\n\n\n\n\n\n\nCredentials"
+    "text": "Survey Dashboard\n\n\n\n\n\n\nSurvey Data"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#survey-dashboard-1",
     "href": "slides/2025_gw_oscon/index.html#survey-dashboard-1",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Survey Dashboard",
-    "text": "Survey Dashboard\n\n\n\n\n\n\nSurvey Data"
+    "text": "Survey Dashboard\n\n\n\n\n\n\nCredentials"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#future-work",
@@ -767,7 +767,7 @@
     "href": "slides/2025_gw_oscon_lightning/index.html#section",
     "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
     "section": "",
-    "text": "Typical experience making a survey\n\n\n\n\n\n\n❌ Reproducible\n\n\n\n❌ Data Control\n\n\n\n⚠️ Free to Use\n\n\n\n⚠️ Open Source\n\n\n\n⚠️ Easy Collaboration\n\n\n\n⚠️ Feature Packed"
+    "text": "Typical experience making a survey\n\n\n\n\n\n❌ Reproducible\n\n❌ Data Control\n\n⚠️ Free to Use\n\n⚠️ Open Source\n\n⚠️ Easy Collaboration\n\n⚠️ Feature Packed"
   },
   {
     "objectID": "slides/2025_gw_oscon_lightning/index.html#section-1",
@@ -922,5 +922,110 @@
     "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
     "section": "Showcase: Survey Construction",
     "text": "Showcase: Survey Construction\nVideo"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#summary-of-features",
+    "href": "slides/2025_gw_oscon/index.html#summary-of-features",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Summary of Features",
+    "text": "Summary of Features\n\n\n\nReactivity and randomization\n\n\nDashboard for survey data\n\n\nCookies for restoration\n\n\nURL parameters for redirection\n\n\nAbility to start from selected page\n\n\nCustom questions"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#showcase-of-map-question",
+    "href": "slides/2025_gw_oscon/index.html#showcase-of-map-question",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Showcase of Map Question",
+    "text": "Showcase of Map Question\n\nVideo\n\nSource: Dr. Selena Hinojos, GWU"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#survey-building",
+    "href": "slides/2025_gw_oscon/index.html#survey-building",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Survey Building",
+    "text": "Survey Building\nVideo"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#local-dashboard-app",
+    "href": "slides/2025_gw_oscon/index.html#local-dashboard-app",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Local Dashboard App",
+    "text": "Local Dashboard App\n\n\n\n\n\n\nSurvey Data"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#local-dashboard-app-1",
+    "href": "slides/2025_gw_oscon/index.html#local-dashboard-app-1",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Local Dashboard App",
+    "text": "Local Dashboard App\n\n\n\n\n\n\nCredentials"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#survey-components",
+    "href": "slides/2025_gw_oscon/index.html#survey-components",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Survey Components",
+    "text": "Survey Components\n\n\nsurvey.qmd\nA Quarto doc defining the main survey content (pages, text, images, questions, etc).\n\n\n\napp.R\nAn R script defining the survey Shiny app. It sets up the database and server, and launches the survey."
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#local-running",
+    "href": "slides/2025_gw_oscon/index.html#local-running",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Local Running",
+    "text": "Local Running\nVideo"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#online-deployment",
+    "href": "slides/2025_gw_oscon/index.html#online-deployment",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Online Deployment",
+    "text": "Online Deployment\n\nshinyapps.io\n\nrsconnect::deployApp(appName = \"my_survey\")\n\nOther Platforms\n\nPosit Connect Cloud\nHugging Face\nHeroku"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#map-question-demo",
+    "href": "slides/2025_gw_oscon/index.html#map-question-demo",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Map Question Demo",
+    "text": "Map Question Demo"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#map-question-showcase",
+    "href": "slides/2025_gw_oscon/index.html#map-question-showcase",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Map Question Showcase",
+    "text": "Map Question Showcase\n\nVideo\n\nSource: Dr. Selena Hinojos, GWU"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon_lightning/index.html#local-running",
+    "href": "slides/2025_gw_oscon_lightning/index.html#local-running",
+    "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
+    "section": "Local Running",
+    "text": "Local Running\nVideo"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon_lightning/index.html#online-deployment",
+    "href": "slides/2025_gw_oscon_lightning/index.html#online-deployment",
+    "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
+    "section": "Online Deployment",
+    "text": "Online Deployment\n\nshinyapps.io\n\nrsconnect::deployApp(appName = \"my_survey\")\n\nOther Platforms\n\nPosit Connect Cloud\nHugging Face\nHeroku"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon_lightning/index.html#local-dashboard-app",
+    "href": "slides/2025_gw_oscon_lightning/index.html#local-dashboard-app",
+    "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
+    "section": "Local Dashboard App",
+    "text": "Local Dashboard App\n\n\n\n\n\n\nSurvey Data"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon_lightning/index.html#local-dashboard-app-1",
+    "href": "slides/2025_gw_oscon_lightning/index.html#local-dashboard-app-1",
+    "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
+    "section": "Local Dashboard App",
+    "text": "Local Dashboard App\n\n\n\n\n\n\nCredentials"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon_lightning/index.html#run-deploy",
+    "href": "slides/2025_gw_oscon_lightning/index.html#run-deploy",
+    "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
+    "section": "Run & Deploy",
+    "text": "Run & Deploy\nVideo\n\n# Deploy to shinyapps.io\nrsconnect::deployApp(appName = \"my_survey\")"
   }
 ]

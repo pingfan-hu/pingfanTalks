@@ -81,7 +81,7 @@ db <- sd_db_connect()
 server <- function(input, output, session) {
 
   # Skip logic
-  sd_skip_if(...)
+  sd_skip_forward(...)
 
   # Conditional display
   sd_show_if(...)
