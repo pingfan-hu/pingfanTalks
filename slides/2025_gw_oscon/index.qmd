@@ -14,6 +14,7 @@ format:
     link-external-icon: false
     center-title-slide: false
     code-block-height: 650px
+    code-line-numbers: false
     title-slide-attributes: 
       data-background-image: figs/logo.png
       data-background-size: 20%
@@ -462,31 +463,63 @@ Launch Survey
 
 :::
 
-## Local Running {style="text-align: center;"}
+## Locally running the survey {style="text-align: center;"}
 
-{{< video https://www.youtube.com/watch?v=mwkoQCWy1o0 width="100%" height="520" >}}
+![](videos/local_run.mp4){style="border: 2px solid #5654A2;"}
 
-## Online Deployment {style="text-align: center;"}
+Data saved locally in csv for previewing purposes.
+
+## Online Deployment {style="font-size: 32px; text-align: center;"}
+
+::: columns
+::: {.column width="48%"}
+### Data Storage {style="font-size: 36px; color: #739C69; padding-top: 1em;"}
+
+- Any PostgreSQL database
+- Recommend [**Supabase**](https://supabase.com) (Free)
+- Use `sd_db_config()` to set up
+
+![](figs/postgresql.svg) ![](figs/supabase.svg)
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+
+### Deploy {style="font-size: 36px; color: #739C69; padding-top: 1em;"}
 
 ::: {style="text-align: left;"}
-### `shinyapps.io` {style="font-size: 36px; color: #739C69; padding-top: 2em;"}
+- Recommend [**shinyapps.io**](https://www.shinyapps.io):
 
-```{r}
-#| eval: false
-#| echo: true
-rsconnect::deployApp(appName = "my_survey")
-```
+  ```{r}
+  #| eval: false
+  #| echo: true
+  rsconnect::deployApp(appName = "my_survey")
+  ```
 
-### Other Platforms {style="font-size: 36px; color: #739C69; padding-top: 2em;"}
+::: {style="margin-top: 0em;"}
+- Other Platforms:
 
-- Posit Connect Cloud
-- Hugging Face
-- Heroku
+  ::: {style="font-size: 0.9em;"}
+  - Posit Connect Cloud
+  - Hugging Face
+  - Heroku
+  :::
+
+:::
+:::
+:::
+:::
+
+::: {.centered-orange .container style="width: 800px;"}
+Online Data Storage + Online Survey URL
 :::
 
 ## Local Dashboard App {style="text-align: center;"}
 
-{{< video https://www.youtube.com/watch?v=EmQKUcVkRPU width="100%" height="580" >}}
+![](videos/dashboard.mp4){style="border: 2px solid #5654A2;"}
 
 ## [Templates and demos are provided on [**`surveydown.org`**](https://surveydown.org) for an easy start.]{style="text-align: center; display: block;"} {.center}
 
@@ -517,18 +550,18 @@ Ability to start from selected page
 :::
 
 ::: {.centered-orange .container style="width: 600px;"}
-Custom questions
+Custom interactive questions
 :::
 :::
 
-## Map Question Demo {style="text-align: center;"}
+## Example of custom interactive question {style="text-align: center;"}
 
 [![](figs/demo_2.png){width="80%" fig-align="center" style="border: 2px solid #5654A2;"}](https://surveydown2.shinyapps.io/leaflet/)
 
 ## Map Question Showcase {style="text-align: center;"}
 
 ::: {style="width: 600px; margin: 0 auto;"}
-{{< video https://www.youtube.com/watch?v=UXpeqkb3xCc width="100%" height="540" >}}
+![](videos/map.mp4){style="border: 2px solid #5654A2;"}
 
 ::: {style="text-align: right; font-size: 0.6em;"}
 Source: Dr. Selena Hinojos, GWU

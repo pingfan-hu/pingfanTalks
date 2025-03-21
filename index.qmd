@@ -64,3 +64,5 @@ presentations <- slides_data %>%
 # Render all presentations
 div(class = "presentations-container", presentations)
 ```
+
+## [Check out [**`surveydown.org`**](https://surveydown.org) for more!]{style="text-align: center; display: block;"} {.center}

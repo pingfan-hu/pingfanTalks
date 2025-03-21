@@ -319,14 +319,14 @@
     "href": "slides/2025_gw_oscon/index.html#online-deployment",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Online Deployment",
-    "text": "Online Deployment\n\nshinyapps.io\n\nrsconnect::deployApp(appName = \"my_survey\")\n\nOther Platforms\n\nPosit Connect Cloud\nHugging Face\nHeroku"
+    "text": "Online Deployment\n\n\nData Storage\n\nAny PostgreSQL database\nRecommend Supabase (Free)\nUse sd_db_config() to set up\n\n \n\n\n\nDeploy\n\n\nRecommend shinyapps.io:\n\nrsconnect::deployApp(appName = \"my_survey\")\n\n\n\n\nOther Platforms:\n\n\nPosit Connect Cloud\nHugging Face\nHeroku\n\n\n\n\n\n\n\nOnline Data Storage + Online Survey URL"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#local-dashboard-app",
     "href": "slides/2025_gw_oscon/index.html#local-dashboard-app",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Local Dashboard App",
-    "text": "Local Dashboard App"
+    "text": "Local Dashboard App\nVideo"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#templates-and-demos-are-provided-on-surveydown.org-for-an-easy-start.",
@@ -354,7 +354,7 @@
     "href": "slides/2025_gw_oscon/index.html#map-question-showcase",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Map Question Showcase",
-    "text": "Map Question Showcase\n\n\n\nSource: Dr. Selena Hinojos, GWU"
+    "text": "Map Question Showcase\n\nVideo\n\nSource: Dr. Selena Hinojos, GWU"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#future-work",
@@ -369,5 +369,19 @@
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Check out surveydown.org for more!",
     "text": "Check out surveydown.org for more!"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#locally-running-the-survey",
+    "href": "slides/2025_gw_oscon/index.html#locally-running-the-survey",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Locally running the survey",
+    "text": "Locally running the survey\nVideo\nData saved locally in csv for previewing purposes."
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#online-deployment-.small-styletext-align-center",
+    "href": "slides/2025_gw_oscon/index.html#online-deployment-.small-styletext-align-center",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Online Deployment {.small; style=“text-align: center;”}",
+    "text": "Online Deployment {.small; style=“text-align: center;”}\n\n\nData Storage\n\nAny PostgreSQL database\nSupabase recommended (Free)\nUse sd_db_config() to set up\n\n\nDeploy\n\nshinyapps.io\n\nrsconnect::deployApp(appName = \"my_survey\")\n\nOther Platforms\n\nPosit Connect Cloud\nHugging Face\nHeroku"
   }
 ]
