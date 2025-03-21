@@ -14,7 +14,6 @@ format:
     link-external-icon: false
     center-title-slide: false
     code-block-height: 650px
-    code-line-numbers: false
     title-slide-attributes: 
       data-background-image: figs/logo.png
       data-background-size: 20%
@@ -496,6 +495,7 @@ Data saved locally in csv for previewing purposes.
   ```{r}
   #| eval: false
   #| echo: true
+  #| code-line-numbers: false
   rsconnect::deployApp(appName = "my_survey")
   ```
 
