@@ -464,7 +464,7 @@ Launch Survey
 
 ## Local Running {style="text-align: center;"}
 
-![](videos/survey-building.mp4){style="border: 2px solid #5654A2;"}
+{{< video https://www.youtube.com/watch?v=mwkoQCWy1o0 width="100%" height="520" >}}
 
 ## Online Deployment {style="text-align: center;"}
 
@@ -486,21 +486,9 @@ rsconnect::deployApp(appName = "my_survey")
 
 ## Local Dashboard App {style="text-align: center;"}
 
-![](figs/dashboard_1.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
+{{< video https://www.youtube.com/watch?v=EmQKUcVkRPU width="100%" height="580" >}}
 
-::: {style="text-align: center;"}
-Survey Data
-:::
-
-## Local Dashboard App {style="text-align: center;"}
-
-![](figs/dashboard_2.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
-
-::: {style="text-align: center;"}
-Credentials
-:::
-
-## [Templates and demos are provided on [surveydown.org](https://surveydown.org) for an easy start.]{style="text-align: center; display: block;"} {.center}
+## [Templates and demos are provided on [**`surveydown.org`**](https://surveydown.org) for an easy start.]{style="text-align: center; display: block;"} {.center}
 
 ## Summary of Features {style="text-align: center;"}
 
@@ -540,7 +528,7 @@ Custom questions
 ## Map Question Showcase {style="text-align: center;"}
 
 ::: {style="width: 600px; margin: 0 auto;"}
-![](videos/map-showcase.mov){style="border: 2px solid #5654A2; width: 100%;"}
+{{< video https://www.youtube.com/watch?v=UXpeqkb3xCc width="100%" height="540" >}}
 
 ::: {style="text-align: right; font-size: 0.6em;"}
 Source: Dr. Selena Hinojos, GWU
@@ -565,8 +553,8 @@ More question types
 ...and more!
 :::
 
-### [You can contribute!](https://github.com/surveydown-dev/surveydown/)
+### [**You can contribute!**](https://github.com/surveydown-dev/surveydown/)
 
 :::
 
-## [Check out [surveydown.org](https://surveydown.org) for more!]{style="text-align: center; display: block;"} {.center}
+## [Check out [**`surveydown.org`**](https://surveydown.org) for more!]{style="text-align: center; display: block;"} {.center}

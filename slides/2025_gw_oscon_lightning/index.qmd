@@ -85,7 +85,7 @@ execute:
 
 ::: {.column width="45%"}
 
-### `survey.qmd` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+### `survey.qmd` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 2em;"}
 
 A **Quarto doc** defining the main survey content (pages, text, images, questions, etc).
 
@@ -96,7 +96,7 @@ A **Quarto doc** defining the main survey content (pages, text, images, question
 
 ::: {.column width="45%"}
 
-### `app.R` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 3em;"}
+### `app.R` {style="text-align: center; font-size: 36px; color: #739C69; padding-top: 2em;"}
 
 An **R script** defining the survey Shiny app. It sets up the database and server, and launches the survey.
 
@@ -104,9 +104,16 @@ An **R script** defining the survey Shiny app. It sets up the database and serve
 
 :::
 
+<br>
+<br>
+
+::: {.centered-orange .container style="width: 800px;"}
+Check out [**surveydown.org**](https://surveydown.org) for more details!
+:::
+
 ## Run & Deploy {style="text-align: center;"}
 
-![](videos/survey-building.mp4){style="border: 2px solid #5654A2;"}
+{{< video https://www.youtube.com/watch?v=mwkoQCWy1o0 width="100%" height="520" >}}
 
 ```{r}
 #| eval: false
@@ -117,16 +124,4 @@ rsconnect::deployApp(appName = "my_survey")
 
 ## Local Dashboard App {style="text-align: center;"}
 
-![](figs/dashboard_1.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
-
-::: {style="text-align: center;"}
-Survey Data
-:::
-
-## Local Dashboard App {style="text-align: center;"}
-
-![](figs/dashboard_2.png){width="90%" fig-align="center" style="border: 2px solid #5654A2;"}
-
-::: {style="text-align: center;"}
-Credentials
-:::
+{{< video https://www.youtube.com/watch?v=EmQKUcVkRPU width="100%" height="580" >}}
