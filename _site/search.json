@@ -200,14 +200,14 @@
     "href": "slides/2025_gw_oscon_lightning/index.html#run-deploy",
     "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
     "section": "Run & Deploy",
-    "text": "Run & Deploy\n\n\n# Deploy to shinyapps.io\nrsconnect::deployApp(appName = \"my_survey\")"
+    "text": "Run & Deploy\nVideo\n\n# Deploy to shinyapps.io\nrsconnect::deployApp(appName = \"my_survey\")"
   },
   {
     "objectID": "slides/2025_gw_oscon_lightning/index.html#local-dashboard-app",
     "href": "slides/2025_gw_oscon_lightning/index.html#local-dashboard-app",
     "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
     "section": "Local Dashboard App",
-    "text": "Local Dashboard App"
+    "text": "Local Dashboard App\nVideo"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#section",
@@ -319,7 +319,7 @@
     "href": "slides/2025_gw_oscon/index.html#online-deployment",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Online Deployment",
-    "text": "Online Deployment\n\n\nData Storage\n\nAny PostgreSQL database\nRecommend Supabase (Free)\nUse sd_db_config() to set up\n\n \n\n\n\nDeploy\n\n\nRecommend shinyapps.io:\n\nrsconnect::deployApp(appName = \"my_survey\")\n\n\n\n\nOther Platforms:\n\n\nPosit Connect Cloud\nHugging Face\nHeroku\n\n\n\n\n\n\n\nOnline Data Storage + Online Survey URL"
+    "text": "Online Deployment\n\n\nData Storage\n\nAny PostgreSQL database\nRecommend Supabase (Free)\nUse sd_db_config() to set up\n\n \n\n\n\nDeploy\n\n\nRecommend shinyapps.io (Free):\n\nrsconnect::deployApp(appName = \"my_survey\")\n\n\n\n\nOther Platforms:\n\n\nPosit Connect Cloud\nHugging Face\nHeroku\n\n\n\n\n\n\n\nOnline Data Storage + Online Survey URL"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#local-dashboard-app",
@@ -340,7 +340,7 @@
     "href": "slides/2025_gw_oscon/index.html#summary-of-features",
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Summary of Features",
-    "text": "Summary of Features\n\n\n\nReactivity and randomization\n\n\nDashboard for survey data\n\n\nCookies for restoration\n\n\nURL parameters for redirection\n\n\nAbility to start from selected page\n\n\nCustom questions"
+    "text": "Summary of Features\n\n\n\nReactivity and randomization\n\n\nDashboard for survey data\n\n\nCookies for restoration\n\n\nURL parameters for redirection\n\n\nAbility to start from selected page\n\n\nCustom interactive questions"
   },
   {
     "objectID": "slides/2025_gw_oscon/index.html#map-question-demo",
@@ -383,5 +383,26 @@
     "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
     "section": "Online Deployment {.small; style=“text-align: center;”}",
     "text": "Online Deployment {.small; style=“text-align: center;”}\n\n\nData Storage\n\nAny PostgreSQL database\nSupabase recommended (Free)\nUse sd_db_config() to set up\n\n\nDeploy\n\nshinyapps.io\n\nrsconnect::deployApp(appName = \"my_survey\")\n\nOther Platforms\n\nPosit Connect Cloud\nHugging Face\nHeroku"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon/index.html#example-of-custom-interactive-question",
+    "href": "slides/2025_gw_oscon/index.html#example-of-custom-interactive-question",
+    "title": "surveydown:An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys",
+    "section": "Example of custom interactive question",
+    "text": "Example of custom interactive question"
+  },
+  {
+    "objectID": "slides/2025_gw_oscon_lightning/index.html#check-out-surveydown.org-for-more",
+    "href": "slides/2025_gw_oscon_lightning/index.html#check-out-surveydown.org-for-more",
+    "title": "surveydown Lightning Talk:An Open-Source, Markdown-BasedSurvey Platform",
+    "section": "Check out surveydown.org for more!",
+    "text": "Check out surveydown.org for more!"
+  },
+  {
+    "objectID": "index.html#check-out-surveydown.org-for-more",
+    "href": "index.html#check-out-surveydown.org-for-more",
+    "title": "Pingfan’s Talks",
+    "section": "Check out surveydown.org for more!",
+    "text": "Check out surveydown.org for more!"
   }
 ]
