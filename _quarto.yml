@@ -27,3 +27,7 @@ execute:
 
 website: 
   title: "Pingfan's Talks"
+  page-footer:
+    center: "© 2025 [Pingfan Hu](https://pingfanhu.com)"
+    border: true
+    background: light

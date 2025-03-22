@@ -27,7 +27,10 @@ make_pdf_path <- function(folder_name) {
 
 # Create presentations using HTML tags
 presentations <- slides_data %>%
-  pmap(function(Date, Title, Event, Location, Directory) {
+  pmap(function(Date, Title, Event, Location, Directory, Type = "slide") {
+    # Default to "slide" if Type is not provided
+    presentation_type <- if(is.null(Type) || is.na(Type)) "slide" else tolower(Type)
+    
     div(
       class = "presentation-box",
       div(
@@ -41,14 +44,25 @@ presentations <- slides_data %>%
       ),
       div(
         class = "presentation-icons",
-        a(
-          href = make_slides_path(Directory),
-          class = "presentation-button",
-          target = "_blank",
-          rel = "noopener noreferrer",
-          tags$i(class = "bi bi-file-earmark-slides"),
-          span("Slides")
-        ),
+        # Conditionally render either Slides button or Poster text
+        if(presentation_type == "slide") {
+          a(
+            href = make_slides_path(Directory),
+            class = "presentation-button",
+            target = "_blank",
+            rel = "noopener noreferrer",
+            tags$i(class = "bi bi-file-earmark-slides"),
+            span("Slides")
+          )
+        } else {
+          # Simple centered text for Poster
+          div(
+            style = "text-align: center; width: 100px; margin-right: 0.5rem;",
+            tags$i(class = "bi bi-easel"),
+            span("Poster")
+          )
+        },
+        # Always show PDF button
         a(
           href = make_pdf_path(Directory),
           class = "presentation-button",
