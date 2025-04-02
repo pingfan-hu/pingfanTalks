@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pingfan’s Talks",
     "section": "",
-    "text": "surveydown Lightning Talk: An Open-Source, Markdown-Based Survey Platform\n\nGW OSCON & GW OSPO Award\n\nMarch 24, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nsurveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys\n\nGW OSCON & GW OSPO Award\n\nMarch 24, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nThe BEV Smart Charging Adoption Project\n\nTRB 2025\n\nJanuary 06, 2025\n\n\n\n\n\nPoster\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
+    "text": "Grid-Integration of Electric Vehicles: Consumer Preferences for BEV Smart Charging Programs\n\nDQE Part 2\n\nMay 10, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nsurveydown Lightning Talk: An Open-Source, Markdown-Based Survey Platform\n\nGW OSCON & GW OSPO Award\n\nMarch 24, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nsurveydown: An Open-Source, Markdown-Based Platform for Interactive and Reproducible Surveys\n\nGW OSCON & GW OSPO Award\n\nMarch 24, 2025\n\n\n\n\n\nSlides\n\n\n\nPDF\n\n\n\n\n\nThe BEV Smart Charging Adoption Project\n\nTRB 2025\n\nJanuary 06, 2025\n\n\n\n\n\nPoster\n\n\n\nPDF\n\n\n\n\n\nMeasuring Consumer Willingness to Enroll in Battery Electric Vehicle Smart Charging Programs\n\nIEEE VPPC 2024\n\nOctober 10, 2024\n\n\n\n\n\nSlides\n\n\n\nPDF"
   },
   {
     "objectID": "slides/2024_ieee_vppc/index.html#introduction",
@@ -404,5 +404,222 @@
     "title": "Pingfan’s Talks",
     "section": "Check out surveydown.org for more!",
     "text": "Check out surveydown.org for more!"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#introduction",
+    "href": "slides/2025_dqe/index.html#introduction",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Introduction",
+    "text": "Introduction\n\nBEVs (Battery Electric Vehicles) can reduce \\(CO_2\\) and prevent air pollution.\nBut managing BEV charging can become a problem for the grid.\nSmart charging can help, but depends on user acceptance."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#smc---supplier-managed-charging",
+    "href": "slides/2025_dqe/index.html#smc---supplier-managed-charging",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "SMC - Supplier Managed Charging",
+    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#smc---supplier-managed-charging-1",
+    "href": "slides/2025_dqe/index.html#smc---supplier-managed-charging-1",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "SMC - Supplier Managed Charging",
+    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#v2g---vehicle-to-grid",
+    "href": "slides/2025_dqe/index.html#v2g---vehicle-to-grid",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "V2G - Vehicle-to-Grid",
+    "text": "V2G - Vehicle-to-Grid"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#literature-review",
+    "href": "slides/2025_dqe/index.html#literature-review",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Literature Review",
+    "text": "Literature Review\n\nA study by Wong et al. (2023) examined incentives affect the EV owners’ acceptance, but EV ownership is only 19%.\nA study by Philip and Whitehead (2024) found range anxiety matters, but EV ownership is only 1.28%.\nAnother study by Huang et al. (2021) indicates the importance of fast charging, but the sample size is only 157.\n\nNone of them have demographics data to study heterogeneity.\n\nWe need high EV ownership & large sample size, and consider heterogeneity."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#research-questions",
+    "href": "slides/2025_dqe/index.html#research-questions",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nSensitivity: How do changes in smart charging program features influence BEV owners’ willingness to opt in?\nMarket Share: Under what conditions will BEV owners be more willing to opt in to smart charging programs?\n\n\n\nConjoint survey to collect BEV owners’ willingness.\n\n\nMultinomial logit model for utility simulations."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#survey-design-with-formr",
+    "href": "slides/2025_dqe/index.html#survey-design-with-formr",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Survey Design with formr",
+    "text": "Survey Design with formr\n\n\nSurvey Components\n\nConjoint Questions:\n\nMonetary Incentives\nCharging Limitations\nFlexibility\n\nDemographic Questions:\n\nBEV Ownership & Usage\nPersonal & Household Info\n\n\n\nConjoint Attributes Sample\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#conjoint-question-explained",
+    "href": "slides/2025_dqe/index.html#conjoint-question-explained",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Conjoint Question Explained",
+    "text": "Conjoint Question Explained\nA Sample Conjoint Question\n\n\n\n\n\n\n\nYou are provided with different sets of attributes.\nYou choose one set instead of one attribute."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#smc-programs",
+    "href": "slides/2025_dqe/index.html#smc-programs",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "SMC Programs",
+    "text": "SMC Programs\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nMonthly Cash\n$2 to $20\n\n\n3\nMonthly Override\n0 to 5\n\n\n4\nMin Battery\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nMonthly Cash\n$20\n\n\nMonthly Override\n5"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#v2g-programs",
+    "href": "slides/2025_dqe/index.html#v2g-programs",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "V2G Programs",
+    "text": "V2G Programs\n\n\nAttributes\n\n\n\n\n\n\nNo.\nAttributes\nRange\n\n\n\n\n1\nEnrollment Cash\n$50 to $300\n\n\n2\nOccurrence Cash\n$2 to $20\n\n\n3\nMonthly Occurrence\n1 to 4\n\n\n4\nLower Bound\n20% to 40%\n\n\n5\nGuaranteed Battery\n60% to 80%\n\n\n\n\n\n\n\n\n\nSample Program\n\n\n\n\n\n\nAttributes\nValues\n\n\n\n\nEnrollment Cash\n$300\n\n\nOccurrence Cash\n$20\n\n\nMonthly Occurrence\n1"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#sample-smc-question",
+    "href": "slides/2025_dqe/index.html#sample-smc-question",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Sample SMC Question",
+    "text": "Sample SMC Question"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#sample-v2g-question",
+    "href": "slides/2025_dqe/index.html#sample-v2g-question",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Sample V2G Question",
+    "text": "Sample V2G Question"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#survey-fielding",
+    "href": "slides/2025_dqe/index.html#survey-fielding",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Survey Fielding",
+    "text": "Survey Fielding\nMeta: Facebook, Messenger, Instagram - Voluntary\n\nFielding from March to July in 2024\n803 results after filtering\n\nDynata: Survey Panel - Payment to real BEV owners only\n\nFielding from September to November in 2024\n553 results after filtering"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#survey-results---top-10-bev",
+    "href": "slides/2025_dqe/index.html#survey-results---top-10-bev",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Survey Results - Top 10 BEV",
+    "text": "Survey Results - Top 10 BEV"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#survey-results---demographics",
+    "href": "slides/2025_dqe/index.html#survey-results---demographics",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Survey Results - Demographics",
+    "text": "Survey Results - Demographics"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#survey-results---willingness-to-participate",
+    "href": "slides/2025_dqe/index.html#survey-results---willingness-to-participate",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Survey Results - Willingness to Participate",
+    "text": "Survey Results - Willingness to Participate\n\nMultinomial Logit Models\n\\[\n\\begin{align*}\nu_j = v_j + \\epsilon_j = \\beta' x + \\epsilon_j\n\\qquad\nP_j = \\frac{e^{v_j}}{\\sum_{k=1}^{J} e^{v_k}}\n\\end{align*}\n\\]\n\n\n\nSMC Estimates\n\n\n\n\n\n\nV2G Estimates\n\n\n\n\n\n\n\nWithout compensation, users will not participate."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#enrollment-sensitivity",
+    "href": "slides/2025_dqe/index.html#enrollment-sensitivity",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Enrollment Sensitivity",
+    "text": "Enrollment Sensitivity"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#enrollment-sensitivity-1",
+    "href": "slides/2025_dqe/index.html#enrollment-sensitivity-1",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Enrollment Sensitivity",
+    "text": "Enrollment Sensitivity\n\n\n\n\n\n\n\nSteeper slope indicates higher sensitivity.\nDiminishing returns exist."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#enrollment-sensitivity-combined---smc",
+    "href": "slides/2025_dqe/index.html#enrollment-sensitivity-combined---smc",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Enrollment Sensitivity Combined - SMC",
+    "text": "Enrollment Sensitivity Combined - SMC\n\n\n\n\n\nAttribute\nEquivalence Value\nUnit\n\n\n\n\nEnrollment Cash\n64.7\n$\n\n\nMonthly Cash\n3.2\n$\n\n\nOverride Days\n2.0\nDays\n\n\nMinimum Threshold\n54.8\n%\n\n\nGuaranteed Threshold\n5.5\n%"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#enrollment-sensitivity-combined---v2g",
+    "href": "slides/2025_dqe/index.html#enrollment-sensitivity-combined---v2g",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Enrollment Sensitivity Combined - V2G",
+    "text": "Enrollment Sensitivity Combined - V2G"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#enrollment-sensitivity-combined---summary",
+    "href": "slides/2025_dqe/index.html#enrollment-sensitivity-combined---summary",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Enrollment Sensitivity Combined - Summary",
+    "text": "Enrollment Sensitivity Combined - Summary\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonetary incentives are important.\nRecurring incentives are more important than one-time.\nFor SMC, range anxiety is vital, since it happens regularly.\nFor V2G, usability is compromised.\nDiminishing returns exist."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#market-simulation---smc",
+    "href": "slides/2025_dqe/index.html#market-simulation---smc",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Market Simulation - SMC",
+    "text": "Market Simulation - SMC"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#market-simulation---v2g",
+    "href": "slides/2025_dqe/index.html#market-simulation---v2g",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Market Simulation - V2G",
+    "text": "Market Simulation - V2G"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#reference-list",
+    "href": "slides/2025_dqe/index.html#reference-list",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Reference List",
+    "text": "Reference List\n\n\n\n\nHuang, Bing, Aart Gerard Meijssen, Jan Anne Annema, and Zofia Lukszo. 2021. “Are Electric Vehicle Drivers Willing to Participate in Vehicle-to-Grid Contracts? A Context-Dependent Stated Choice Experiment.” Energy Policy 156 (September): 112410. https://doi.org/10.1016/j.enpol.2021.112410.\n\n\nPhilip, Thara, and Jake Whitehead. 2024. “Consumer Preferences Towards Electric Vehicle Smart Charging Program Attributes: A Stated Preference Study.” Rochester, NY. https://doi.org/10.2139/ssrn.4812923.\n\n\nWong, Stephen D., Susan A. Shaheen, Elliot Martin, and Robert Uyeki. 2023. “Do Incentives Make a Difference? Understanding Smart Charging Program Adoption for Electric Vehicles.” Transportation Research Part C: Emerging Technologies 151 (June): 104123. https://doi.org/10.1016/j.trc.2023.104123."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#smc-equivalencies-of-5-enrollment-increase",
+    "href": "slides/2025_dqe/index.html#smc-equivalencies-of-5-enrollment-increase",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "SMC Equivalencies of 5% Enrollment Increase",
+    "text": "SMC Equivalencies of 5% Enrollment Increase\n\n\n\n\n\n\n\nAttribute\nEquivalence Value\nUnit\n\n\n\n\nEnrollment Cash\n64.7\n$\n\n\nMonthly Cash\n3.2\n$\n\n\nOverride Days\n2.0\nDays\n\n\nMinimum Threshold\n54.8\n%\n\n\nGuaranteed Threshold\n5.5\n%\n\n\n\n\n\n\n\n\n\n\n\n\n\nAttribute\nEquivalence Value\nUnit\n\n\n\n\nEnrollment Cash\n45.0\n$\n\n\nOccurrence Cash\n2.3\n$\n\n\nMonthly Occurrence\n1.5\nTimes\n\n\nLower Bound\n8.5\n%\n\n\nGuaranteed Threshold\n7.2\n%"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#equivalencies-of-5-enrollment-increase",
+    "href": "slides/2025_dqe/index.html#equivalencies-of-5-enrollment-increase",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Equivalencies of 5% Enrollment Increase",
+    "text": "Equivalencies of 5% Enrollment Increase\n\n\n\nSMC\n\n\n\n\n\nAttribute\nEquivalence Value\nUnit\n\n\n\n\nEnrollment Cash\n64.7\n$\n\n\nMonthly Cash\n3.2\n$\n\n\nOverride Days\n2.0\nDays\n\n\nMinimum Threshold\n54.8\n%\n\n\nGuaranteed Threshold\n5.5\n%\n\n\n\n\n\n\n\n\nV2G\n\n\n\n\n\nAttribute\nEquivalence Value\nUnit\n\n\n\n\nEnrollment Cash\n45.0\n$\n\n\nOccurrence Cash\n2.3\n$\n\n\nMonthly Occurrence\n1.5\nTimes\n\n\nLower Bound\n8.5\n%\n\n\nGuaranteed Threshold\n7.2\n%\n\n\n\n\n\n\n\n\n\n\n\nSmaller value indicates higher efficiency.\nRecurring incentives are more important than one-time.\nMonetary incentives are valued more in V2G.\nGuaranteed threshold is more important in SMC, indicating range anxiety."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#scenario-analysis",
+    "href": "slides/2025_dqe/index.html#scenario-analysis",
+    "title": "Consumer Preferences for BEV Smart Charging Programs",
+    "section": "Scenario Analysis",
+    "text": "Scenario Analysis"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#smc-scenario-analysis",
+    "href": "slides/2025_dqe/index.html#smc-scenario-analysis",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "SMC Scenario Analysis",
+    "text": "SMC Scenario Analysis\n\n\n\n\n\n\n\nFlexibility is highly valued.\nRecurring incentives are more important than one-time.\nPayment alone is not enough."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#v2g-scenario-analysis",
+    "href": "slides/2025_dqe/index.html#v2g-scenario-analysis",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "V2G Scenario Analysis",
+    "text": "V2G Scenario Analysis\n\n\n\n\n\n\n\nStill, recurring incentives are more important than one-time.\nBut flexibility is not as important compared with SMC.\nOwners are willing to leverage BEV as a source of income."
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#smart-charging-enrollment-simulator",
+    "href": "slides/2025_dqe/index.html#smart-charging-enrollment-simulator",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Smart Charging Enrollment Simulator",
+    "text": "Smart Charging Enrollment Simulator"
+  },
+  {
+    "objectID": "slides/2025_dqe/index.html#survey-fielding---1356-in-total",
+    "href": "slides/2025_dqe/index.html#survey-fielding---1356-in-total",
+    "title": "Consumer Preferences for BEVSmart Charging Programs",
+    "section": "Survey Fielding - 1356 in Total",
+    "text": "Survey Fielding - 1356 in Total\nMeta: Facebook, Messenger, Instagram - Voluntary\n\nFielding from March to July in 2024\n803 results after filtering\n\nDynata: Survey Panel - Payment to real BEV owners only\n\nFielding from September to November in 2024\n553 results after filtering"
   }
 ]
