@@ -410,14 +410,14 @@
     "href": "slides/2025_dqe/index.html#introduction",
     "title": "Consumer Preferences for BEVSmart Charging Programs",
     "section": "Introduction",
-    "text": "Introduction\n\nBEVs (Battery Electric Vehicles) can reduce \\(CO_2\\) and prevent air pollution.\nBut managing BEV charging can become a problem for the grid.\nSmart charging can help, but depends on user acceptance."
+    "text": "Introduction\n\nUnmanaged BEV charging generates \\(CO_2\\) and other pollution.\nManaged charging is cheaper and environmentally friendly.\nSmart charging: Supplier-Managed Charging (SMC) and Vehicle-to-Grid (V2G).\n\n\n\n\n\n\n\nEVs are clean; electricity is clean, but the source of electricity might not be clean.\nWhy is that? Well, unmanaged BEV charging may generate carbon dioxide and other air pollution due to high demand on the grid. That’s why we need managed charging to ensure clean energy as well as keep the price low.\nSmart charging is a type of managed charging, which includes Supplier-Managed Charging, aka SMC, and Vehicle-to-Grid, aka V2G."
   },
   {
     "objectID": "slides/2025_dqe/index.html#smc---supplier-managed-charging",
     "href": "slides/2025_dqe/index.html#smc---supplier-managed-charging",
     "title": "Consumer Preferences for BEVSmart Charging Programs",
     "section": "SMC - Supplier Managed Charging",
-    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold."
+    "text": "SMC - Supplier Managed Charging\n\nSMC smooths out overnight EV charging demand.\nElectricity demand is controlled below capacity threshold.\nIt saves money and reduces pollution.\n\n\n\n\n\n\n\nFor SMC, aka Supplier-Managed Charging, it smooths out the overnight EV charging demand.\nAs you can see, with unmanaged charging, the BEV load easily passes over the capacity threshold.\nBut with SMC, the electricity demand is controlled below the threshold. It reduces the peak demand and saves money."
   },
   {
     "objectID": "slides/2025_dqe/index.html#smc---supplier-managed-charging-1",

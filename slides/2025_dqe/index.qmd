@@ -35,18 +35,36 @@ library(kableExtra)
 
 ## Introduction {.smaller}
 
-- BEVs (Battery Electric Vehicles) can reduce $CO_2$ and prevent air pollution.
-- But managing BEV charging can become a problem for the grid.
-- Smart charging can help, but depends on user acceptance.
+- **Unmanaged** BEV charging generates $CO_2$ and other pollution.
+- **Managed** charging is cheaper and environmentally friendly.
+- **Smart** charging: Supplier-Managed Charging (SMC) and Vehicle-to-Grid (V2G).
 
-![](figs/smart_charging.png){fig-align="center" width="60%"}
+![](figs/smart_charging.png){fig-align="center" width="50%"}
+
+::: {.notes}
+EVs are clean; electricity is clean, but the source of electricity might not be clean.
+
+Why is that? Well, unmanaged BEV charging may generate carbon dioxide and other air pollution due to high demand on the grid. 
+That's why we need managed charging to ensure clean energy as well as keep the price low.
+
+Smart charging is a type of managed charging, which includes Supplier-Managed Charging, aka SMC, and Vehicle-to-Grid, aka V2G.
+:::
 
 ## SMC - Supplier Managed Charging
 
 - SMC smooths out overnight EV charging demand.
 - Electricity demand is controlled below capacity threshold.
+- It saves money and reduces pollution.
 
 ![](figs/education_1_half.png){fig-align="center"}
+
+::: {.notes}
+For SMC, aka Supplier-Managed Charging, it smooths out the overnight EV charging demand.
+
+As you can see, with unmanaged charging, the BEV load easily passes over the capacity threshold.
+
+But with SMC, the electricity demand is controlled below the threshold. It reduces the peak demand and saves money.
+:::
 
 ## SMC - Supplier Managed Charging
 
