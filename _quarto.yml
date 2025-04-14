@@ -1,19 +1,28 @@
 project:
   type: website
-  output-dir: _site
-  preview:
-    port: 5678
-    browser: true
-  render:
-    - "**/*.qmd"
   resources:
     - "pdf/"
+
+website: 
+  title: "Pingfan's Talks"
+  description: "The slide and poster collection of Pingfan Hu"
+  favicon: logo.png
+  site-url: https://slides.pingfanhu.com
+  repo-url: https://github.com/pingfan-hu/pingfanSlides
+  back-to-top-navigation: false
+  open-graph:
+    locale: es_ES
+    site-name: https://slides.pingfanhu.com
+  page-footer:
+    center: "© 2025 [Pingfan Hu](https://pingfanhu.com)"
+    border: true
+    background: light
 
 format:
   html:
     toc: false
-    theme: [united, theme/theme.scss]
-    css: theme/styles.css
+    theme: [united, themes/theme.scss]
+    css: themes/styles.css
     self-contained: true
     link-external-newwindow: true
     link-external-icon: false
@@ -30,12 +39,4 @@ knitr:
     echo: false
 
 execute: 
-  freeze: false
   warning: false
-
-website: 
-  title: "Pingfan's Talks"
-  page-footer:
-    center: "© 2025 [Pingfan Hu](https://pingfanhu.com)"
-    border: true
-    background: light
