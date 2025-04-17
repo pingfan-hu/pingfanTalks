@@ -70,12 +70,25 @@ But with SMC, the electricity demand is controlled below the threshold. It reduc
 
 - SMC smooths out overnight EV charging demand.
 - Electricity demand is controlled below capacity threshold.
+- It saves money and reduces pollution.
 
 ![](figs/education_1.png){fig-align="center"}
+
+::: {.notes}
+For SMC, aka Supplier-Managed Charging, it smooths out the overnight EV charging demand.
+
+As you can see, with unmanaged charging, the BEV load easily passes over the capacity threshold.
+
+But with SMC, the electricity demand is controlled below the threshold. It reduces the peak demand and saves money.
+:::
 
 ## V2G - Vehicle-to-Grid
 
 ![](figs/education_2.png){fig-align="center" width="70%"}
+
+::: {.notes}
+V2G is short for Vehicle-to-Grid. It is another type of smart charging that allows BEV owners to sell electricity back to the grid. With V2G, BEVs become potential sources of electricity.
+:::
 
 ## Literature Review
 
@@ -87,6 +100,10 @@ None of them have demographics data to study <span style="color: #739C69">hetero
 
 ::: {.centered-text .container}
 We need high EV ownership & large sample size, and consider heterogeneity.
+:::
+
+::: {.notes}
+Various studies have been done on smart charging programs, but they all have small sample size and low EV ownership. Therefore, we aimed to conduct a large-scale survey with high EV ownership to study the heterogeneity of BEV owners' preferences.
 :::
 
 ## Research Questions {style="line-height: 2;"}
@@ -103,6 +120,12 @@ We need high EV ownership & large sample size, and consider heterogeneity.
 
 ::: {.centered-text .container}
 **Multinomial logit model** for utility simulations.
+:::
+
+::: {.notes}
+Here we have 2 research questions. Firstly, we want to know the sensitivity of each smart charging program feature; secondly, we want to know under what conditions will BEV owners be more willing to opt in to the programs.
+
+In order to answer these questions, we designed a conjoint survey to collect BEV owners' willingness to participate. Then we used multinomial logit models to simulate the utility of each program feature.
 :::
 
 ## Survey Design with `formr` {.smaller style="line-height: 1.8;"}
@@ -142,6 +165,12 @@ smc_attributes_kable
 :::
 :::
 
+::: {.notes}
+We used formr to design the survey. It's an open-source survey platform that supports R coding. In this survey, we have conjoint questions to ask for willingness to participate, and multiple choice questions to collect demographic information.
+
+On the right side is a sample list of conjoint attributes. They represent the smart charging features of a program. We'll talk in details in later slides.
+:::
+
 ## Conjoint Question Explained
 
 ### A Sample Conjoint Question {style="text-align: center; font-size: 36px; color: #739C69;"}
@@ -151,6 +180,10 @@ smc_attributes_kable
 :::{style="margin-left: 3em;"}
 1. You are provided with different **sets** of attributes.
 2. You choose one **set** instead of one **attribute**.
+:::
+
+::: {.notes}
+But first, I want to explain what conjoint question is. In this apple example, you can only choose one set of the attributes, so if you pick one option, you pick all the attributes in it. In short, conjoint is about forcing people to make trade-offs.
 :::
 
 ## SMC Programs {.smaller style="line-height: 1.8;"}
@@ -186,11 +219,20 @@ smc_options_kable
 ```
 
 ::: {style="text-align: center;"}
-<img src="https://raw.githubusercontent.com/pingfan-hu/My-Resources/main/bev/battery_smc/u_200_g_160_m_80.png" style="width: 400px; width: 100%; height: auto;"/>
+<img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_smc/u_200_g_160_m_80.png" style="width: 400px; width: 100%; height: auto;"/>
 :::
 :::
 :::
 :::
+
+::: {.notes}
+Let's move on to the conjoint question for SMC programs. Again SMC is short for Supplier-Managed Charging. These are the 5 attributes of SMC. You can see there are cash, override, and battery thresholds, and they all have reasonable ranges. For example, for enrollment cash we have $50 to $300.
+
+Here is a sample SMC program. You can see the one-time enrollment cash, recurring monthly cash, and how many times per month the charging can be shifted back to normal.
+
+The battery thresholds here are well-designed to provide an immediate visual aid of the minimum battery and guaranteed battery. We also used milage instead of percentage to make it more intuitive. The mileage will be shown according to the real values of each participant.
+:::
+
 
 ## V2G Programs {.smaller style="line-height: 1.8;"}
 
@@ -236,19 +278,33 @@ v2g_options_kable
 ```
 
 ::: {style="text-align: center;"}
-<img src="https://raw.githubusercontent.com/pingfan-hu/My-Resources/main/bev/battery_smc/u_200_g_160_m_80.png" style="width: 400px; width: 100%; height: auto;"/>
+<img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_v2g/u_200_g_160_l_80.png" style="width: 400px; width: 100%; height: auto;"/>
 :::
 :::
 :::
+:::
+
+::: {.notes}
+This is the conjoint question design for V2G programs. V2G is short for Vehicle-to-Grid. The attributes are similar to SMC, but with some differences. For example, we have occurrence cash and monthly occurrence instead of override.
+
+The battery thresholds are in the same layout, but since V2G drains the battery, the lower bound is how much the battery is drained to, and guaranteed battery is how much it's charged back to.
 :::
 
 ## Sample SMC Question
 
 ![](figs/smc_question.jpg){fig-align="center"}
 
+::: {.notes}
+There are 6 SMC conjoint questions. In each question, participants are provided with 2 valid options and a "Not Interested" option. It's important to have this "Not Interested" option as a validation of the willingness of the participants.
+:::
+
 ## Sample V2G Question
 
 ![](figs/v2g_question.jpg){fig-align="center"}
+
+::: {.notes}
+Likewise, there are 6 V2G conjoint questions as well.
+:::
 
 ## Survey Fielding - 1356 in Total
 
@@ -266,8 +322,16 @@ v2g_options_kable
 ![](figs/survey_fielding.png){fig-align="center" width="70%"}
 :::
 
+::: {.notes}
+We collected in total of 1,356 complete, filtered responses from Meta and Dynata throughout 2024, and we made sure that all participants are real BEV owners.
+:::
+
 ## Survey Results - Top 10 BEV
 ![](figs/top_bev.png)
+
+::: {.notes}
+This is a showcase of the top 10 BEV models from our survey results. You can see that Tesla is the most popular brand, followed by Ford, Chevrolet, and some other popular brands. These results are also representative of the BEV market in the United States.
+:::
 
 ## Survey Results - Demographics
 
@@ -281,6 +345,10 @@ v2g_options_kable
 
 ::: {.fragment style="fig-align: center;"}
 ![](figs/result_3.png)
+:::
+
+::: {.notes}
+Other than the BEV models, there are also some important demographics information collected in the survey. You can see most families have 2 cars; most of owners charge at home for more than 8 hours; and most of them care of climate very much. And more importantly, we have 100% BEV ownership.
 :::
 
 ## Survey Results - Willingness to Participate {.smaller}
@@ -315,9 +383,23 @@ $$
 Without compensation, users will not participate.
 :::
 
+::: {.notes}
+The willingness to participate is quantified with the multinomial logit model, shortened as MNL. The utility of each option is a linear combination of the attributes, which is the $v_j$ here, plus an error term, shown as $epsilon_j$. The probability of choosing an option is the exponential of its utility divided by the sum of exponentials of all utilities.
+
+Here are the coefficient estimate plots of both programs. As you can see, the "No Choice" has highgest coefficient, which simply means that without compensation, users will not participate in the programs.
+
+However, coefficients alone are not enough to interpret the willingness to participate. A more intuitive approach is the sensitivity, which means by how much the enrollment rate will change when a feature value changes.
+:::
+
 ## Enrollment Sensitivity
 
 ![](figs/sensitivity_plot_1.png){fig-align="center"}
+
+::: {.notes}
+This is one example of the sensitivity plots. As the enrollment cash increases, the user enrollment increases as well. The solid part is from the results, and the dotted part is the extrapolation with the model.
+
+And here we have a full demonstration of all sensitivity plots. Steeper slope indicates higher sensitivity. Also, as the feature values become higher, we see diminishing returns. But the solid parts are basically linear.
+:::
 
 ## Enrollment Sensitivity
 
@@ -326,6 +408,12 @@ Without compensation, users will not participate.
 ::: {style="text-align: center; font-size: 26px;"}
 1. Steeper slope indicates higher sensitivity.
 2. Diminishing returns exist.
+:::
+
+::: {.notes}
+This is one example of the sensitivity plots. As the enrollment cash increases, the user enrollment increases as well. The solid part is from the results, and the dotted part is the extrapolation with the model.
+
+And here we have a full demonstration of all sensitivity plots. Steeper slope indicates higher sensitivity. Also, as the feature values become higher, we see diminishing returns. But the solid parts are basically linear.
 :::
 
 ## Equivalencies of 5% Enrollment Increase
@@ -351,7 +439,8 @@ smc_attr_equiv %>%
   kbl(col.names = c("Attribute", "Equivalence Value", "Unit"),
       align = c("l", "c", "c")) %>%
   kable_styling(font_size = 21) %>%
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE) %>% 
+  row_spec(5, bold = TRUE, color = "#739C69")
 ```
 
 :::
@@ -373,7 +462,8 @@ v2g_attr_equiv %>%
   kbl(col.names = c("Attribute", "Equivalence Value", "Unit"),
       align = c("l", "c", "c")) %>%
   kable_styling(font_size = 21) %>%
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE) %>% 
+  row_spec(c(1, 2), bold = TRUE, color = "#739C69")
 ```
 
 :::
@@ -384,8 +474,18 @@ v2g_attr_equiv %>%
 ::: {style="font-size: 26px;"}
 1. **Smaller** value indicates higher efficiency.
 2. **Recurring** incentives are more important than one-time.
-3. **Monetary** incentives are valued more in **V2G**.
-4. **Guaranteed** threshold is more important in **SMC**, indicating range anxiety.
+3. In **SMC**, **Guaranteed** threshold is more important than V2G, indicating range anxiety.
+4. In **V2G**, **Monetary** incentives are valued more than SMC.
+:::
+
+::: {.notes}
+Following the linearity of the sensitivity plots, there is a convenient way to reveal the equivalencies of enrollment increases. Here for each program, we start from its baseline. We increase each feature value individually, and see how much each one needs to be, in order to achieve a 5% enrollment increase. And here are our interpretations:
+
+To start with, smaller value indicates higher efficiency, and recurring incentives are more important thant one-time. For example, in SMC, the enrollment cash needs to be \$64.7 to achieve a 5% enrollment increase, while for monthly cash, it only needs to be \$3.2. So monthly cash is more efficient than enrollment cash. Same is true for the 2 types of cash in V2G.
+
+Also, guaranteed threshold is more important in SMC than in V2G, indicating range anxiety.
+
+Finally, monetary incentives are valued more in V2G than in SMC. This indicates that BEV owners are willing to leverage their BEVs as a source of income.
 :::
 
 ## SMC Scenario Analysis
@@ -397,6 +497,12 @@ v2g_attr_equiv %>%
 3. Payment alone is not enough.
 :::
 
+::: {.notes}
+So, after analysis of all these individual features, we can combine them into programs. We call them "scenarios". Here for SMC we have 3 scenarios. They are flexibility, recurring cash, and one-time cash designated.
+
+As we can see, for SMC, flexibility is highly valued, and recurring incentives are more important than one-time. So due to the range anxiety, payment alone is not enough. There should be a combination of flexibility and monetary incentives.
+:::
+
 ## V2G Scenario Analysis
 ![](figs/v2g_scenario_plot.png){fig-align="center"}
 
@@ -406,8 +512,19 @@ v2g_attr_equiv %>%
 3. Owners are willing to leverage BEV as a source of income.
 :::
 
+::: {.notes}
+For V2G programs, recurring incentives are also more important than one-time, flexibility is compromised since ownrs are willing to use leverage their BEVs as a source of income. So the V2G programs are more incentive powered than SMC programs.
+:::
+
 ## Smart Charging Enrollment Simulator {style="text-align: center;"}
 
 [![](figs/simulator.png){width="100%" fig-align="center" style="border: 2px solid #5654A2;"}](https://gwuvehicle.shinyapps.io/enrollment_simulator/)
+
+::: {.notes}
+Here we've made a smart charging enrollment simulator. We can play around with it and see the anticipated enrollment of each program, with different feature values.
+
+1. More enrollment increase in SMC: Guaranteed threshold from 60% to 100%.
+2. More enrollment increase in V2G: Recurring cash from $2 to $20.
+:::
 
 ## Reference List
