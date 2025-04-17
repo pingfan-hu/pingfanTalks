@@ -231,7 +231,7 @@ The battery thresholds here are well-designed to provide an immediate visual aid
 ## V2G Programs {.smaller style="line-height: 1.8;"}
 
 ::: {.columns}
-::: {.column .fragment width="50%"}
+::: {.column width="50%"}
 ### Attributes {style="text-align: center; font-size: 36px; color: #739C69;"}
 
 :::{style="border: 2px solid #333; border-radius: 8px;"}
@@ -252,7 +252,7 @@ v2g_attributes_kable
 :::
 :::
 
-::: {.column .fragment width="50%"}
+::: {.column width="50%"}
 ### Sample Program {style="text-align: center; font-size: 36px; color: #739C69;"}
 
 :::{style="border: 2px solid #333; border-radius: 8px;"}

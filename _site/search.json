@@ -74,7 +74,7 @@
     "href": "slides/2025_dqe/index.html#sample-smc-question",
     "title": "Consumer Preferences for BEVSmart Charging Programs",
     "section": "Sample SMC Question",
-    "text": "Sample SMC Question\n\n\n\n\n\n\nThere are 6 SMC conjoint questions. In each question, participants are provided with 2 valid options and a “Not Interested” option. It’s important to have this “Not Interested” option, because it is a validation of willingness. When participants choose these 2 value options, they are surely to be interested in what they choose. Otherwise, they will choose “Not Interested”."
+    "text": "Sample SMC Question\n\n\n\n\n\n\nThere are 6 SMC conjoint questions. In each question, participants are provided with 2 valid options and a “Not Interested” option. It’s important to have this “Not Interested” option, because it is a validation of willingness. When participants choose from these 2 valid options, they are surely to be interested in what they choose. Otherwise, they will choose “Not Interested”."
   },
   {
     "objectID": "slides/2025_dqe/index.html#sample-v2g-question",
@@ -137,14 +137,14 @@
     "href": "slides/2025_dqe/index.html#smc-scenario-analysis",
     "title": "Consumer Preferences for BEVSmart Charging Programs",
     "section": "SMC Scenario Analysis",
-    "text": "SMC Scenario Analysis\n\n\n\n\n\n\n\nFlexibility is highly valued.\nRecurring incentives are more important than one-time.\nPayment alone is not enough.\n\n\n\nSo, after analysis of all these individual features, we can combine them into programs. We call them “scenarios”. Here for SMC we have 3 scenarios. They are flexibility, recurring cash, and one-time cash designated.\nAs we can see, for SMC, flexibility is highly valued, and recurring incentives are more important than one-time. So due to the range anxiety, payment alone is not enough. There should be a combination of flexibility and monetary incentives."
+    "text": "SMC Scenario Analysis\n\n\n\n\n\n\n\nFlexibility is highly valued.\nRecurring incentives are more important than one-time.\nPayment alone is not enough.\n\n\n\nSo, after analysis of all these individual features, we can combine them into programs. We call them “scenarios”. I want to emphasize that the purpose of doing these evaluations is to wisely allocate the resources of the grid. Therefore, we need to maximize the enrollment of each program with least efforts.\nHere for SMC we have 3 scenarios. They are flexibility, recurring cash, and one-time cash designated.\nAs we can see, for SMC, flexibility is highly valued, and recurring incentives are more important than one-time. So due to the range anxiety, payment alone is not enough. There should be a combination of flexibility and monetary incentives."
   },
   {
     "objectID": "slides/2025_dqe/index.html#v2g-scenario-analysis",
     "href": "slides/2025_dqe/index.html#v2g-scenario-analysis",
     "title": "Consumer Preferences for BEVSmart Charging Programs",
     "section": "V2G Scenario Analysis",
-    "text": "V2G Scenario Analysis\n\n\n\n\n\n\n\nStill, recurring incentives are more important than one-time.\nBut flexibility is not as important compared with SMC.\nOwners are willing to leverage BEV as a source of income.\n\n\n\nFor V2G programs, recurring incentives are also more important than one-time, flexibility is compromised since ownrs are willing to use leverage their BEVs as a source of income. So the V2G programs are more incentive powered than SMC programs."
+    "text": "V2G Scenario Analysis\n\n\n\n\n\n\n\nStill, recurring incentives are more important than one-time.\nBut flexibility is not as important compared with SMC.\nOwners are willing to leverage BEV as a source of income.\n\n\n\nFor V2G programs, recurring incentives are also more important than one-time. But flexibility is compromised since owners are willing to use their BEVs as a source of income. So the V2G programs are more incentive powered than SMC programs."
   },
   {
     "objectID": "slides/2025_dqe/index.html#smart-charging-enrollment-simulator",
