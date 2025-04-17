@@ -289,7 +289,7 @@ The battery thresholds are in the same layout, but since V2G drains the battery,
 ![](figs/smc_question.jpg){fig-align="center"}
 
 ::: {.notes}
-There are 6 SMC conjoint questions. In each question, participants are provided with 2 valid options and a "Not Interested" option. It's important to have this "Not Interested" option, because it is a validation of willingness. When participants choose these 2 value options, they are surely to be interested in what they choose. Otherwise, they will choose "Not Interested".
+There are 6 SMC conjoint questions. In each question, participants are provided with 2 valid options and a "Not Interested" option. It's important to have this "Not Interested" option, because it is a validation of willingness. When participants choose from these 2 valid options, they are surely to be interested in what they choose. Otherwise, they will choose "Not Interested".
 :::
 
 ## Sample V2G Question
