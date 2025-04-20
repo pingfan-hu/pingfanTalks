@@ -363,13 +363,13 @@ $$
 ::: {.column width="50%"}
 ### SMC Estimates {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-![](figs/smc_mxl_plot.png){fig-align="center"}
+![](figs/smc_mnl_plot.png){fig-align="center"}
 :::
 
 ::: {.column width="50%"}
 ### V2G Estimates {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-![](figs/v2g_mxl_plot.png){fig-align="center"}
+![](figs/v2g_mnl_plot.png){fig-align="center"}
 :::
 :::
 
