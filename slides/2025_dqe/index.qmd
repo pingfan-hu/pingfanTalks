@@ -430,7 +430,7 @@ smc_attr_equiv %>%
       align = c("l", "c", "c")) %>%
   kable_styling(font_size = 21) %>%
   row_spec(0, bold = TRUE) %>% 
-  row_spec(5, bold = TRUE, color = "#739C69")
+  row_spec(5, bold = TRUE, color = "#ED6D46")
 ```
 
 :::
@@ -453,7 +453,7 @@ v2g_attr_equiv %>%
       align = c("l", "c", "c")) %>%
   kable_styling(font_size = 21) %>%
   row_spec(0, bold = TRUE) %>% 
-  row_spec(c(1, 2), bold = TRUE, color = "#739C69")
+  row_spec(c(1, 2), bold = TRUE, color = "#ED6D46")
 ```
 
 :::
