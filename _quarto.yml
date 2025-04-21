@@ -7,12 +7,12 @@ website:
   title: "Pingfan's Talks"
   description: "The slide and poster collection of Pingfan Hu"
   favicon: logo.png
-  site-url: https://slides.pingfanhu.com
-  repo-url: https://github.com/pingfan-hu/pingfanSlides
+  site-url: https://talks.pingfanhu.com
+  repo-url: https://github.com/pingfan-hu/pingfanTalks
   back-to-top-navigation: false
   open-graph:
     locale: es_ES
-    site-name: https://slides.pingfanhu.com
+    site-name: https://talks.pingfanhu.com
   page-footer:
     center: "© 2025 [Pingfan Hu](https://pingfanhu.com)"
     border: true

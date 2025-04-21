@@ -1,5 +1,6 @@
 ---
 title: "Pingfan's Talks"
+image: logo.png
 ---
 
 ```{r}
@@ -9,7 +10,7 @@ library(htmltools)
 library(commonmark)
 
 gs4_deauth()
-slides_data <- read_sheet("1WISHM4Y0kp12QAsXMRt3KhE9mQ18ofpNSUzz6V82tU8")
+talks_data <- read_sheet("1WISHM4Y0kp12QAsXMRt3KhE9mQ18ofpNSUzz6V82tU8")
 
 # Function to convert markdown to HTML
 render_markdown <- function(text) {
@@ -26,7 +27,7 @@ make_pdf_path <- function(folder_name) {
 }
 
 # Create presentations using HTML tags
-presentations <- slides_data %>%
+presentations <- talks_data %>%
   pmap(function(Date, Title, Event, Location, Directory, Type = "slide") {
     # Default to "slide" if Type is not provided
     presentation_type <- if(is.null(Type) || is.na(Type)) "slide" else tolower(Type)

@@ -5,5 +5,5 @@
 /.quarto/
 *.Rproj
 .DS_Store
-
+_site/
 /.luarc.json
