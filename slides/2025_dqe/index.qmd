@@ -39,7 +39,7 @@ library(kableExtra)
 - **Managed** charging is cheaper and environmentally friendly.
 - **Smart** charging: Supplier-Managed Charging (SMC) and Vehicle-to-Grid (V2G).
 
-![](figs/smart_charging.png){fig-align="center" width="50%"}
+![](figs/smart_charging.png){fig-align="center" width="65%"}
 
 ::: {.notes}
 EVs are clean; electricity is clean, but the source of electricity might not be clean.
