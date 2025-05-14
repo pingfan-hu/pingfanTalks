@@ -33,19 +33,24 @@ library(tidyverse)
 library(kableExtra)
 ```
 
+## EV sales in US reaching ~10% of sales {style="text-align: center;"}
+
+![](figs/ev_sales_us.png){fig-align="center" width="80%"}
+
+::: {style="width: 80%; margin: 0 auto; text-align: right; font-size: 24px;"}
+Source: Argonne National Lab, [www.anl.gov/ev-facts/model-sales](https://www.anl.gov/ev-facts/model-sales)
+:::
+
 ## Introduction {.smaller}
 
-- **Unmanaged** BEV charging generates $CO_2$ and other pollution.
-- **Managed** charging is cheaper and environmentally friendly.
+- **Unmanaged** BEV charging is becoming a problem to the grid.
+- **Managed** charging is cheaper and smoothes out the grid load.
 - **Smart** charging: Supplier-Managed Charging (SMC) and Vehicle-to-Grid (V2G).
 
 ![](figs/smart_charging.png){fig-align="center" width="65%"}
 
 ::: {.notes}
-EVs are clean; electricity is clean, but the source of electricity might not be clean.
-
-Why is that? Well, unmanaged BEV charging may generate carbon dioxide and other air pollution due to high demand on the grid. 
-That's why we need managed charging to ensure clean energy as well as keep the price low.
+Unmanaged BEV charging is becoming a problem to the grid due to the spike. That's why we need managed charging to smoothes out the grid load as well as keep the price low.
 
 Smart charging is a type of managed charging, which includes Supplier-Managed Charging, shortened as SMC, and Vehicle-to-Grid, shortened as V2G.
 :::
@@ -84,6 +89,8 @@ But with SMC, the electricity demand is controlled below the threshold. It reduc
 V2G is short for Vehicle-to-Grid. It is another type of smart charging that allows BEV owners to sell electricity back to the grid. With V2G, BEVs become potential sources of electricity.
 :::
 
+## [Smart charging depends on enrollment.]{style="text-align: center; display: block;"} {.center}
+
 ## Literature Review
 
 1. A study by @wong_incentives_2023 examined **incentives** affect the EV owners' acceptance, <span style="color: #739C69">but EV ownership is only 19%</span>.
@@ -97,14 +104,14 @@ We need high EV ownership & large sample size, and consider heterogeneity.
 :::
 
 ::: {.notes}
-Various studies have been done on smart charging programs, but they all have small sample size and low EV ownership. Therefore, we aimed to conduct a large-scale survey with high EV ownership to study the heterogeneity of BEV owners' preferences.
+There's been a few studies that looked on people's willingness to participate to smart charging programs, but they all have small sample size and low EV ownership. Therefore, we aimed to conduct a large-scale survey with high EV ownership to study the heterogeneity of BEV owners' preferences.
 :::
 
 ## Research Questions {style="line-height: 2;"}
 
-1. **Sensitivity**: How do changes in smart charging program features influence BEV owners' **willingness** to opt in?
+1. **Sensitivity**: How do changes in smart charging program **features** influence BEV owners' willingness to opt in?
 
-2. **Market Share**: Under what **conditions** will BEV owners be more willing to opt in to smart charging programs?
+2. **Enrollment Rate**: Under what **combinations of features** will BEV owners be more willing to opt in to smart charging programs?
 
 <br>
 
@@ -122,23 +129,52 @@ Here we have 2 research questions. Firstly, we want to know the sensitivity of e
 In order to answer these questions, we designed a conjoint survey to collect BEV owners' willingness to participate. Then we used multinomial logit models to simulate the utility of each program feature.
 :::
 
-## Survey Design with `formr` {.smaller style="line-height: 1.8;"}
+## Survey Design with `formr`
 
-::: {.columns}
-::: {.column .fragment width="50%"}
-### Survey Components {style="text-align: center; font-size: 36px; color: #739C69;"}
+<br>
+<br>
 
-1. **Conjoint Questions:**
-    a. Monetary Incentives
-    b. Charging Limitations
-    c. Flexibility
-2. **Demographic Questions:**
-    a. BEV Ownership & Usage
-    b. Personal & Household Info
+::: {.columns }
+::: {style="text-align: center;" .column .fragment}
+### Conjoint Questions {style="text-align: center; font-size: 36px; color: #739C69;"}
+1. Monetary Incentives
+2. Charging Limitations
+3. Flexibility
 :::
 
-::: {.column .fragment width="50%"}
-### Conjoint Attributes Sample {style="text-align: center; font-size: 36px; color: #739C69;"}
+::: {style="text-align: center;" .column .fragment}
+### Demographic Questions {style="text-align: center; font-size: 36px; color: #739C69;"}
+1. BEV Ownership
+2. Personal Info
+3. Household Info
+:::
+:::
+
+::: {.notes}
+We used formr to design the survey. It's an open-source survey platform that supports R coding. In this survey, we have conjoint questions to ask for willingness to participate, and multiple choice questions to collect demographic information.
+:::
+
+## Conjoint Question Explained
+
+### A Sample Conjoint Question {style="padding-top: 0.5em; text-align: center; font-size: 36px; color: #739C69;"}
+
+![](figs/conjoint_example.jpg){fig-align="center" width="80%"}
+
+:::{style="margin-left: 3em;"}
+1. Provide respondents with different **sets** of attributes.
+2. Observe choices across random sets.
+3. Estimate **utility** of each attribute.
+:::
+
+::: {.notes}
+But first, I want to explain what conjoint question is. If I care about apples, I would want to know how people value type vs price vs freshness. In this apple example, you can only choose one set of the attributes, so if you pick one option, you pick all the attributes in it. In short, conjoint is about forcing people to make trade-offs.
+:::
+
+## SMC Programs {.smaller style="line-height: 1.8;"}
+
+::: {.columns}
+::: {.column .fragment style="padding-top: 0.5em;"}
+### Attributes {style="text-align: center; font-size: 36px; color: #739C69;"}
 
 :::{style="border: 2px solid #333; border-radius: 8px;"}
 ```{r}
@@ -157,43 +193,8 @@ smc_attributes_kable
 ```
 :::
 :::
-:::
 
-::: {.notes}
-We used formr to design the survey. It's an open-source survey platform that supports R coding. In this survey, we have conjoint questions to ask for willingness to participate, and multiple choice questions to collect demographic information.
-
-On the right side is a sample list of conjoint attributes. They represent the smart charging features of a program. We'll talk in details.
-:::
-
-## Conjoint Question Explained
-
-### A Sample Conjoint Question {style="text-align: center; font-size: 36px; color: #739C69;"}
-
-![](figs/conjoint_example.jpg){fig-align="center"}
-
-:::{style="margin-left: 3em;"}
-1. You are provided with different **sets** of attributes.
-2. You choose one **set** instead of one **attribute**.
-:::
-
-::: {.notes}
-But first, I want to explain what conjoint question is. In this apple example, you can only choose one set of the attributes, so if you pick one option, you pick all the attributes in it. In short, conjoint is about forcing people to make trade-offs.
-:::
-
-## SMC Programs {.smaller style="line-height: 1.8;"}
-
-::: {.columns}
-::: {.column .fragment width="50%"}
-### Attributes {style="text-align: center; font-size: 36px; color: #739C69;"}
-
-:::{style="border: 2px solid #333; border-radius: 8px;"}
-```{r}
-smc_attributes_kable
-```
-:::
-:::
-
-::: {.column .fragment width="50%"}
+::: {.column .fragment style="padding-top: 0.5em;"}
 ### Sample Program {style="text-align: center; font-size: 36px; color: #739C69;"}
 
 :::{style="border: 2px solid #333; border-radius: 8px;"}
@@ -214,6 +215,10 @@ smc_options_kable
 
 ::: {style="text-align: center;"}
 <img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_smc/u_200_g_160_m_80.png" style="width: 400px; width: 100%; height: auto;"/>
+
+::: {style="text-align: center; font-size: 20px;"}
+(Range determined by stated vehicle they own)
+:::
 :::
 :::
 :::
@@ -231,7 +236,7 @@ The battery thresholds here are well-designed to provide an immediate visual aid
 ## V2G Programs {.smaller style="line-height: 1.8;"}
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column style="padding-top: 0.5em;"}
 ### Attributes {style="text-align: center; font-size: 36px; color: #739C69;"}
 
 :::{style="border: 2px solid #333; border-radius: 8px;"}
@@ -252,7 +257,7 @@ v2g_attributes_kable
 :::
 :::
 
-::: {.column width="50%"}
+::: {.column style="padding-top: 0.5em;"}
 ### Sample Program {style="text-align: center; font-size: 36px; color: #739C69;"}
 
 :::{style="border: 2px solid #333; border-radius: 8px;"}
@@ -273,6 +278,10 @@ v2g_options_kable
 
 ::: {style="text-align: center;"}
 <img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_v2g/u_200_g_160_l_80.png" style="width: 400px; width: 100%; height: auto;"/>
+
+::: {style="text-align: center; font-size: 20px;"}
+(Range determined by stated vehicle they own)
+:::
 :::
 :::
 :::
@@ -320,6 +329,38 @@ Likewise, there are 6 V2G conjoint questions.
 We collected in total of 1,356 complete, filtered responses from Meta and Dynata throughout 2024, and we made sure that all participants are real BEV owners.
 :::
 
+## Recruitment on Meta and Dynata
+
+::: {.columns}
+::: {.column style="padding-top: 0.5em;"}
+### Meta {style="text-align: center; font-size: 36px; color: #739C69;"}
+
+![](figs/meta_ad.png){fig-align="center" width="70%"}
+:::
+
+::: {.column style="padding-top: 0.5em;"}
+### Dynata {style="text-align: center; font-size: 36px; color: #739C69;"}
+
+:::{style="border: 2px solid #333; border-radius: 8px; width: 40%; margin: 0 auto; display: block;"}
+![](figs/dynata.svg)
+:::
+
+<br>
+
+::: {style="text-align: center;"}
+Pre-screening
+
+&
+
+Filtering
+:::
+:::
+:::
+
+## Survey Question - Car Ownership
+
+![](figs/car_ownership.png){fig-align="center" width="65%"}
+
 ## Survey Results - Top 10 BEV
 ![](figs/top_bev.png)
 
@@ -357,17 +398,21 @@ u_j = v_j + \epsilon_j = \beta' x + \epsilon_j
 P_j = \frac{e^{v_j}}{\sum_{k=1}^{J} e^{v_k}}
 \end{align*}
 $$
+
+::: {style="text-align: center;"}
+Utility esimated using maximum likelihood estimation (MLE).
+:::
 :::
 
 ::: {.columns .fragment}
-::: {.column width="50%"}
-### SMC Estimates {style="text-align: center; font-size: 36px; color: #739C69;"}
+::: {.column style="padding-top: 0.5em;"}
+### SMC Estimates {style="text-align: center; font-size: 24px; color: #739C69;"}
 
 ![](figs/smc_mnl_plot.png){fig-align="center"}
 :::
 
-::: {.column width="50%"}
-### V2G Estimates {style="text-align: center; font-size: 36px; color: #739C69;"}
+::: {.column style="padding-top: 0.5em;"}
+### V2G Estimates {style="text-align: center; font-size: 24px; color: #739C69;"}
 
 ![](figs/v2g_mnl_plot.png){fig-align="center"}
 :::
@@ -385,9 +430,41 @@ Here are the coefficient estimate plots of both programs. As you can see, the "N
 However, coefficients alone are not enough to interpret the willingness to participate. A more intuitive approach is the sensitivity, which means by how much the enrollment rate will change when a feature value changes.
 :::
 
-## Enrollment Sensitivity
+## Enrollment Sensitivity {.smaller style="line-height: 1.8;"}
 
+::: {.columns}
+::: {.column style="padding-top: 1em;"}
+### Attribute Table {style="text-align: center; font-size: 36px; color: #739C69;"}
+
+:::{style="border: 2px solid #333; border-radius: 8px;"}
+```{r}
+attribute_table_enroll_cash <- tibble(
+    Attributes = c("Enrollment Cash", "Monthly Cash", "Monthly Override"),
+    Values = c("$50 - $300", "$2", "1")
+)
+
+attribute_kable_enroll_cash <- attribute_table_enroll_cash %>% 
+    kable(escape = FALSE, align = c("c", "c")) %>% 
+    column_spec(column = 1, width = '16em') %>%
+    column_spec(column = 2, width = '10em') %>% 
+    kable_styling(position = "center") %>% 
+    row_spec(1, bold = TRUE, color = "#ED6D46")
+
+attribute_kable_enroll_cash
+```
+
+::: {style="text-align: center;"}
+<img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_smc/u_200_g_120_m_40.png" style="width: 400px; width: 100%; height: auto;"/>
+
+:::
+:::
+:::
+
+::: {.column style="padding-top: 1em;"}
+### Sensitivity Plot {style="text-align: center; font-size: 36px; color: #739C69;"}
 ![](figs/sensitivity_plot_1.png){fig-align="center"}
+:::
+:::
 
 ::: {.notes}
 This is one example of the sensitivity plots. As the enrollment cash increases, the user enrollment increases as well. The solid part is from the results, and the dotted part is the extrapolation with the model.
@@ -411,7 +488,7 @@ And here we have a full demonstration of all sensitivity plots. Steeper slope in
 <br>
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column}
 
 ### SMC {style="text-align: center; font-size: 36px; color: #739C69;"}
 
@@ -435,7 +512,7 @@ smc_attr_equiv %>%
 
 :::
 
-::: {.column width="50%"}
+::: {.column}
 
 ### V2G {style="text-align: center; font-size: 36px; color: #739C69;"}
 
@@ -463,9 +540,9 @@ v2g_attr_equiv %>%
 
 ::: {style="font-size: 26px;"}
 1. **Smaller** value indicates higher efficiency.
-2. **Recurring** incentives are more important than one-time.
-3. In **SMC**, **Guaranteed** threshold is more important than V2G, indicating range anxiety.
-4. In **V2G**, **Monetary** incentives are valued more than SMC.
+2. **Monetary** incentives are valued more in V2G than SMC.
+3. **Guaranteed** threshold is more important in SMC than V2G, indicating range anxiety.
+4. Attribute equivalencies can be used to inform incentive design.
 :::
 
 ::: {.notes}
@@ -516,5 +593,13 @@ Here we've made a smart charging enrollment simulator. We can play around with i
 1. More enrollment increase in SMC: Guaranteed threshold from 60% to 100%.
 2. More enrollment increase in V2G: Recurring cash from $2 to $20.
 :::
+
+## Contributions
+
+<br>
+
+1. First **large N** study of BEV owners' preferences for smart charging programs.
+2. Quantified the **sensitivity** of BEV owners' preferences for smart charging features.
+3. Introduced the concept of attribute **equivalencies** to inform incentive design.
 
 ## Reference List
