@@ -352,7 +352,7 @@ We collected in total of 1,356 complete, filtered responses from Meta and Dynata
 
 ## Survey Question - Car Ownership
 
-![](figs/car_ownership.png){fig-align="center" width="65%"}
+![](figs/car_ownership.png){fig-align="center" width="55%"}
 
 ## Survey Results - Top 10 BEV
 ![](figs/top_bev.png)
