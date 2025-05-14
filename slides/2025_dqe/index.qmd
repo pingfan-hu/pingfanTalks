@@ -160,7 +160,7 @@ We used formr to design the survey. It's an open-source survey platform that sup
 
 ![](figs/conjoint_example.jpg){fig-align="center" width="80%"}
 
-:::{style="margin-left: 3em;"}
+::: {style="margin-left: 3em;"}
 1. Provide respondents with different **sets** of attributes.
 2. Observe choices across random sets.
 3. Estimate **utility** of each attribute.
@@ -174,9 +174,11 @@ But first, I want to explain what conjoint question is. If I care about apples, 
 
 ::: {.columns}
 ::: {.column .fragment style="padding-top: 0.5em;"}
+
 ### Attributes {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-:::{style="border: 2px solid #333; border-radius: 8px;"}
+::: {style="border: 2px solid #333; border-radius: 8px;"}
+
 ```{r}
 smc_attributes <- tibble(
     `No.` = seq(1,5),
@@ -191,13 +193,16 @@ smc_attributes_kable <- smc_attributes %>%
 
 smc_attributes_kable
 ```
+
 :::
 :::
 
 ::: {.column .fragment style="padding-top: 0.5em;"}
+
 ### Sample Program {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-:::{style="border: 2px solid #333; border-radius: 8px;"}
+::: {style="border: 2px solid #333; border-radius: 8px;"}
+
 ```{r}
 smc_options <- tibble(
     Attributes = c("Enrollment Cash", "Monthly Cash", "Monthly Override"),
@@ -213,13 +218,14 @@ smc_options_kable <- smc_options %>%
 smc_options_kable
 ```
 
-::: {style="text-align: center;"}
-<img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_smc/u_200_g_160_m_80.png" style="width: 400px; width: 100%; height: auto;"/>
+<div style="text-align: center; font-size: 20px;">
 
-::: {style="text-align: center; font-size: 20px;"}
+![](https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_smc/u_200_g_160_m_80.png){width="100%" style="width: 400px;"}
+
 (Range determined by stated vehicle they own)
-:::
-:::
+
+</div>
+
 :::
 :::
 :::
@@ -232,14 +238,15 @@ Here is a sample SMC program. You can see the one-time enrollment cash, recurrin
 The battery thresholds here are well-designed to provide an immediate visual aid of the minimum battery and guaranteed battery. We also used milage instead of percentage to make it more intuitive. The mileage will be shown according to the real values of each participant.
 :::
 
-
 ## V2G Programs {.smaller style="line-height: 1.8;"}
 
 ::: {.columns}
 ::: {.column style="padding-top: 0.5em;"}
+
 ### Attributes {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-:::{style="border: 2px solid #333; border-radius: 8px;"}
+::: {style="border: 2px solid #333; border-radius: 8px;"}
+
 ```{r}
 v2g_attributes <- tibble(
     `No.` = seq(1,5),
@@ -254,13 +261,16 @@ v2g_attributes_kable <- v2g_attributes %>%
 
 v2g_attributes_kable
 ```
+
 :::
 :::
 
 ::: {.column style="padding-top: 0.5em;"}
+
 ### Sample Program {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-:::{style="border: 2px solid #333; border-radius: 8px;"}
+::: {style="border: 2px solid #333; border-radius: 8px;"}
+
 ```{r}
 v2g_options <- tibble(
     Attributes = c("Enrollment Cash", "Occurrence Cash", "Monthly Occurrence"),
@@ -276,13 +286,14 @@ v2g_options_kable <- v2g_options %>%
 v2g_options_kable
 ```
 
-::: {style="text-align: center;"}
-<img src="https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_v2g/u_200_g_160_l_80.png" style="width: 400px; width: 100%; height: auto;"/>
+<div style="text-align: center; font-size: 20px;">
 
-::: {style="text-align: center; font-size: 20px;"}
+![](https://raw.githubusercontent.com/pingfan-hu/pingfanResources/main/bev/battery_v2g/u_200_g_160_l_80.png){width="100%" style="width: 400px;"}
+
 (Range determined by stated vehicle they own)
-:::
-:::
+
+</div>
+
 :::
 :::
 :::
@@ -311,50 +322,32 @@ Likewise, there are 6 V2G conjoint questions.
 
 ## Survey Fielding - 1356 in Total
 
-<span style="color: #739C69">**Meta**</span>: Facebook, Messenger, Instagram - **Voluntary**
+::: {.columns}
+::: {.column width="40%"}
 
-- Fielding from March to July in 2024
-- **803** results after filtering
+![](figs/meta_ad.png)
 
-<span style="color: #739C69">**Dynata**</span>: Survey Panel - **Payment to real BEV owners only**
+:::
 
-- Fielding from September to November in 2024
-- **553** results after filtering
+::: {.column width="60%"}
 
-::: {style="text-align: center;"}
-![](figs/survey_fielding.png){fig-align="center" width="70%"}
+<span style="color: #739C69">**Meta Ads**</span>: Voluntary participants
+
+- **803** responses
+- March to July in 2024
+
+<span style="color: #739C69">**Dynata Recruitment**</span>: Paid survey
+
+- **553** responses
+- September to November in 2024
+
+![](figs/survey_fielding.png)
+
+:::
 :::
 
 ::: {.notes}
 We collected in total of 1,356 complete, filtered responses from Meta and Dynata throughout 2024, and we made sure that all participants are real BEV owners.
-:::
-
-## Recruitment on Meta and Dynata
-
-::: {.columns}
-::: {.column style="padding-top: 0.5em;"}
-### Meta {style="text-align: center; font-size: 36px; color: #739C69;"}
-
-![](figs/meta_ad.png){fig-align="center" width="70%"}
-:::
-
-::: {.column style="padding-top: 0.5em;"}
-### Dynata {style="text-align: center; font-size: 36px; color: #739C69;"}
-
-:::{style="border: 2px solid #333; border-radius: 8px; width: 40%; margin: 0 auto; display: block;"}
-![](figs/dynata.svg)
-:::
-
-<br>
-
-::: {style="text-align: center;"}
-Pre-screening
-
-&
-
-Filtering
-:::
-:::
 :::
 
 ## Survey Question - Car Ownership
@@ -434,13 +427,17 @@ However, coefficients alone are not enough to interpret the willingness to parti
 
 ::: {.columns}
 ::: {.column style="padding-top: 1em;"}
-### Attribute Table {style="text-align: center; font-size: 36px; color: #739C69;"}
+### Baseline Simulation {style="text-align: center; font-size: 36px; color: #739C69;"}
 
-:::{style="border: 2px solid #333; border-radius: 8px;"}
+::: {style="text-align: center; font-size: 24px;"}
+Choice between "None" and this program:
+:::
+
+::: {style="border: 2px solid #333; border-radius: 8px;"}
 ```{r}
 attribute_table_enroll_cash <- tibble(
     Attributes = c("Enrollment Cash", "Monthly Cash", "Monthly Override"),
-    Values = c("$50 - $300", "$2", "1")
+    Values = c("$0 - $1000", "$2", "1")
 )
 
 attribute_kable_enroll_cash <- attribute_table_enroll_cash %>% 
